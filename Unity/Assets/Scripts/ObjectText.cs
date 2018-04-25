@@ -7,10 +7,13 @@ public class ObjectText : MonoBehaviour {
 	public GameObject text;
 	public TextMesh t;
 	public string description;
-
-	// Use this for initialization
+    private Transform lookTowards;
+    public GameObject player; 
+	
 	void Start () {
-		text = new GameObject();
+        // lookTowards = Camera.main.transform;
+        // lookTowards = (Transform)GameObject.Find("VRTK").transform.Find("Player").Find("Body").Find("Camera (eye)");
+        text = new GameObject();
         text.name = "Text";
 		t = text.AddComponent<TextMesh>();
 		t.text = description;
@@ -18,12 +21,15 @@ public class ObjectText : MonoBehaviour {
 		t.characterSize = 0.001f;
 		t.fontSize = 200;
         t.color = Color.black;
-        t.transform.parent = transform;
-        t.transform.position = transform.position + new Vector3(0, 0.11f, 0);
-	}
+        text.transform.parent = transform;
+        text.transform.position = transform.position + new Vector3(0, 0.11f, 0);
+        text.transform.rotation = Quaternion.Euler(0, 0, 0);
+        // text.transform.rotation = Quaternion.FromToRotation(new Vector3(text.transform.position.x, 0, text.transform.position.z), new Vector3(lookTowards.position.x, 0, lookTowards.position.z));
+    }
 	
-	// Update is called once per frame
 	void Update () {
-		// t.transform.position = transform.position + new Vector3(0, 0.11f, 0);
-	}
+        Debug.Log(player.transform.position);
+	    // t.transform.position = transform.position + new Vector3(0, 0.11f, 0);
+        // t.transform.rotation = Quaternion.FromToRotation(new Vector3(t.transform.position.x, 0, t.transform.position.z), new Vector3(lookTowards.transform.position.x, 0, lookTowards.transform.position.z));
+    }
 }

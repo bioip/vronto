@@ -15,7 +15,7 @@ public class SpheresGenerator : MonoBehaviour {
 	void Start () {
 
 
-        Debug.Log(CSVManager.NumRows());
+        // Debug.Log(CSVManager.NumRows());
 
         // Generating 64 Spheres for visualization purposes
         for(int i = 0; i <= 507; i += 169)
