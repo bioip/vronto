@@ -18,33 +18,45 @@ public class SpheresGenerator : MonoBehaviour {
         Debug.Log(CSVManager.NumRows());
 
         
-        for(int i = 0; i < CSVManager.NumRows(); i++)
+        for(int i = 0; i <= 507; i += 169)
         {
-            //generate spheres according to coord in csv file
-            GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[i].X), float.Parse(CSVManager.GetRowList()[i].Y), 
-                                                float.Parse(CSVManager.GetRowList()[i].Z));
-            sp.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
-            
-            //disable shadow
-            MeshRenderer mr = sp.GetComponent(typeof(MeshRenderer)) as MeshRenderer;
-            mr.shadowCastingMode = ShadowCastingMode.Off;
-            
+            for(int j = i; j <= i + 39; j += 13)
+            {
+                for(int k = j; k <= j + 3; k++)
+                {
+                    //generate spheres according to coord in csv file
+                    GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                    sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[k].X), float.Parse(CSVManager.GetRowList()[k].Y), 
+                                                        float.Parse(CSVManager.GetRowList()[k].Z));
+                    sp.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+                    
+                    //disable shadow
+                    MeshRenderer mr = sp.GetComponent(typeof(MeshRenderer)) as MeshRenderer;
+                    mr.shadowCastingMode = ShadowCastingMode.Off;
+                    
 
-            //add Rigidbody component
-            Rigidbody rb = sp.AddComponent(typeof(Rigidbody)) as Rigidbody;
-            rb.useGravity = false;
-            rb.isKinematic = true;
+                    //add Rigidbody component
+                    Rigidbody rb = sp.AddComponent(typeof(Rigidbody)) as Rigidbody;
+                    rb.useGravity = false;
+                    rb.isKinematic = true;
 
-            //add VRTK component
-            VRTK_InteractableObject io = sp.AddComponent(typeof(VRTK_InteractableObject)) as VRTK_InteractableObject;
-            VRTK_FixedJointGrabAttach fjga = sp.AddComponent(typeof(VRTK_FixedJointGrabAttach)) as VRTK_FixedJointGrabAttach;
-            VRTK_SwapControllerGrabAction scga = sp.AddComponent(typeof(VRTK_SwapControllerGrabAction)) as VRTK_SwapControllerGrabAction;
-            VRTK_InteractHaptics ih = sp.AddComponent(typeof(VRTK_InteractHaptics)) as VRTK_InteractHaptics;
-            io.isGrabbable = true;
-            io.touchHighlightColor = Color.yellow;
-            io.grabAttachMechanicScript = fjga;
-            io.secondaryGrabActionScript = scga;
+                    //add VRTK component
+                    VRTK_InteractableObject io = sp.AddComponent(typeof(VRTK_InteractableObject)) as VRTK_InteractableObject;
+                    VRTK_FixedJointGrabAttach fjga = sp.AddComponent(typeof(VRTK_FixedJointGrabAttach)) as VRTK_FixedJointGrabAttach;
+                    VRTK_SwapControllerGrabAction scga = sp.AddComponent(typeof(VRTK_SwapControllerGrabAction)) as VRTK_SwapControllerGrabAction;
+                    VRTK_InteractHaptics ih = sp.AddComponent(typeof(VRTK_InteractHaptics)) as VRTK_InteractHaptics;
+                    io.holdButtonToGrab = false;
+                    io.isGrabbable = true;
+                    io.touchHighlightColor = Color.yellow;
+                    io.grabAttachMechanicScript = fjga;
+                    io.secondaryGrabActionScript = scga;
+
+                    //attach text to spheres
+                    ObjectText ot = sp.AddComponent(typeof(ObjectText)) as ObjectText;
+                    ot.description = CSVManager.GetRowList()[i].Description;
+                }
+            }
+            
 
         }
         
