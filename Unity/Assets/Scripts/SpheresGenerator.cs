@@ -17,7 +17,7 @@ public class SpheresGenerator : MonoBehaviour {
 
         Debug.Log(CSVManager.NumRows());
 
-        
+        // Generating 64 Spheres for visualization purposes
         for(int i = 0; i <= 507; i += 169)
         {
             for(int j = i; j <= i + 39; j += 13)
@@ -26,9 +26,10 @@ public class SpheresGenerator : MonoBehaviour {
                 {
                     //generate spheres according to coord in csv file
                     GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                    sp.transform.parent = transform;
                     sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[k].X), float.Parse(CSVManager.GetRowList()[k].Y), 
                                                         float.Parse(CSVManager.GetRowList()[k].Z));
-                    sp.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+                    sp.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                     
                     //disable shadow
                     MeshRenderer mr = sp.GetComponent(typeof(MeshRenderer)) as MeshRenderer;
@@ -53,7 +54,7 @@ public class SpheresGenerator : MonoBehaviour {
 
                     //attach text to spheres
                     ObjectText ot = sp.AddComponent(typeof(ObjectText)) as ObjectText;
-                    ot.description = CSVManager.GetRowList()[i].Description;
+                    ot.description = CSVManager.GetRowList()[k].Description;
                 }
             }
             
