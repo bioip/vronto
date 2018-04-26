@@ -450,11 +450,11 @@ MonoBehaviour:
   enableTeleport: 1
   targetListPolicy: {fileID: 0}
   pointerRenderer: {fileID: 380843531}
-  activationButton: 7
+  activationButton: 10
   holdButtonToActivate: 1
   activateOnEnable: 0
   activationDelay: 0
-  selectionButton: 7
+  selectionButton: 10
   selectOnPress: 0
   selectionDelay: 0
   selectAfterHoverDuration: 0
@@ -1212,7 +1212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 146900, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Name
-      value: Body
+      value: '[CameraRig]'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11420968, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -1246,6 +1246,69 @@ GameObject:
 GameObject:
   m_PrefabParentObject: {fileID: 146900, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
   m_PrefabInternal: {fileID: 1466561567}
+--- !u!114 &1466561591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466561574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cec7beb7f1f7b29458f6ea73474a91e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  controllerEvents: {fileID: 0}
+--- !u!114 &1466561592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466561574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba3cd5456cd79e49948f5ceb58544b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerToggleButton: 10
+  pointerSetButton: 10
+  grabToggleButton: 7
+  useToggleButton: 3
+  uiClickButton: 3
+  menuToggleButton: 14
+  axisFidelity: 1
+  triggerClickThreshold: 1
+  triggerForceZeroThreshold: 0.01
+  triggerAxisZeroOnUntouch: 0
+  gripClickThreshold: 1
+  gripForceZeroThreshold: 0.01
+  gripAxisZeroOnUntouch: 0
+  triggerPressed: 0
+  triggerTouched: 0
+  triggerHairlinePressed: 0
+  triggerClicked: 0
+  triggerAxisChanged: 0
+  gripPressed: 0
+  gripTouched: 0
+  gripHairlinePressed: 0
+  gripClicked: 0
+  gripAxisChanged: 0
+  touchpadPressed: 0
+  touchpadTouched: 0
+  touchpadAxisChanged: 0
+  buttonOnePressed: 0
+  buttonOneTouched: 0
+  buttonTwoPressed: 0
+  buttonTwoTouched: 0
+  startMenuPressed: 0
+  pointerPressed: 0
+  grabPressed: 0
+  usePressed: 0
+  uiClickPressed: 0
+  menuPressed: 0
+  controllerVisible: 1
 --- !u!1 &1549256247
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1352,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549256247}
   m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: 0.38268343}
-  m_LocalPosition: {x: -0.5, y: 0.2, z: -0.5}
+  m_LocalPosition: {x: 0.99, y: 0.2, z: -0.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1957703618}
@@ -1309,15 +1372,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: edabbdd7c1c1123468655717232000eb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.69
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edabbdd7c1c1123468655717232000eb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.08
+      value: 1.99
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edabbdd7c1c1123468655717232000eb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 3.9
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edabbdd7c1c1123468655717232000eb, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1357,7 +1420,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edabbdd7c1c1123468655717232000eb, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edabbdd7c1c1123468655717232000eb, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1365,11 +1428,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edabbdd7c1c1123468655717232000eb, type: 2}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: edabbdd7c1c1123468655717232000eb, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: edabbdd7c1c1123468655717232000eb, type: 2}

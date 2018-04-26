@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
+using VRTK;
 
 public class ObjectText : MonoBehaviour {
 
@@ -8,11 +10,9 @@ public class ObjectText : MonoBehaviour {
 	public TextMesh t;
 	public string description;
     private Transform lookTowards;
-    public GameObject player; 
-	
+
 	void Start () {
-        // lookTowards = Camera.main.transform;
-        // lookTowards = (Transform)GameObject.Find("VRTK").transform.Find("Player").Find("Body").Find("Camera (eye)");
+        lookTowards = VRTK_DeviceFinder.HeadsetTransform();
         text = new GameObject();
         text.name = "Text";
 		t = text.AddComponent<TextMesh>();
@@ -24,12 +24,30 @@ public class ObjectText : MonoBehaviour {
         text.transform.parent = transform;
         text.transform.position = transform.position + new Vector3(0, 0.11f, 0);
         text.transform.rotation = Quaternion.Euler(0, 0, 0);
-        // text.transform.rotation = Quaternion.FromToRotation(new Vector3(text.transform.position.x, 0, text.transform.position.z), new Vector3(lookTowards.position.x, 0, lookTowards.position.z));
+        /*
+        try
+        {
+            text.transform.rotation = Quaternion.FromToRotation(new Vector3(text.transform.position.x, 0, text.transform.position.z), new Vector3(lookTowards.position.x, 0, lookTowards.position.z));
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.Log("Can't find head");
+        }
+        */
     }
 	
 	void Update () {
-        Debug.Log(player.transform.position);
-	    // t.transform.position = transform.position + new Vector3(0, 0.11f, 0);
-        // t.transform.rotation = Quaternion.FromToRotation(new Vector3(t.transform.position.x, 0, t.transform.position.z), new Vector3(lookTowards.transform.position.x, 0, lookTowards.transform.position.z));
+        /*
+        lookTowards = VRTK_DeviceFinder.HeadsetTransform();
+        // t.transform.position = transform.position + new Vector3(0, 0.11f, 0);
+        try
+        {
+            text.transform.rotation = Quaternion.FromToRotation(new Vector3(text.transform.position.x, 0, text.transform.position.z), new Vector3(lookTowards.position.x, 0, lookTowards.position.z));
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.Log("Can't find head");
+        }
+        */
     }
 }
