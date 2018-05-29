@@ -1,0 +1,6 @@
+Unity/Assets/Models/*.dae filter=lfs diff=lfs merge=lfs -text
+Unity/Assets/Models/*.obj filter=lfs diff=lfs merge=lfs -text
+Unity/Assets/Models/trassedia_for_vr.dae filter=lfs diff=lfs merge=lfs -text
+Unity/Assets/Models/cube.obj filter=lfs diff=lfs merge=lfs -text
+Unity/Assets/Models/r2.obj filter=lfs diff=lfs merge=lfs -text
+Unity/Assets/Models/room.obj filter=lfs diff=lfs merge=lfs -text

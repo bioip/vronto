@@ -5,66 +5,98 @@ using UnityEngine.Rendering;
 using VRTK;
 using VRTK.GrabAttachMechanics;
 using VRTK.SecondaryControllerGrabActions;
+using UnityEngine.UI;
 
 public class SpheresGenerator : MonoBehaviour {
 
     private int[] objects;
     public CSV CSVManager;
+    private int sphere_offset = 0;
+    private int pageNum = 1;
+    private List<GameObject> spheres = new List<GameObject>();
+    public InputField PageInput;
+    public InputField labelInput;
 
 	// Use this for initialization
 	void Start () {
-
-
-        // Debug.Log(CSVManager.NumRows());
-
-        // Generating 64 Spheres for visualization purposes
-        for(int i = 0; i <= 507; i += 169)
-        {
-            for(int j = i; j <= i + 39; j += 13)
-            {
-                for(int k = j; k <= j + 3; k++)
-                {
-                    //generate spheres according to coord in csv file
-                    GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                    sp.transform.parent = transform;
-                    sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[k].X), float.Parse(CSVManager.GetRowList()[k].Y), 
-                                                        float.Parse(CSVManager.GetRowList()[k].Z));
-                    sp.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-                    
-                    //disable shadow
-                    MeshRenderer mr = sp.GetComponent(typeof(MeshRenderer)) as MeshRenderer;
-                    mr.shadowCastingMode = ShadowCastingMode.Off;
-                    
-
-                    //add Rigidbody component
-                    Rigidbody rb = sp.AddComponent(typeof(Rigidbody)) as Rigidbody;
-                    rb.useGravity = false;
-                    rb.isKinematic = true;
-
-                    //add VRTK component
-                    VRTK_InteractableObject io = sp.AddComponent(typeof(VRTK_InteractableObject)) as VRTK_InteractableObject;
-                    VRTK_FixedJointGrabAttach fjga = sp.AddComponent(typeof(VRTK_FixedJointGrabAttach)) as VRTK_FixedJointGrabAttach;
-                    VRTK_SwapControllerGrabAction scga = sp.AddComponent(typeof(VRTK_SwapControllerGrabAction)) as VRTK_SwapControllerGrabAction;
-                    VRTK_InteractHaptics ih = sp.AddComponent(typeof(VRTK_InteractHaptics)) as VRTK_InteractHaptics;
-                    io.holdButtonToGrab = false;
-                    io.isGrabbable = true;
-                    io.touchHighlightColor = Color.yellow;
-                    io.grabAttachMechanicScript = fjga;
-                    io.secondaryGrabActionScript = scga;
-
-                    //attach text to spheres
-                    ObjectText ot = sp.AddComponent(typeof(ObjectText)) as ObjectText;
-                    ot.description = CSVManager.GetRowList()[k].Description;
-                }
-            }
-            
-
-        }
-        
+        generate_spheres();
+        PageInput.text = "P" + pageNum.ToString() + "/6";
 	}
-	
+
+	private void generate_spheres() {
+        for(int i = sphere_offset; i < sphere_offset + 450; i++)
+        {
+            if(i >= 2448)
+            {
+                return;
+            }
+            //generate spheres according to coord in csv file
+            GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            sp.transform.parent = transform;
+            sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[i].X), float.Parse(CSVManager.GetRowList()[i].Y), 
+                                                float.Parse(CSVManager.GetRowList()[i].Z));
+            sp.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            spheres.Add(sp);
+
+            //disable shadow
+            MeshRenderer mr = sp.GetComponent(typeof(MeshRenderer)) as MeshRenderer;
+            mr.shadowCastingMode = ShadowCastingMode.Off;
+            
+            //enable sphere collider isTrigger
+            SphereCollider sc = sp.GetComponent(typeof(SphereCollider)) as SphereCollider;
+            sc.isTrigger = true;
+
+            //add Rigidbody component
+            Rigidbody rb = sp.AddComponent(typeof(Rigidbody)) as Rigidbody;
+            rb.useGravity = false;
+            rb.isKinematic = true;
+
+            //add VRTK component
+            VRTK_InteractableObject io = sp.AddComponent(typeof(VRTK_InteractableObject)) as VRTK_InteractableObject;
+            VRTK_FixedJointGrabAttach fjga = sp.AddComponent(typeof(VRTK_FixedJointGrabAttach)) as VRTK_FixedJointGrabAttach;
+            VRTK_SwapControllerGrabAction scga = sp.AddComponent(typeof(VRTK_SwapControllerGrabAction)) as VRTK_SwapControllerGrabAction;
+            VRTK_InteractHaptics ih = sp.AddComponent(typeof(VRTK_InteractHaptics)) as VRTK_InteractHaptics;
+            io.holdButtonToGrab = true;
+            io.isGrabbable = true;
+            io.touchHighlightColor = Color.yellow;
+            io.grabAttachMechanicScript = fjga;
+            io.secondaryGrabActionScript = scga;
+
+            /*
+            //attach text to spheres
+            ObjectText ot = sp.AddComponent(typeof(ObjectText)) as ObjectText;
+            ot.description = CSVManager.GetRowList()[i].Description;
+            */
+
+            //show the label in HUD when touched
+            TouchedInput ti = sp.AddComponent(typeof(TouchedInput)) as TouchedInput;
+            ti.input = labelInput;
+            ti.label = CSVManager.GetRowList()[i].Description;
+        }
+    }
+
+    private void deactivate_spheres() {
+        foreach (GameObject sphere in spheres) 
+        {
+            Destroy(sphere);
+        }
+        spheres.Clear();
+    }
+
 	// Update is called once per frame
 	void Update () {
 		
 	}
+    public void increment_offset() {
+        deactivate_spheres();
+        sphere_offset += 450;
+        pageNum += 1;
+        if(sphere_offset >= 2449)
+        {
+            sphere_offset = 0;
+            pageNum = 1;
+        }
+        generate_spheres();
+        PageInput.text = "P" + pageNum.ToString() + "/6";
+    }
 }

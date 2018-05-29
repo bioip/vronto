@@ -18,7 +18,7 @@ public class ObjectText : MonoBehaviour {
 		t = text.AddComponent<TextMesh>();
 		t.text = description;
 		t.anchor = TextAnchor.MiddleCenter;
-		t.characterSize = 0.001f;
+		t.characterSize = 0.005f;
 		t.fontSize = 200;
         t.color = Color.black;
         text.transform.parent = transform;
