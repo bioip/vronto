@@ -1,0 +1,2449 @@
+X, Y, Z, ID, Description
+HAO:0000000,-36.6,24.75,-88.5,anatomical entity
+HAO:0000001,-35.5075,24.75,-87.4075,ventral mesofurco-profurcal muscle
+HAO:0000002,-34.415,24.75,-86.315,A1 flap
+HAO:0000003,-33.3225,24.75,-85.2225,anatomical structure
+HAO:0000004,-32.23,24.75,-84.13,portion of organism substance
+HAO:0000005,-31.1375,24.75,-83.0375,anatomical space
+HAO:0000006,-30.045,24.75,-81.945,material anatomical entity
+HAO:0000007,-28.9525,24.75,-80.8525,immaterial anatomical entity
+HAO:0000008,-27.86,24.75,-79.76,anatomical line
+HAO:0000009,-26.7675,24.75,-78.6675,anatomical point
+HAO:0000010,-25.675,24.75,-77.575,anatomical surface
+HAO:0000011,-24.5825,24.75,-76.4825,anatomical system
+HAO:0000012,-23.49,24.75,-75.39,multi-cellular organism
+HAO:0000013,-22.3975,24.75,-74.2975,cell
+HAO:0000014,-21.305,24.75,-73.205,cell component
+HAO:0000015,-20.2125,24.75,-72.1125,abdomen
+HAO:0000016,-19.12,24.75,-71.02,abdominal segment
+HAO:0000017,-18.0275,24.75,-69.9275,abdominal segment 1
+HAO:0000018,-16.935,24.75,-68.835,abdominal segment 10
+HAO:0000019,-15.8425,24.75,-67.7425,compound organ component
+HAO:0000020,-14.75,24.75,-66.65,abdominal segment 2
+HAO:0000021,-13.6575,24.75,-65.5575,simple organ
+HAO:0000022,-12.565,24.75,-64.465,abdominal segment 3
+HAO:0000023,-11.4725,24.75,-63.3725,abdominal segment 4
+HAO:0000024,-10.38,24.75,-62.28,compound organ
+HAO:0000025,-9.2875,24.75,-61.1875,abdominal segment 5
+HAO:0000026,-8.195,24.75,-60.095,abdominal segment 6
+HAO:0000027,-7.1025,24.75,-59.0025,male organism
+HAO:0000028,-6.01,24.75,-57.91,female organism
+HAO:0000029,-4.9175,24.75,-56.8175,hermaphroditic organism
+HAO:0000030,-36.6,23.205,-88.5,asexual organism
+HAO:0000031,-35.5075,23.205,-87.4075,abdominal segment 7
+HAO:0000032,-34.415,23.205,-86.315,organism subdivision
+HAO:0000033,-33.3225,23.205,-85.2225,abdominal segment 8
+HAO:0000034,-32.23,23.205,-84.13,abdominal segment 9
+HAO:0000035,-31.1375,23.205,-83.0375,abdominal sternum 2
+HAO:0000036,-30.045,23.205,-81.945,abdominal sternum 3
+HAO:0000037,-28.9525,23.205,-80.8525,abdominal sternum 4
+HAO:0000038,-27.86,23.205,-79.76,abdominal sternum 5
+HAO:0000039,-26.7675,23.205,-78.6675,abdominal sternum 6
+HAO:0000040,-25.675,23.205,-77.575,acellular anatomical structure
+HAO:0000041,-24.5825,23.205,-76.4825,anatomical cluster
+HAO:0000042,-23.49,23.205,-75.39,extraembryonic structure
+HAO:0000043,-22.3975,23.205,-74.2975,portion of tissue
+HAO:0000044,-21.305,23.205,-73.205,abdominal sternum 7
+HAO:0000045,-20.2125,23.205,-72.1125,sequential hermaphroditic organism
+HAO:0000046,-19.12,23.205,-71.02,synchronous hermaphroditic organism
+HAO:0000047,-18.0275,23.205,-69.9275,abdominal sternum 9
+HAO:0000048,-16.935,23.205,-68.835,gonochoristic organism
+HAO:0000049,-15.8425,23.205,-67.7425,protandrous hermaphroditic organism
+HAO:0000050,-14.75,23.205,-66.65,protogynous hermaphroditic organism
+HAO:0000051,-13.6575,23.205,-65.5575,abdominal tergum 1
+HAO:0000052,-12.565,23.205,-64.465,abdominal tergum 10
+HAO:0000053,-11.4725,23.205,-63.3725,abdominal tergum 2
+HAO:0000054,-10.38,23.205,-62.28,anatomical group
+HAO:0000055,-9.2875,23.205,-61.1875,multi-tissue structure
+HAO:0000056,-8.195,23.205,-60.095,abdominal tergum 3
+HAO:0000057,-7.1025,23.205,-59.0025,abdominal tergum 4
+HAO:0000058,-6.01,23.205,-57.91,abdominal tergum 5
+HAO:0000059,-4.9175,23.205,-56.8175,abdominal tergum 6
+HAO:0000060,-36.6,21.66,-88.5,abdominal tergum 7
+HAO:0000061,-35.5075,21.66,-87.4075,abdominal tergum 8
+HAO:0000062,-34.415,21.66,-86.315,cell space
+HAO:0000063,-33.3225,21.66,-85.2225,portion of cell substance
+HAO:0000064,-32.23,21.66,-84.13,single cell organism
+HAO:0000065,-31.1375,21.66,-83.0375,basal lamina
+HAO:0000066,-30.045,21.66,-81.945,epithelium
+HAO:0000067,-28.9525,21.66,-80.8525,simple cuboidal epithelium
+HAO:0000068,-27.86,21.66,-79.76,simple columnar epithelium
+HAO:0000069,-26.7675,21.66,-78.6675,multilaminar epithelium
+HAO:0000070,-25.675,21.66,-77.575,simple squamous epithelium
+HAO:0000071,-24.5825,21.66,-76.4825,atypical epithelium
+HAO:0000072,-23.49,21.66,-75.39,cavitated compound organ
+HAO:0000073,-22.3975,21.66,-74.2975,unilaminar epithelium
+HAO:0000074,-21.305,21.66,-73.205,solid compound organ
+HAO:0000075,-20.2125,21.66,-72.1125,T9
+HAO:0000076,-19.12,21.66,-71.02,abscissa
+HAO:0000077,-18.0275,21.66,-69.9275,epithelial cell
+HAO:0000078,-16.935,21.66,-68.835,accessory gland
+HAO:0000079,-15.8425,21.66,-67.7425,accessory ventral condyle
+HAO:0000080,-14.75,21.66,-66.65,acetabular carina
+HAO:0000081,-13.6575,21.66,-65.5575,acetabular groove
+HAO:0000082,-12.565,21.66,-64.465,acetabulum
+HAO:0000083,-11.4725,21.66,-63.3725,acropleural apodeme
+HAO:0000084,-10.38,21.66,-62.28,acropleural sulcus
+HAO:0000085,-9.2875,21.66,-61.1875,acrosternite
+HAO:0000086,-8.195,21.66,-60.095,aculea
+HAO:0000087,-7.1025,21.66,-59.0025,adult
+HAO:0000088,-6.01,21.66,-57.91,adult abdomen
+HAO:0000089,-4.9175,21.66,-56.8175,adult tagma
+HAO:0000090,-36.6,20.115,-88.5,adult thorax
+HAO:0000091,-35.5075,20.115,-87.4075,aedeagus
+HAO:0000092,-34.415,20.115,-86.315,alinotum
+HAO:0000093,-33.3225,20.115,-85.2225,anal vein
+HAO:0000094,-32.23,20.115,-84.13,anepisternum
+HAO:0000095,-31.1375,20.115,-83.0375,annellus
+HAO:0000096,-30.045,20.115,-81.945,annulus
+HAO:0000097,-28.9525,20.115,-80.8525,anteclypeus
+HAO:0000098,-27.86,20.115,-79.76,antecosta
+HAO:0000099,-26.7675,20.115,-78.6675,antecostal sulcus
+HAO:0000100,-25.675,20.115,-77.575,antemedian mesonotal wing process
+HAO:0000101,-24.5825,20.115,-76.4825,antenna
+HAO:0000102,-23.49,20.115,-75.39,antenna cleaner
+HAO:0000103,-22.3975,20.115,-74.2975,antennal rim
+HAO:0000104,-21.305,20.115,-73.205,antennal segment
+HAO:0000105,-20.2125,20.115,-72.1125,antennal shelf
+HAO:0000106,-19.12,20.115,-71.02,antennal suture
+HAO:0000107,-18.0275,20.115,-69.9275,antennomere
+HAO:0000108,-16.935,20.115,-68.835,posterior cranio-mandibular muscle
+HAO:0000109,-15.8425,20.115,-67.7425,frontal carina
+HAO:0000110,-14.75,20.115,-66.65,anterior extension of mesofurca
+HAO:0000111,-13.6575,20.115,-65.5575,anterior extension of the preaxilla
+HAO:0000112,-12.565,20.115,-64.465,anterior glossal sclerite
+HAO:0000113,-11.4725,20.115,-63.3725,anterior labral retractor
+HAO:0000114,-10.38,20.115,-62.28,anterior margin of the speculum
+HAO:0000115,-9.2875,20.115,-61.1875,anterior mesofurco-mesolaterophragmal muscle
+HAO:0000116,-8.195,20.115,-60.095,anterior mesopleural area
+HAO:0000117,-7.1025,20.115,-59.0025,anterior mesopleural sulcus
+HAO:0000118,-6.01,20.115,-57.91,anterior mesopleuro-mesofurcal muscle
+HAO:0000119,-4.9175,20.115,-56.8175,anterior mesopleuro-third axillary sclerite of fore wing muscle
+HAO:0000120,-36.6,18.57,-88.5,anterior notal wing process
+HAO:0000121,-35.5075,18.57,-87.4075,anterior process of the mesofurcal bridge
+HAO:0000122,-34.415,18.57,-86.315,anterior process of the pronotum
+HAO:0000123,-33.3225,18.57,-85.2225,anterior process of the prosternum
+HAO:0000124,-32.23,18.57,-84.13,anterior profurcal lamella
+HAO:0000125,-31.1375,18.57,-83.0375,anterior rim of pronotum
+HAO:0000126,-30.045,18.57,-81.945,anterior tentorial pit
+HAO:0000127,-28.9525,18.57,-80.8525,antero-dorsal incision of mesopleuron
+HAO:0000128,-27.86,18.57,-79.76,anteroadmedian line
+HAO:0000129,-26.7675,18.57,-78.6675,anterolateral depression of the petiole
+HAO:0000130,-25.675,18.57,-77.575,anterolateral mesoscutal corner
+HAO:0000131,-24.5825,18.57,-76.4825,anteromedian pronotal ridge
+HAO:0000132,-23.49,18.57,-75.39,anteroventral pronotal inflection
+HAO:0000133,-22.3975,18.57,-74.2975,antescutal depression
+HAO:0000134,-21.305,18.57,-73.205,apex gonostipitis
+HAO:0000135,-20.2125,18.57,-72.1125,apex of the calcar
+HAO:0000136,-19.12,18.57,-71.02,apical clavomere ventral pit
+HAO:0000137,-18.0275,18.57,-69.9275,apical flagellomere
+HAO:0000138,-16.935,18.57,-68.835,apical parossiculal seta
+HAO:0000139,-15.8425,18.57,-67.7425,apical process of the labrum
+HAO:0000140,-14.75,18.57,-66.65,apical row of spines
+HAO:0000141,-13.6575,18.57,-65.5575,apiceps
+HAO:0000142,-12.565,18.57,-64.465,apodeme
+HAO:0000143,-11.4725,18.57,-63.3725,apophysis
+HAO:0000144,-10.38,18.57,-62.28,appendage
+HAO:0000145,-9.2875,18.57,-61.1875,appendage segment
+HAO:0000146,-8.195,18.57,-60.095,area
+HAO:0000147,-7.1025,18.57,-59.0025,areolet
+HAO:0000148,-6.01,18.57,-57.91,arolium
+HAO:0000149,-4.9175,18.57,-56.8175,articular line
+HAO:0000150,-36.6,17.025,-88.5,articular process
+HAO:0000151,-35.5075,17.025,-87.4075,articulation
+HAO:0000152,-34.415,17.025,-86.315,aulax
+HAO:0000153,-33.3225,17.025,-85.2225,auxilia
+HAO:0000154,-32.23,17.025,-84.13,auxiliar sclerite
+HAO:0000155,-31.1375,17.025,-83.0375,axilla
+HAO:0000156,-30.045,17.025,-81.945,axillar carina
+HAO:0000157,-28.9525,17.025,-80.8525,axillary cord
+HAO:0000158,-27.86,17.025,-79.76,axillary region
+HAO:0000159,-26.7675,17.025,-78.6675,axillary sclerite
+HAO:0000160,-25.675,17.025,-77.575,axillula
+HAO:0000161,-24.5825,17.025,-76.4825,axillular carina
+HAO:0000162,-23.49,17.025,-75.39,axillular setae
+HAO:0000163,-22.3975,17.025,-74.2975,band
+HAO:0000164,-21.305,17.025,-73.205,bar
+HAO:0000165,-20.2125,17.025,-72.1125,basal bridge
+HAO:0000166,-19.12,17.025,-71.02,basal grooves
+HAO:0000167,-18.0275,17.025,-69.9275,basal hooklets
+HAO:0000168,-16.935,17.025,-68.835,gonostipes/volsella complex
+HAO:0000169,-15.8425,17.025,-67.7425,basal transverse carina of third abdominal tergite
+HAO:0000170,-14.75,17.025,-66.65,basal vein
+HAO:0000171,-13.6575,17.025,-65.5575,basalare
+HAO:0000172,-12.565,17.025,-64.465,basiconic capitate peg sensillum
+HAO:0000173,-11.4725,17.025,-63.3725,basicosta
+HAO:0000174,-10.38,17.025,-62.28,basicostal suture
+HAO:0000175,-9.2875,17.025,-61.1875,basicoxite
+HAO:0000176,-8.195,17.025,-60.095,basisternum
+HAO:0000177,-7.1025,17.025,-59.0025,basitarsal notch
+HAO:0000178,-6.01,17.025,-57.91,basitarsus
+HAO:0000179,-4.9175,17.025,-56.8175,basiura
+HAO:0000180,-36.6,15.48,-88.5,basivalvula
+HAO:0000181,-35.5075,15.48,-87.4075,blade
+HAO:0000182,-34.415,15.48,-86.315,body
+HAO:0000183,-33.3225,15.48,-85.2225,body segment
+HAO:0000184,-32.23,15.48,-84.13,bulla
+HAO:0000185,-31.1375,15.48,-83.0375,calcar
+HAO:0000186,-30.045,15.48,-81.945,calyx
+HAO:0000187,-28.9525,15.48,-80.8525,cardo
+HAO:0000188,-27.86,15.48,-79.76,carina
+HAO:0000189,-26.7675,15.48,-78.6675,cenchrus
+HAO:0000191,-25.675,15.48,-77.575,cercus
+HAO:0000192,-24.5825,15.48,-76.4825,cervical apodeme
+HAO:0000193,-23.49,15.48,-75.39,cervical prominence
+HAO:0000194,-22.3975,15.48,-74.2975,cervical pronotal area
+HAO:0000195,-21.305,15.48,-73.205,cervical sclerite
+HAO:0000196,-20.2125,15.48,-72.1125,cervix
+HAO:0000197,-19.12,15.48,-71.02,chaetobothria
+HAO:0000198,-18.0275,15.48,-69.9275,chalaza
+HAO:0000199,-16.935,15.48,-68.835,chamber of the metanotum
+HAO:0000200,-15.8425,15.48,-67.7425,cheek
+HAO:0000201,-14.75,15.48,-66.65,cibarium
+HAO:0000202,-13.6575,15.48,-65.5575,circumocular ridge
+HAO:0000203,-12.565,15.48,-64.465,clava
+HAO:0000204,-11.4725,15.48,-63.3725,claval fold
+HAO:0000205,-10.38,15.48,-62.28,claval lobe
+HAO:0000206,-9.2875,15.48,-61.1875,cleaning brush
+HAO:0000207,-8.195,15.48,-60.095,closed coxal cavity
+HAO:0000208,-7.1025,15.48,-59.0025,club
+HAO:0000209,-6.01,15.48,-57.91,ventral rim of clypeus
+HAO:0000210,-4.9175,15.48,-56.8175,clypeal process
+HAO:0000211,-36.6,13.935,-88.5,clypeo-pleurostomal line
+HAO:0000212,-35.5075,13.935,-87.4075,clypeus
+HAO:0000213,-34.415,13.935,-86.315,coeloconic sensillum
+HAO:0000214,-33.3225,13.935,-85.2225,colleterial gland
+HAO:0000215,-32.23,13.935,-84.13,protibial comb
+HAO:0000216,-31.1375,13.935,-83.0375,comb of the spur
+HAO:0000217,-30.045,13.935,-81.945,compound eye
+HAO:0000218,-28.9525,13.935,-80.8525,condylar carina of the mandible
+HAO:0000219,-27.86,13.935,-79.76,condylar groove
+HAO:0000220,-26.7675,13.935,-78.6675,condyle
+HAO:0000221,-25.675,13.935,-77.575,conjunctiva
+HAO:0000222,-24.5825,13.935,-76.4825,corbicula
+HAO:0000223,-23.49,13.935,-75.39,corner
+HAO:0000224,-22.3975,13.935,-74.2975,coronal suture
+HAO:0000225,-21.305,13.935,-73.205,costa
+HAO:0000226,-20.2125,13.935,-72.1125,costal cell
+HAO:0000227,-19.12,13.935,-71.02,costal notch
+HAO:0000228,-18.0275,13.935,-69.9275,coxa
+HAO:0000229,-16.935,13.935,-68.835,coxal foramen
+HAO:0000230,-15.8425,13.935,-67.7425,coxal corium
+HAO:0000231,-14.75,13.935,-66.65,cranial condyle
+HAO:0000232,-13.6575,13.935,-65.5575,cranio-antennal muscle
+HAO:0000233,-12.565,13.935,-64.465,cranio-pharyngeal plate muscle
+HAO:0000234,-11.4725,13.935,-63.3725,cranium
+HAO:0000235,-10.38,13.935,-62.28,crest
+HAO:0000236,-9.2875,13.935,-61.1875,crossvein
+HAO:0000237,-8.195,13.935,-60.095,cubital vein
+HAO:0000238,-7.1025,13.935,-59.0025,cupula
+HAO:0000239,-6.01,13.935,-57.91,cuspis
+HAO:0000240,-4.9175,13.935,-56.8175,cuticle
+HAO:0000241,-36.6,12.39,-88.5,depression
+HAO:0000242,-35.5075,12.39,-87.4075,dicondylic joint
+HAO:0000243,-34.415,12.39,-86.315,dilator muscle apodeme
+HAO:0000244,-33.3225,12.39,-85.2225,discrimen
+HAO:0000245,-32.23,12.39,-84.13,discrimenal lamella
+HAO:0000246,-31.1375,12.39,-83.0375,apical gonostyle/volsella complex-harpal muscle
+HAO:0000247,-30.045,12.39,-81.945,distal gonostipo-parossiculal muscle
+HAO:0000248,-28.9525,12.39,-80.8525,distal tarsal plantula
+HAO:0000249,-27.86,12.39,-79.76,distivolsellar apodeme
+HAO:0000250,-26.7675,12.39,-78.6675,distodorsal gonostyle/volsella complex-penisvalval muscle
+HAO:0000251,-25.675,12.39,-77.575,distoventral gonostyle/volsella complex-penisvalval muscle
+HAO:0000252,-24.5825,12.39,-76.4825,dorsal axillar area
+HAO:0000253,-23.49,12.39,-75.39,dorsal cibarial dilatator muscle
+HAO:0000254,-22.3975,12.39,-74.2975,dorsal incision of the pronotum
+HAO:0000255,-21.305,12.39,-73.205,dorsal mesofurco-profurcal muscle
+HAO:0000256,-20.2125,12.39,-72.1125,dorsal mesometapleural carina
+HAO:0000257,-19.12,12.39,-71.02,dorsal mesopleural inflection
+HAO:0000258,-18.0275,12.39,-69.9275,dorsal mesopostnotal flange
+HAO:0000259,-16.935,12.39,-68.835,dorsal mesopostnotal incision
+HAO:0000260,-15.8425,12.39,-67.7425,dorsal metafurcal lamella
+HAO:0000261,-14.75,12.39,-66.65,dorsal metapleural area
+HAO:0000262,-13.6575,12.39,-65.5575,dorsal pharyngeal dilatator
+HAO:0000263,-12.565,12.39,-64.465,dorsal plate
+HAO:0000264,-11.4725,12.39,-63.3725,dorsal premental adductor
+HAO:0000265,-10.38,12.39,-62.28,dorsal profurcal lamella
+HAO:0000266,-9.2875,12.39,-61.1875,dorsal profurco-postoccipital muscle
+HAO:0000267,-8.195,12.39,-60.095,dorsal pronotal area
+HAO:0000268,-7.1025,12.39,-59.0025,dorsal pronotal corner
+HAO:0000269,-6.01,12.39,-57.91,dorsal pronotal inflection
+HAO:0000270,-4.9175,12.39,-56.8175,dorsal propleural area
+HAO:0000271,-36.6,10.845,-88.5,dorsal propleural ridge
+HAO:0000272,-35.5075,10.845,-87.4075,dorsal propodeal inflection
+HAO:0000273,-34.415,10.845,-86.315,dorsal rod
+HAO:0000274,-33.3225,10.845,-85.2225,dorsal premento-salivarial muscle
+HAO:0000275,-32.23,10.845,-84.13,dorsal tentorial arm
+HAO:0000276,-31.1375,10.845,-83.0375,dorsal tooth of mandible
+HAO:0000277,-30.045,10.845,-81.945,dorso-pleural line
+HAO:0000278,-28.9525,10.845,-80.8525,dorsolateral cupulo-gonostyle/volsella complex muscle
+HAO:0000279,-27.86,10.845,-79.76,dorsomedial cupulo-gonostyle/volsella complex muscle
+HAO:0000280,-26.7675,10.845,-78.6675,dorsope
+HAO:0000281,-25.675,10.845,-77.575,dorsum
+HAO:0000282,-24.5825,10.845,-76.4825,duct
+HAO:0000283,-23.49,10.845,-75.39,ductus ejaculatorius
+HAO:0000284,-22.3975,10.845,-74.2975,ectophallus
+HAO:0000285,-21.305,10.845,-73.205,edge
+HAO:0000286,-20.2125,10.845,-72.1125,egg
+HAO:0000287,-19.12,10.845,-71.02,anellus
+HAO:0000288,-18.0275,10.845,-69.9275,empodium
+HAO:0000289,-16.935,10.845,-68.835,encircling groove
+HAO:0000290,-15.8425,10.845,-67.7425,endocuticle
+HAO:0000291,-14.75,10.845,-66.65,endophallus
+HAO:0000292,-13.6575,10.845,-65.5575,epicnemial carina
+HAO:0000293,-12.565,10.845,-64.465,epicnemial pit
+HAO:0000294,-11.4725,10.845,-63.3725,epicnemium
+HAO:0000295,-10.38,10.845,-62.28,epicoxal lobe
+HAO:0000296,-9.2875,10.845,-61.1875,epicoxal sulcus
+HAO:0000297,-8.195,10.845,-60.095,epicranial suture
+HAO:0000298,-7.1025,10.845,-59.0025,epidermis
+HAO:0000299,-6.01,10.845,-57.91,epimeron
+HAO:0000300,-4.9175,10.845,-56.8175,epipharyngeal wall
+HAO:0000301,-36.6,9.3,-88.5,epipharynx
+HAO:0000302,-35.5075,9.3,-87.4075,epipygium
+HAO:0000303,-34.415,9.3,-86.315,episternum
+HAO:0000304,-33.3225,9.3,-85.2225,epistomal declivity
+HAO:0000305,-32.23,9.3,-84.13,epistomal ridge
+HAO:0000306,-31.1375,9.3,-83.0375,epistomal sulcus
+HAO:0000307,-30.045,9.3,-81.945,epomial carina
+HAO:0000308,-28.9525,9.3,-80.8525,ergot
+HAO:0000309,-27.86,9.3,-79.76,eusternum
+HAO:0000310,-26.7675,9.3,-78.6675,evaporatorium
+HAO:0000311,-25.675,9.3,-77.575,exocuticle
+HAO:0000312,-24.5825,9.3,-76.4825,external male genitalia
+HAO:0000313,-23.49,9.3,-75.39,external paramera
+HAO:0000314,-22.3975,9.3,-74.2975,premento-palpal muscle
+HAO:0000315,-21.305,9.3,-73.205,exuvia
+HAO:0000316,-20.2125,9.3,-72.1125,face
+HAO:0000317,-19.12,9.3,-71.02,facial fovea
+HAO:0000318,-18.0275,9.3,-69.9275,facial orbit
+HAO:0000319,-16.935,9.3,-68.835,facial pit
+HAO:0000320,-15.8425,9.3,-67.7425,facial sulcus
+HAO:0000321,-14.75,9.3,-66.65,fascia
+HAO:0000322,-13.6575,9.3,-65.5575,felt field
+HAO:0000323,-12.565,9.3,-64.465,felt line
+HAO:0000324,-11.4725,9.3,-63.3725,female genitalia
+HAO:0000325,-10.38,9.3,-62.28,femoral depression
+HAO:0000326,-9.2875,9.3,-61.1875,femoral groove
+HAO:0000327,-8.195,9.3,-60.095,femur
+HAO:0000328,-7.1025,9.3,-59.0025,fibula ducti
+HAO:0000329,-6.01,9.3,-57.91,first abdominal spiracle
+HAO:0000330,-4.9175,9.3,-56.8175,first axillary sclerite
+HAO:0000331,-36.6,7.755,-88.5,first median plate
+HAO:0000332,-35.5075,7.755,-87.4075,first mesopleuro-mesonotal muscle
+HAO:0000333,-34.415,7.755,-86.315,first phragmo-postoccipital muscle
+HAO:0000334,-33.3225,7.755,-85.2225,first phragmo-propleural muscle
+HAO:0000335,-32.23,7.755,-84.13,first phragmo-second phragmal muscle
+HAO:0000336,-31.1375,7.755,-83.0375,distal gonostyle/volsella complex-harpal muscle
+HAO:0000337,-30.045,7.755,-81.945,first subdiscal
+HAO:0000338,-28.9525,7.755,-80.8525,first valvifer
+HAO:0000339,-27.86,7.755,-79.76,first valvula
+HAO:0000340,-26.7675,7.755,-78.6675,fissure
+HAO:0000341,-25.675,7.755,-77.575,flabellum
+HAO:0000342,-24.5825,7.755,-76.4825,flagellomere
+HAO:0000343,-23.49,7.755,-75.39,flagellum
+HAO:0000344,-22.3975,7.755,-74.2975,flange
+HAO:0000345,-21.305,7.755,-73.205,foramen
+HAO:0000346,-20.2125,7.755,-72.1125,foramen genitale
+HAO:0000347,-19.12,7.755,-71.02,occipital foramen
+HAO:0000348,-18.0275,7.755,-69.9275,fore coxa
+HAO:0000349,-16.935,7.755,-68.835,fore leg
+HAO:0000350,-15.8425,7.755,-67.7425,fore tibia
+HAO:0000351,-14.75,7.755,-66.65,fore wing
+HAO:0000352,-13.6575,7.755,-65.5575,forewing
+HAO:0000353,-12.565,7.755,-64.465,fossa
+HAO:0000354,-11.4725,7.755,-63.3725,frenal line
+HAO:0000355,-10.38,7.755,-62.28,frenum
+HAO:0000356,-9.2875,7.755,-61.1875,frontal line
+HAO:0000357,-8.195,7.755,-60.095,frontal orbit
+HAO:0000358,-7.1025,7.755,-59.0025,frontal patch
+HAO:0000359,-6.01,7.755,-57.91,frontal scrobe
+HAO:0000360,-4.9175,7.755,-56.8175,frontal suture
+HAO:0000361,-36.6,6.21,-88.5,functional mouth
+HAO:0000362,-35.5075,6.21,-87.4075,funicle
+HAO:0000363,-34.415,6.21,-86.315,funicle segment
+HAO:0000364,-33.3225,6.21,-85.2225,furca
+HAO:0000365,-32.23,6.21,-84.13,furcal arm
+HAO:0000366,-31.1375,6.21,-83.0375,furcal pit
+HAO:0000367,-30.045,6.21,-81.945,furcasternum
+HAO:0000368,-28.9525,6.21,-80.8525,galea
+HAO:0000369,-27.86,6.21,-79.76,gaster
+HAO:0000370,-26.7675,6.21,-78.6675,gastrocoelus
+HAO:0000371,-25.675,6.21,-77.575,gena
+HAO:0000372,-24.5825,6.21,-76.4825,genal bridge
+HAO:0000373,-23.49,6.21,-75.39,genal patch
+HAO:0000374,-22.3975,6.21,-74.2975,genitalia
+HAO:0000375,-21.305,6.21,-73.205,gland
+HAO:0000376,-20.2125,6.21,-72.1125,glossa
+HAO:0000377,-19.12,6.21,-71.02,premento-glossal muscle
+HAO:0000378,-18.0275,6.21,-69.9275,glymma
+HAO:0000379,-16.935,6.21,-68.835,gonad
+HAO:0000380,-15.8425,6.21,-67.7425,gonocondyle
+HAO:0000381,-14.75,6.21,-66.65,gonoforceps
+HAO:0000382,-13.6575,6.21,-65.5575,gonomacula
+HAO:0000383,-12.565,6.21,-64.465,gonopod
+HAO:0000384,-11.4725,6.21,-63.3725,gonossiculo-phallotremal muscle
+HAO:0000385,-10.38,6.21,-62.28,gonossiculus
+HAO:0000386,-9.2875,6.21,-61.1875,gonostipes
+HAO:0000387,-8.195,6.21,-60.095,gonostipital arm
+HAO:0000388,-7.1025,6.21,-59.0025,gonostipo-volsellal muscle
+HAO:0000389,-6.01,6.21,-57.91,gonostyle
+HAO:0000390,-4.9175,6.21,-56.8175,gradulus
+HAO:0000391,-36.6,4.665,-88.5,gula
+HAO:0000392,-35.5075,4.665,-87.4075,gular ridge
+HAO:0000393,-34.415,4.665,-86.315,gular sulcus
+HAO:0000394,-33.3225,4.665,-85.2225,hamulus
+HAO:0000395,-32.23,4.665,-84.13,harpe
+HAO:0000396,-31.1375,4.665,-83.0375,harpo-gonomaculal muscle
+HAO:0000397,-30.045,4.665,-81.945,head
+HAO:0000398,-28.9525,4.665,-80.8525,head capsule
+HAO:0000399,-27.86,4.665,-79.76,hind leg
+HAO:0000400,-26.7675,4.665,-78.6675,hind wing
+HAO:0000401,-25.675,4.665,-77.575,hindwing
+HAO:0000402,-24.5825,4.665,-76.4825,median complex
+HAO:0000403,-23.49,4.665,-75.39,humeral plate
+HAO:0000404,-22.3975,4.665,-74.2975,humeral sclerite of the metanotum
+HAO:0000405,-21.305,4.665,-73.205,hymenopteran
+HAO:0000406,-20.2125,4.665,-72.1125,hyperoccipital carina
+HAO:0000407,-19.12,4.665,-71.02,hypoclypeal depression
+HAO:0000408,-18.0275,4.665,-69.9275,hypopharyngeal rod
+HAO:0000409,-16.935,4.665,-68.835,hypopharynx
+HAO:0000410,-15.8425,4.665,-67.7425,hypopygium
+HAO:0000411,-14.75,4.665,-66.65,hypostoma
+HAO:0000412,-13.6575,4.665,-65.5575,hypostomal bridge
+HAO:0000413,-12.565,4.665,-64.465,hypostomal carina
+HAO:0000414,-11.4725,4.665,-63.3725,hypostomal sulcus
+HAO:0000415,-10.38,4.665,-62.28,hypostomal suture
+HAO:0000416,-9.2875,4.665,-61.1875,hypostomal tooth
+HAO:0000417,-8.195,4.665,-60.095,impression
+HAO:0000418,-7.1025,4.665,-59.0025,inflection
+HAO:0000419,-6.01,4.665,-57.91,inner orbit
+HAO:0000420,-4.9175,4.665,-56.8175,integrated tarsal plantula
+HAO:0000421,-36.6,3.12,-88.5,integument
+HAO:0000422,-35.5075,3.12,-87.4075,interantennal process
+HAO:0000423,-34.415,3.12,-86.315,interantennal process
+HAO:0000424,-33.3225,3.12,-85.2225,interantennal prominence
+HAO:0000425,-32.23,3.12,-84.13,interaxillar sulcus
+HAO:0000426,-31.1375,3.12,-83.0375,intercoxal space
+HAO:0000427,-30.045,3.12,-81.945,internal male genitalia
+HAO:0000428,-28.9525,3.12,-80.8525,internal metanotal ridge
+HAO:0000429,-27.86,3.12,-79.76,interocellar pit
+HAO:0000430,-26.7675,3.12,-78.6675,interocellar space
+HAO:0000431,-25.675,3.12,-77.575,interommatidial seta
+HAO:0000432,-24.5825,3.12,-76.4825,interorbital space
+HAO:0000433,-23.49,3.12,-75.39,interpenisvalval muscle
+HAO:0000434,-22.3975,3.12,-74.2975,intersegmental membrane
+HAO:0000435,-21.305,3.12,-73.205,intersegmental membrane-mesobasalar muscle
+HAO:0000436,-20.2125,3.12,-72.1125,intersegmentalia
+HAO:0000437,-19.12,3.12,-71.02,intersternite
+HAO:0000438,-18.0275,3.12,-69.9275,interstice
+HAO:0000439,-16.935,3.12,-68.835,intertorular carina
+HAO:0000440,-15.8425,3.12,-67.7425,intervalvula
+HAO:0000441,-14.75,3.12,-66.65,intervolsellal muscle
+HAO:0000442,-13.6575,3.12,-65.5575,intrinsic muscle of the 9th sternum
+HAO:0000443,-12.565,3.12,-64.465,intrinsic muscle of the gonostipes
+HAO:0000444,-11.4725,3.12,-63.3725,intrinsic palpal muscle
+HAO:0000445,-10.38,3.12,-62.28,jugal region
+HAO:0000446,-9.2875,3.12,-61.1875,juxtantennal carina
+HAO:0000447,-8.195,3.12,-60.095,kleisiades
+HAO:0000448,-7.1025,3.12,-59.0025,labial endite
+HAO:0000449,-6.01,3.12,-57.91,labial gland
+HAO:0000450,-4.9175,3.12,-56.8175,labial palp
+HAO:0000451,-36.6,24.75,-88.5,labial suture
+HAO:0000452,-35.5075,24.75,-87.4075,labiomaxillary complex
+HAO:0000453,-34.415,24.75,-86.315,labium
+HAO:0000454,-33.3225,24.75,-85.2225,labral compressor
+HAO:0000455,-32.23,24.75,-84.13,labral seta
+HAO:0000456,-31.1375,24.75,-83.0375,labrum
+HAO:0000457,-30.045,24.75,-81.945,lacinial lobe
+HAO:0000458,-28.9525,24.75,-80.8525,lamella
+HAO:0000459,-27.86,24.75,-79.76,larva
+HAO:0000460,-26.7675,24.75,-78.6675,larval abdomen
+HAO:0000461,-25.675,24.75,-77.575,larval head
+HAO:0000462,-24.5825,24.75,-76.4825,larval tagma
+HAO:0000463,-23.49,24.75,-75.39,larval thorax
+HAO:0000464,-22.3975,24.75,-74.2975,lateral S9-cupulal muscle
+HAO:0000465,-21.305,24.75,-73.205,lateral apodeme
+HAO:0000466,-20.2125,24.75,-72.1125,lateral area of the mesoscutum
+HAO:0000467,-19.12,24.75,-71.02,lateral articular process
+HAO:0000468,-18.0275,24.75,-69.9275,lateral axillar area
+HAO:0000469,-16.935,24.75,-68.835,lateral bar of the mesoscutellum
+HAO:0000470,-15.8425,24.75,-67.7425,lateral basisternal projection
+HAO:0000471,-14.75,24.75,-66.65,lateral carina of abdominal tergite 3
+HAO:0000472,-13.6575,24.75,-65.5575,lateral gonostyle/volsella complex-penisvalval muscle
+HAO:0000473,-12.565,24.75,-64.465,median gonostyle/volsella complex-volsella muscle
+HAO:0000474,-11.4725,24.75,-63.3725,lateral margin of mesoscutum
+HAO:0000475,-10.38,24.75,-62.28,lateral mesofurcal arm
+HAO:0000476,-9.2875,24.75,-61.1875,lateral mesofurco-mesotrochanteral muscle
+HAO:0000477,-8.195,24.75,-60.095,lateral mesoscutellar spine
+HAO:0000478,-7.1025,24.75,-59.0025,lateral metapleuro-metacoxal muscle
+HAO:0000479,-6.01,24.75,-57.91,lateral neck plate
+HAO:0000480,-4.9175,24.75,-56.8175,lateral ocellar line
+HAO:0000481,-36.6,23.205,-88.5,lateral ocellus
+HAO:0000482,-35.5075,23.205,-87.4075,lateral profurco-procoxal muscle
+HAO:0000483,-34.415,23.205,-86.315,lateral pronotal area
+HAO:0000484,-33.3225,23.205,-85.2225,lateral propleural area
+HAO:0000485,-32.23,23.205,-84.13,lateral propodeal area
+HAO:0000486,-31.1375,23.205,-83.0375,lateral propodeal carina
+HAO:0000487,-30.045,23.205,-81.945,lateral scutellar keel
+HAO:0000488,-28.9525,23.205,-80.8525,lateral scutellar pit
+HAO:0000489,-27.86,23.205,-79.76,lateral suspensor of the mouth
+HAO:0000490,-26.7675,23.205,-78.6675,laterocervico-procoxal muscle
+HAO:0000491,-25.675,23.205,-77.575,laterope
+HAO:0000492,-24.5825,23.205,-76.4825,laterophragma
+HAO:0000493,-23.49,23.205,-75.39,laterotergite
+HAO:0000494,-22.3975,23.205,-74.2975,leg
+HAO:0000495,-21.305,23.205,-73.205,leg segment
+HAO:0000496,-20.2125,23.205,-72.1125,ligula
+HAO:0000497,-19.12,23.205,-71.02,longitudinal carina of the propleuron
+HAO:0000498,-18.0275,23.205,-69.9275,longitudinal line of the dorsal profurcal lamella
+HAO:0000499,-16.935,23.205,-68.835,longitudinal metacoxal carina
+HAO:0000500,-15.8425,23.205,-67.7425,longitudinal muscle of the sucking pump
+HAO:0000501,-14.75,23.205,-66.65,longitudinal vein
+HAO:0000502,-13.6575,23.205,-65.5575,lower face
+HAO:0000503,-12.565,23.205,-64.465,malar line
+HAO:0000504,-11.4725,23.205,-63.3725,malar sulcus
+HAO:0000505,-10.38,23.205,-62.28,male genitalia
+HAO:0000506,-9.2875,23.205,-61.1875,mandible
+HAO:0000507,-8.195,23.205,-60.095,mandibular adductor muscle apodeme
+HAO:0000508,-7.1025,23.205,-59.0025,mandibular condyle
+HAO:0000509,-6.01,23.205,-57.91,mandibular gland
+HAO:0000510,-4.9175,23.205,-56.8175,margin
+HAO:0000511,-36.6,21.66,-88.5,marginal cilia
+HAO:0000512,-35.5075,21.66,-87.4075,marginal vein
+HAO:0000513,-34.415,21.66,-86.315,maxilla
+HAO:0000514,-33.3225,21.66,-85.2225,maxillary gland
+HAO:0000515,-32.23,21.66,-84.13,maxillary palp
+HAO:0000516,-31.1375,21.66,-83.0375,medial 9th sterno-cupulal muscle
+HAO:0000517,-30.045,21.66,-81.945,gonostyle/volsella complex-gonossiculus muscle
+HAO:0000518,-28.9525,21.66,-80.8525,medial propodeal furrow
+HAO:0000519,-27.86,21.66,-79.76,medial vein
+HAO:0000520,-26.7675,21.66,-78.6675,median area of the mesoscutum
+HAO:0000521,-25.675,21.66,-77.575,median mesofurco-mesotrochanteral muscle
+HAO:0000522,-24.5825,21.66,-76.4825,median mesoscutal line
+HAO:0000523,-23.49,21.66,-75.39,median mesoscutal sulcus
+HAO:0000524,-22.3975,21.66,-74.2975,median metapleuro-metacoxal muscle
+HAO:0000525,-21.305,21.66,-73.205,median oblique line
+HAO:0000526,-20.2125,21.66,-72.1125,median ocellus
+HAO:0000527,-19.12,21.66,-71.02,median plate
+HAO:0000528,-18.0275,21.66,-69.9275,median profurco-procoxal muscle
+HAO:0000529,-16.935,21.66,-68.835,median propodeal carina
+HAO:0000530,-15.8425,21.66,-67.7425,median propodeal keel
+HAO:0000531,-14.75,21.66,-66.65,median sclerotized style
+HAO:0000532,-13.6575,21.66,-65.5575,median sulcus of postgenal bridge
+HAO:0000533,-12.565,21.66,-64.465,mediolateral S9-cupulal muscle
+HAO:0000534,-11.4725,21.66,-63.3725,mentum
+HAO:0000535,-10.38,21.66,-62.28,meron
+HAO:0000536,-9.2875,21.66,-61.1875,mesepimeral inflection
+HAO:0000537,-8.195,21.66,-60.095,mesepimeral ridge
+HAO:0000538,-7.1025,21.66,-59.0025,mesepimeral sulcus
+HAO:0000539,-6.01,21.66,-57.91,mesepimeron
+HAO:0000540,-4.9175,21.66,-56.8175,mesepisternal groove
+HAO:0000541,-36.6,20.115,-88.5,mesepisternum
+HAO:0000542,-35.5075,20.115,-87.4075,mesobasalare
+HAO:0000543,-34.415,20.115,-86.315,mesocoxal depression
+HAO:0000544,-33.3225,20.115,-85.2225,mesocoxo-mesosubalar muscle
+HAO:0000545,-32.23,20.115,-84.13,mesodiscrimen
+HAO:0000546,-31.1375,20.115,-83.0375,mesodiscrimenal lamella
+HAO:0000547,-30.045,20.115,-81.945,mesofurca
+HAO:0000548,-28.9525,20.115,-80.8525,mesofurcal bridge
+HAO:0000549,-27.86,20.115,-79.76,mesofurcal pit
+HAO:0000550,-26.7675,20.115,-78.6675,mesofurco-mesocoxal muscle
+HAO:0000551,-25.675,20.115,-77.575,mesofurco-mesolaterophragmal muscle
+HAO:0000552,-24.5825,20.115,-76.4825,mesofurco-metabasalar muscle
+HAO:0000553,-23.49,20.115,-75.39,mesometapleural sulcus
+HAO:0000554,-22.3975,20.115,-74.2975,mesometapleural suture
+HAO:0000555,-21.305,20.115,-73.205,mesometapleuron
+HAO:0000556,-20.2125,20.115,-72.1125,mesonotum
+HAO:0000557,-19.12,20.115,-71.02,mesopectus
+HAO:0000558,-18.0275,20.115,-69.9275,mesophragma
+HAO:0000559,-16.935,20.115,-68.835,mesopleural carina
+HAO:0000560,-15.8425,20.115,-67.7425,mesopleural epicoxal sulcus
+HAO:0000561,-14.75,20.115,-66.65,mesopleural pit
+HAO:0000562,-13.6575,20.115,-65.5575,mesopleural triangle
+HAO:0000563,-12.565,20.115,-64.465,mesopleuro-mesobasalar muscle
+HAO:0000564,-11.4725,20.115,-63.3725,mesopleuro-mesocoxal muscle
+HAO:0000565,-10.38,20.115,-62.28,mesopleuro-third axillary sclerite of hind wing muscle
+HAO:0000566,-9.2875,20.115,-61.1875,mesopleuron
+HAO:0000567,-8.195,20.115,-60.095,mesopostnotum
+HAO:0000568,-7.1025,20.115,-59.0025,mesopostscutellum
+HAO:0000569,-6.01,20.115,-57.91,mesoscutal humeral sulcus
+HAO:0000570,-4.9175,20.115,-56.8175,mesoscutal suprahumeral sulcus
+HAO:0000571,-36.6,18.57,-88.5,mesoscutellar appendage
+HAO:0000572,-35.5075,18.57,-87.4075,mesoscutellar-axillar complex
+HAO:0000573,-34.415,18.57,-86.315,mesoscutello-metanotal muscle
+HAO:0000574,-33.3225,18.57,-85.2225,mesoscutellum
+HAO:0000575,-32.23,18.57,-84.13,mesoscutum
+HAO:0000576,-31.1375,18.57,-83.0375,mesosoma
+HAO:0000577,-30.045,18.57,-81.945,mesospinasterno-metafurcal muscle
+HAO:0000578,-28.9525,18.57,-80.8525,mesosterno-mesocoxal muscle
+HAO:0000579,-27.86,18.57,-79.76,mesosterno-procoxal muscle
+HAO:0000580,-26.7675,18.57,-78.6675,mesosternum
+HAO:0000581,-25.675,18.57,-77.575,mesosubalare
+HAO:0000582,-24.5825,18.57,-76.4825,anterior thoracic spiracle
+HAO:0000583,-23.49,18.57,-75.39,mesothorax
+HAO:0000584,-22.3975,18.57,-74.2975,mesotrochantin
+HAO:0000585,-21.305,18.57,-73.205,mesotrochantinal plate
+HAO:0000586,-20.2125,18.57,-72.1125,metabasalare
+HAO:0000587,-19.12,18.57,-71.02,metacoxa
+HAO:0000588,-18.0275,18.57,-69.9275,metacoxal depression
+HAO:0000589,-16.935,18.57,-68.835,metacoxo-metasubalar muscle
+HAO:0000590,-15.8425,18.57,-67.7425,metadiscrimen
+HAO:0000591,-14.75,18.57,-66.65,metadiscrimenal lamella
+HAO:0000592,-13.6575,18.57,-65.5575,metafurca
+HAO:0000593,-12.565,18.57,-64.465,metafurcal arm
+HAO:0000594,-11.4725,18.57,-63.3725,metafurcal pit
+HAO:0000595,-10.38,18.57,-62.28,metafurco-mesofurcal
+HAO:0000596,-9.2875,18.57,-61.1875,metafurco-metacoxal muscle
+HAO:0000597,-8.195,18.57,-60.095,metafurco-metatrochanteral muscle
+HAO:0000598,-7.1025,18.57,-59.0025,metafurco-second abdominal sternal muscle
+HAO:0000599,-6.01,18.57,-57.91,metanotal spine
+HAO:0000600,-4.9175,18.57,-56.8175,metanotal trough
+HAO:0000601,-36.6,17.025,-88.5,metanotal-propodeal sulcus
+HAO:0000602,-35.5075,17.025,-87.4075,metanoto-metatrochanteral muscle
+HAO:0000603,-34.415,17.025,-86.315,metanotum
+HAO:0000604,-33.3225,17.025,-85.2225,metapectal-propodeal complex
+HAO:0000605,-32.23,17.025,-84.13,metapectus
+HAO:0000606,-31.1375,17.025,-83.0375,metaphragma
+HAO:0000607,-30.045,17.025,-81.945,metapleural apodeme
+HAO:0000608,-28.9525,17.025,-80.8525,metapleural arm
+HAO:0000609,-27.86,17.025,-79.76,metapleural carina
+HAO:0000610,-26.7675,17.025,-78.6675,metapleural epicoxal carina
+HAO:0000611,-25.675,17.025,-77.575,metapleural epicoxal sulcus
+HAO:0000612,-24.5825,17.025,-76.4825,metapleural pit
+HAO:0000613,-23.49,17.025,-75.39,metapleural ridge
+HAO:0000614,-22.3975,17.025,-74.2975,metapleural sulcus
+HAO:0000615,-21.305,17.025,-73.205,metapleural triangle
+HAO:0000616,-20.2125,17.025,-72.1125,metapleuro-metabasalar muscle
+HAO:0000617,-19.12,17.025,-71.02,metapleuro-metanotal muscle
+HAO:0000618,-18.0275,17.025,-69.9275,metapleuro-metasubalar muscle
+HAO:0000619,-16.935,17.025,-68.835,metapleuro-metatrochanteral muscle
+HAO:0000620,-15.8425,17.025,-67.7425,metapleuro-third axillary sclerite of hind wing muscle
+HAO:0000621,-14.75,17.025,-66.65,metapleuron
+HAO:0000622,-13.6575,17.025,-65.5575,metapostnotum
+HAO:0000623,-12.565,17.025,-64.465,metascutellar arm
+HAO:0000624,-11.4725,17.025,-63.3725,metascutellar carina
+HAO:0000625,-10.38,17.025,-62.28,metascutellum
+HAO:0000626,-9.2875,17.025,-61.1875,metasoma
+HAO:0000627,-8.195,17.025,-60.095,metasomal depression
+HAO:0000628,-7.1025,17.025,-59.0025,metasternum
+HAO:0000629,-6.01,17.025,-57.91,metasubalare
+HAO:0000630,-4.9175,17.025,-56.8175,metathorax
+HAO:0000631,-36.6,15.48,-88.5,metatibia
+HAO:0000632,-35.5075,15.48,-87.4075,metepimeron
+HAO:0000633,-34.415,15.48,-86.315,metepisternal depression
+HAO:0000634,-33.3225,15.48,-85.2225,metepisternum
+HAO:0000635,-32.23,15.48,-84.13,mid coxa
+HAO:0000636,-31.1375,15.48,-83.0375,mid leg
+HAO:0000637,-30.045,15.48,-81.945,midpit
+HAO:0000638,-28.9525,15.48,-80.8525,monocondylic joint
+HAO:0000639,-27.86,15.48,-79.76,mouthparts
+HAO:0000640,-26.7675,15.48,-78.6675,multiporous plate sensillum
+HAO:0000641,-25.675,15.48,-77.575,muscle
+HAO:0000642,-24.5825,15.48,-76.4825,muscle bearing process of the metanotum
+HAO:0000643,-23.49,15.48,-75.39,musculus retractor unguis
+HAO:0000644,-22.3975,15.48,-74.2975,netrion
+HAO:0000645,-21.305,15.48,-73.205,netrion apodeme
+HAO:0000646,-20.2125,15.48,-72.1125,netrion sulcus
+HAO:0000647,-19.12,15.48,-71.02,notaulus
+HAO:0000648,-18.0275,15.48,-69.9275,notch
+HAO:0000649,-16.935,15.48,-68.835,notopleural suture
+HAO:0000650,-15.8425,15.48,-67.7425,notum
+HAO:0000651,-14.75,15.48,-66.65,nucha
+HAO:0000652,-13.6575,15.48,-65.5575,occipital arch
+HAO:0000653,-12.565,15.48,-64.465,occipital carina
+HAO:0000654,-11.4725,15.48,-63.3725,propleural fossa of the cranium
+HAO:0000655,-10.38,15.48,-62.28,occipital depression
+HAO:0000656,-9.2875,15.48,-61.1875,occipital sulcus
+HAO:0000657,-8.195,15.48,-60.095,occiptal condyle
+HAO:0000658,-7.1025,15.48,-59.0025,occiput
+HAO:0000659,-6.01,15.48,-57.91,occlusor muscle apodeme
+HAO:0000660,-4.9175,15.48,-56.8175,ocellar fovea
+HAO:0000661,-36.6,13.935,-88.5,ocellus
+HAO:0000662,-35.5075,13.935,-87.4075,ocular ocellar line
+HAO:0000663,-34.415,13.935,-86.315,ocular sclerite
+HAO:0000664,-33.3225,13.935,-85.2225,ocular suture
+HAO:0000665,-32.23,13.935,-84.13,odontoidea
+HAO:0000666,-31.1375,13.935,-83.0375,ommatidium
+HAO:0000667,-30.045,13.935,-81.945,open coxal cavity
+HAO:0000668,-28.9525,13.935,-80.8525,operculum
+HAO:0000669,-27.86,13.935,-79.76,oral cavity
+HAO:0000670,-26.7675,13.935,-78.6675,oral foramen
+HAO:0000671,-25.675,13.935,-77.575,orbicula
+HAO:0000672,-24.5825,13.935,-76.4825,orbit
+HAO:0000673,-23.49,13.935,-75.39,orbital band
+HAO:0000674,-22.3975,13.935,-74.2975,orbital carina
+HAO:0000675,-21.305,13.935,-73.205,outer carina of the mandible
+HAO:0000676,-20.2125,13.935,-72.1125,outer groove
+HAO:0000677,-19.12,13.935,-71.02,outer orbit
+HAO:0000678,-18.0275,13.935,-69.9275,ovipore
+HAO:0000679,-16.935,13.935,-68.835,ovipositor
+HAO:0000680,-15.8425,13.935,-67.7425,ovipositor sheath
+HAO:0000681,-14.75,13.935,-66.65,paddle shaped seta
+HAO:0000682,-13.6575,13.935,-65.5575,palpifer
+HAO:0000683,-12.565,13.935,-64.465,palpus
+HAO:0000684,-11.4725,13.935,-63.3725,paracoxal ridge
+HAO:0000685,-10.38,13.935,-62.28,paracoxal sulcus
+HAO:0000686,-9.2875,13.935,-61.1875,paraglossa
+HAO:0000687,-8.195,13.935,-60.095,premento-paraglossal muscle
+HAO:0000688,-7.1025,13.935,-59.0025,paramandibular process
+HAO:0000689,-6.01,13.935,-57.91,paraocular area
+HAO:0000690,-4.9175,13.935,-56.8175,paraocular carina
+HAO:0000691,-36.6,12.39,-88.5,paraocular lobe
+HAO:0000692,-35.5075,12.39,-87.4075,parapenis
+HAO:0000693,-34.415,12.39,-86.315,parapenisjugum
+HAO:0000694,-33.3225,12.39,-85.2225,parapsidal line
+HAO:0000695,-32.23,12.39,-84.13,parapsis
+HAO:0000696,-31.1375,12.39,-83.0375,parascrobal area
+HAO:0000697,-30.045,12.39,-81.945,parascutal carina
+HAO:0000698,-28.9525,12.39,-80.8525,paravalva
+HAO:0000699,-27.86,12.39,-79.76,parietal
+HAO:0000700,-26.7675,12.39,-78.6675,parietal band
+HAO:0000701,-25.675,12.39,-77.575,parossiculo-penisvalval muscle
+HAO:0000702,-24.5825,12.39,-76.4825,parossiculo-phallotremal muscle
+HAO:0000703,-23.49,12.39,-75.39,parossiculus
+HAO:0000704,-22.3975,12.39,-74.2975,patch
+HAO:0000705,-21.305,12.39,-73.205,pectus
+HAO:0000706,-20.2125,12.39,-72.1125,pedicel
+HAO:0000707,-19.12,12.39,-71.02,penisvalva
+HAO:0000708,-18.0275,12.39,-69.9275,penisvalvo-endophallal muscle
+HAO:0000709,-16.935,12.39,-68.835,penisvalvo-gonossiculal muscle
+HAO:0000710,-15.8425,12.39,-67.7425,penisvalvo-phallotremal muscle
+HAO:0000711,-14.75,12.39,-66.65,peristome
+HAO:0000712,-13.6575,12.39,-65.5575,peritreme
+HAO:0000713,-12.565,12.39,-64.465,phallobase
+HAO:0000714,-11.4725,12.39,-63.3725,phallotrema
+HAO:0000715,-10.38,12.39,-62.28,pharate adult
+HAO:0000716,-9.2875,12.39,-61.1875,phragma
+HAO:0000717,-8.195,12.39,-60.095,pile
+HAO:0000718,-7.1025,12.39,-59.0025,pit
+HAO:0000719,-6.01,12.39,-57.91,planta
+HAO:0000720,-4.9175,12.39,-56.8175,pleural apodeme
+HAO:0000721,-36.6,10.845,-88.5,pleural apophysis
+HAO:0000722,-35.5075,10.845,-87.4075,pleural area
+HAO:0000723,-34.415,10.845,-86.315,pleural pit
+HAO:0000724,-33.3225,10.845,-85.2225,pleural ridge
+HAO:0000725,-32.23,10.845,-84.13,pleural suture
+HAO:0000726,-31.1375,10.845,-83.0375,pleural wing process
+HAO:0000727,-30.045,10.845,-81.945,pleurite
+HAO:0000728,-28.9525,10.845,-80.8525,pleuro-ventral line
+HAO:0000729,-27.86,10.845,-79.76,pleuron
+HAO:0000730,-26.7675,10.845,-78.6675,pleurostoma
+HAO:0000731,-25.675,10.845,-77.575,pleurostomal condyle
+HAO:0000732,-24.5825,10.845,-76.4825,pleurostomal fossa
+HAO:0000733,-23.49,10.845,-75.39,pleurostomal ridge
+HAO:0000734,-22.3975,10.845,-74.2975,pleurostomal suture
+HAO:0000735,-21.305,10.845,-73.205,plica
+HAO:0000736,-20.2125,10.845,-72.1125,plica basalis
+HAO:0000737,-19.12,10.845,-71.02,plica vannalis
+HAO:0000738,-18.0275,10.845,-69.9275,plical area
+HAO:0000739,-16.935,10.845,-68.835,pollex
+HAO:0000740,-15.8425,10.845,-67.7425,postacetabular patch
+HAO:0000741,-14.75,10.845,-66.65,postacetabular sulcus
+HAO:0000742,-13.6575,10.845,-65.5575,postalar process
+HAO:0000743,-12.565,10.845,-64.465,postclypeus
+HAO:0000744,-11.4725,10.845,-63.3725,postcubitus
+HAO:0000745,-10.38,10.845,-62.28,anterior cranio-mandibular muscle
+HAO:0000746,-9.2875,10.845,-61.1875,posterior extension of preaxilla
+HAO:0000747,-8.195,10.845,-60.095,posterior glossal plate
+HAO:0000748,-7.1025,10.845,-59.0025,posterior glossal sclerite
+HAO:0000749,-6.01,10.845,-57.91,posterior labral retractor
+HAO:0000750,-4.9175,10.845,-56.8175,posterior lingual plate
+HAO:0000751,-36.6,9.3,-88.5,posterior mesepimeral area
+HAO:0000752,-35.5075,9.3,-87.4075,posterior mesepimeral inflection
+HAO:0000753,-34.415,9.3,-86.315,posterior mesofurco-mesolaterophragmal muscle
+HAO:0000754,-33.3225,9.3,-85.2225,posterior mesonoto-mesotrochanteral muscle
+HAO:0000755,-32.23,9.3,-84.13,posterior mesopleuro-mesofurcal muscle
+HAO:0000756,-31.1375,9.3,-83.0375,posterior mesopleuro-third axillary sclerite of fore wing muscle
+HAO:0000757,-30.045,9.3,-81.945,posterior mesoscutellar sulcus
+HAO:0000758,-28.9525,9.3,-80.8525,posterior notal wing process
+HAO:0000759,-27.86,9.3,-79.76,posterior ocellar line
+HAO:0000760,-26.7675,9.3,-78.6675,posterior profurcal lamella
+HAO:0000761,-25.675,9.3,-77.575,posterior pronotal inflection
+HAO:0000762,-24.5825,9.3,-76.4825,posterior pronotal sulcus
+HAO:0000763,-23.49,9.3,-75.39,posterior propodeal projection
+HAO:0000764,-22.3975,9.3,-74.2975,posterior scutellar depression
+HAO:0000765,-21.305,9.3,-73.205,posterior scutum
+HAO:0000766,-20.2125,9.3,-72.1125,posterior subalar pit
+HAO:0000767,-19.12,9.3,-71.02,posterior supraalar area
+HAO:0000768,-18.0275,9.3,-69.9275,posterior tentorial pit
+HAO:0000769,-16.935,9.3,-68.835,posterior thoracic spiracle
+HAO:0000770,-15.8425,9.3,-67.7425,posterodorsal edge of pronotum
+HAO:0000771,-14.75,9.3,-66.65,posterodorsal edge of the mesopleuron
+HAO:0000772,-13.6575,9.3,-65.5575,posterolateral pronotal area
+HAO:0000773,-12.565,9.3,-64.465,posterolateral pronotal carina
+HAO:0000774,-11.4725,9.3,-63.3725,posterolateral pronotal sulcus
+HAO:0000775,-10.38,9.3,-62.28,posteroventral metapleural pit
+HAO:0000776,-9.2875,9.3,-61.1875,postgena
+HAO:0000777,-8.195,9.3,-60.095,postgenal bridge
+HAO:0000778,-7.1025,9.3,-59.0025,postgenal cushion
+HAO:0000779,-6.01,9.3,-57.91,postgenal pit
+HAO:0000780,-4.9175,9.3,-56.8175,postgenal sulcus
+HAO:0000781,-36.6,7.755,-88.5,postgenal suture
+HAO:0000782,-35.5075,7.755,-87.4075,postlabium
+HAO:0000783,-34.415,7.755,-86.315,postmarginal vein
+HAO:0000784,-33.3225,7.755,-85.2225,postmedian notal wing process
+HAO:0000785,-32.23,7.755,-84.13,postmentum
+HAO:0000786,-31.1375,7.755,-83.0375,postnotum
+HAO:0000787,-30.045,7.755,-81.945,postoccipital ridge
+HAO:0000788,-28.9525,7.755,-80.8525,postoccipital sulcus
+HAO:0000789,-27.86,7.755,-79.76,postoccipital suture
+HAO:0000790,-26.7675,7.755,-78.6675,postocciput
+HAO:0000791,-25.675,7.755,-77.575,postocellar furrow
+HAO:0000792,-24.5825,7.755,-76.4825,postocellar vertex
+HAO:0000793,-23.49,7.755,-75.39,postorbital carina
+HAO:0000794,-22.3975,7.755,-74.2975,postpectal carina
+HAO:0000795,-21.305,7.755,-73.205,postphragma
+HAO:0000796,-20.2125,7.755,-72.1125,poststernite
+HAO:0000797,-19.12,7.755,-71.02,posttergite
+HAO:0000798,-18.0275,7.755,-69.9275,preapical tooth
+HAO:0000799,-16.935,7.755,-68.835,prearticular incisure
+HAO:0000800,-15.8425,7.755,-67.7425,preaxilla
+HAO:0000801,-14.75,7.755,-66.65,preaxillar carina
+HAO:0000802,-13.6575,7.755,-65.5575,prelabium
+HAO:0000803,-12.565,7.755,-64.465,postmento-premental muscle
+HAO:0000804,-11.4725,7.755,-63.3725,prementum
+HAO:0000805,-10.38,7.755,-62.28,preoccipital carina
+HAO:0000806,-9.2875,7.755,-61.1875,preoccipital furrow
+HAO:0000807,-8.195,7.755,-60.095,preoccipital lunula
+HAO:0000808,-7.1025,7.755,-59.0025,preocellar pit
+HAO:0000809,-6.01,7.755,-57.91,preoral cavity
+HAO:0000810,-4.9175,7.755,-56.8175,preorbital carina
+HAO:0000811,-36.6,6.21,-88.5,prepectus
+HAO:0000812,-35.5075,6.21,-87.4075,prepupa
+HAO:0000813,-34.415,6.21,-86.315,prescutal ridge
+HAO:0000814,-33.3225,6.21,-85.2225,prescutal sulcus
+HAO:0000815,-32.23,6.21,-84.13,prescutum
+HAO:0000816,-31.1375,6.21,-83.0375,prespecular sulcus
+HAO:0000817,-30.045,6.21,-81.945,prespiracular propodeal area
+HAO:0000818,-28.9525,6.21,-80.8525,presternum
+HAO:0000819,-27.86,6.21,-79.76,prestigma
+HAO:0000820,-26.7675,6.21,-78.6675,pretarsus
+HAO:0000821,-25.675,6.21,-77.575,primary gonopore
+HAO:0000822,-24.5825,6.21,-76.4825,process
+HAO:0000823,-23.49,6.21,-75.39,prodiscrimen
+HAO:0000824,-22.3975,6.21,-74.2975,prodiscrimenal lamella
+HAO:0000825,-21.305,6.21,-73.205,profurca
+HAO:0000826,-20.2125,6.21,-72.1125,profurcal arm
+HAO:0000827,-19.12,6.21,-71.02,profurcal pit
+HAO:0000828,-18.0275,6.21,-69.9275,profurco-laterocervical muscle
+HAO:0000829,-16.935,6.21,-68.835,projection
+HAO:0000830,-15.8425,6.21,-67.7425,pronope
+HAO:0000831,-14.75,6.21,-66.65,pronotal cervical sulcus
+HAO:0000832,-13.6575,6.21,-65.5575,pronotal collar
+HAO:0000833,-12.565,6.21,-64.465,pronotal cushion
+HAO:0000834,-11.4725,6.21,-63.3725,pronotal flange
+HAO:0000835,-10.38,6.21,-62.28,pronotal groove
+HAO:0000836,-9.2875,6.21,-61.1875,pronotal lobe
+HAO:0000837,-8.195,6.21,-60.095,pronotal neck
+HAO:0000838,-7.1025,6.21,-59.0025,pronotal plate
+HAO:0000839,-6.01,6.21,-57.91,pronotal projection
+HAO:0000840,-4.9175,6.21,-56.8175,pronotal shoulder
+HAO:0000841,-36.6,4.665,-88.5,pronotal side
+HAO:0000842,-35.5075,4.665,-87.4075,pronotal suprahumeral sulcus
+HAO:0000843,-34.415,4.665,-86.315,pronotal verricule
+HAO:0000844,-33.3225,4.665,-85.2225,pronoto-laterocervical muscle
+HAO:0000845,-32.23,4.665,-84.13,pronoto-mesobasalar muscle
+HAO:0000846,-31.1375,4.665,-83.0375,pronoto-mesothoracic spiracle muscle
+HAO:0000847,-30.045,4.665,-81.945,pronoto-postoccipital muscle
+HAO:0000848,-28.9525,4.665,-80.8525,pronoto-procoxal muscle
+HAO:0000849,-27.86,4.665,-79.76,pronoto-profurcal muscle
+HAO:0000850,-26.7675,4.665,-78.6675,pronoto-prophragmal muscle
+HAO:0000851,-25.675,4.665,-77.575,pronoto-propleural muscle
+HAO:0000852,-24.5825,4.665,-76.4825,pronoto-third axillary sclerite muscle
+HAO:0000853,-23.49,4.665,-75.39,pronotum
+HAO:0000854,-22.3975,4.665,-74.2975,propectus
+HAO:0000855,-21.305,4.665,-73.205,prophragma
+HAO:0000856,-20.2125,4.665,-72.1125,propleural arm
+HAO:0000857,-19.12,4.665,-71.02,propleural cervical sulcus
+HAO:0000858,-18.0275,4.665,-69.9275,propleural epicoxal sulcus
+HAO:0000859,-16.935,4.665,-68.835,propleuro-postoccipital muscle
+HAO:0000860,-15.8425,4.665,-67.7425,propleuro-procoxal muscle
+HAO:0000861,-14.75,4.665,-66.65,propleuro-protrochanteral muscle
+HAO:0000862,-13.6575,4.665,-65.5575,propleuron
+HAO:0000863,-12.565,4.665,-64.465,propodeal bridge
+HAO:0000864,-11.4725,4.665,-63.3725,propodeal carina
+HAO:0000865,-10.38,4.665,-62.28,propodeal foramen
+HAO:0000866,-9.2875,4.665,-61.1875,propodeal tooth
+HAO:0000867,-8.195,4.665,-60.095,propodeo-first metasomal spiracle muscle
+HAO:0000868,-7.1025,4.665,-59.0025,propodeo-second abdominal sternal muscle
+HAO:0000869,-6.01,4.665,-57.91,propodeo-second abdominal tergal muscle
+HAO:0000870,-4.9175,4.665,-56.8175,prospinasterno-mesofurcal muscle
+HAO:0000871,-36.6,3.12,-88.5,prosternal incision
+HAO:0000872,-35.5075,3.12,-87.4075,prosterno-procoxal muscle
+HAO:0000873,-34.415,3.12,-86.315,prosternum
+HAO:0000874,-33.3225,3.12,-85.2225,prothorax
+HAO:0000875,-32.23,3.12,-84.13,protibial spur
+HAO:0000876,-31.1375,3.12,-83.0375,proximal gonostipo-parossiculal muscle
+HAO:0000877,-30.045,3.12,-81.945,proximodorsal gonostyle/volsella complex-penisvalval muscle
+HAO:0000878,-28.9525,3.12,-80.8525,proximolateral apodeme of cupula
+HAO:0000879,-27.86,3.12,-79.76,proximoventral gonostyle/volsella complex-penisvalval muscle
+HAO:0000880,-26.7675,3.12,-78.6675,pseudoceps
+HAO:0000881,-25.675,3.12,-77.575,pseudophragma
+HAO:0000882,-24.5825,3.12,-76.4825,pteralia
+HAO:0000883,-23.49,3.12,-75.39,pterothorax
+HAO:0000884,-22.3975,3.12,-74.2975,pulvillum
+HAO:0000885,-21.305,3.12,-73.205,puncture
+HAO:0000886,-20.2125,3.12,-72.1125,pupa
+HAO:0000887,-19.12,3.12,-71.02,pygidial plate
+HAO:0000888,-18.0275,3.12,-69.9275,radial vein
+HAO:0000889,-16.935,3.12,-68.835,radicle
+HAO:0000890,-15.8425,3.12,-67.7425,radio-medial cross vein
+HAO:0000891,-14.75,3.12,-66.65,ramal rod
+HAO:0000892,-13.6575,3.12,-65.5575,rami valvularum
+HAO:0000893,-12.565,3.12,-64.465,region
+HAO:0000894,-11.4725,3.12,-63.3725,remigial region
+HAO:0000895,-10.38,3.12,-62.28,reproductive system
+HAO:0000896,-9.2875,3.12,-61.1875,retractor of the epipharynx
+HAO:0000897,-8.195,3.12,-60.095,retractor of the mouth angle
+HAO:0000898,-7.1025,3.12,-59.0025,rhachis
+HAO:0000899,-6.01,3.12,-57.91,ridge
+HAO:0000900,-4.9175,3.12,-56.8175,rim
+HAO:0000901,-36.6,24.75,-88.5,row
+HAO:0000902,-35.5075,24.75,-87.4075,row of impressions
+HAO:0000903,-34.415,24.75,-86.315,row of setae
+HAO:0000904,-33.3225,24.75,-85.2225,ruga
+HAO:0000905,-32.23,24.75,-84.13,salivarial orifice
+HAO:0000906,-31.1375,24.75,-83.0375,salivarium
+HAO:0000907,-30.045,24.75,-81.945,scale
+HAO:0000908,-28.9525,24.75,-80.8525,scape
+HAO:0000909,-27.86,24.75,-79.76,sclerite
+HAO:0000910,-26.7675,24.75,-78.6675,scopa
+HAO:0000911,-25.675,24.75,-77.575,scrobal depression
+HAO:0000912,-24.5825,24.75,-76.4825,scrobe
+HAO:0000913,-23.49,24.75,-75.39,sculpture
+HAO:0000914,-22.3975,24.75,-74.2975,scutellar bridge
+HAO:0000915,-21.305,24.75,-73.205,scutellar disc
+HAO:0000916,-20.2125,24.75,-72.1125,scutellar fovea
+HAO:0000917,-19.12,24.75,-71.02,scutellar sulcus
+HAO:0000918,-18.0275,24.75,-69.9275,scutoscutellar ridge
+HAO:0000919,-16.935,24.75,-68.835,scutoscutellar sulcus
+HAO:0000920,-15.8425,24.75,-67.7425,scutoscutellar suture
+HAO:0000921,-14.75,24.75,-66.65,second axillary sclerite
+HAO:0000922,-13.6575,24.75,-65.5575,second dorsal diagonal muscle
+HAO:0000923,-12.565,24.75,-64.465,second median plate
+HAO:0000924,-11.4725,24.75,-63.3725,second mesopleuro-mesonotal muscle
+HAO:0000925,-10.38,24.75,-62.28,second phragmo-third phragmal muscle
+HAO:0000926,-9.2875,24.75,-61.1875,proximal gonostyle/volsella complex-harpal muscle
+HAO:0000927,-8.195,24.75,-60.095,second valvifer
+HAO:0000928,-7.1025,24.75,-59.0025,second valvula
+HAO:0000929,-6.01,24.75,-57.91,segment
+HAO:0000930,-4.9175,24.75,-56.8175,sense organ
+HAO:0000931,-36.6,23.205,-88.5,sensillar patch
+HAO:0000932,-35.5075,23.205,-87.4075,sensillar patch of the male flagellomere
+HAO:0000933,-34.415,23.205,-86.315,sensillum
+HAO:0000934,-33.3225,23.205,-85.2225,sensillum trichodeum curvatum
+HAO:0000935,-32.23,23.205,-84.13,seta
+HAO:0000936,-31.1375,23.205,-83.0375,setiferous patch
+HAO:0000937,-30.045,23.205,-81.945,sex flagellomere
+HAO:0000938,-28.9525,23.205,-80.8525,signum
+HAO:0000939,-27.86,23.205,-79.76,sitophore
+HAO:0000940,-26.7675,23.205,-78.6675,skaphion
+HAO:0000941,-25.675,23.205,-77.575,skaphion carina
+HAO:0000942,-24.5825,23.205,-76.4825,spatha
+HAO:0000943,-23.49,23.205,-75.39,specialized adhesive spur
+HAO:0000944,-22.3975,23.205,-74.2975,speculum
+HAO:0000945,-21.305,23.205,-73.205,spermatheca
+HAO:0000946,-20.2125,23.205,-72.1125,spiculum
+HAO:0000947,-19.12,23.205,-71.02,spina
+HAO:0000948,-18.0275,23.205,-69.9275,spinasternum
+HAO:0000949,-16.935,23.205,-68.835,spine
+HAO:0000950,-15.8425,23.205,-67.7425,spiracle
+HAO:0000951,-14.75,23.205,-66.65,spur
+HAO:0000952,-13.6575,23.205,-65.5575,sternacostal suture
+HAO:0000953,-12.565,23.205,-64.465,sternaulus
+HAO:0000954,-11.4725,23.205,-63.3725,sternellum
+HAO:0000955,-10.38,23.205,-62.28,sternite
+HAO:0000956,-9.2875,23.205,-61.1875,sternum
+HAO:0000957,-8.195,23.205,-60.095,stigma
+HAO:0000958,-7.1025,23.205,-59.0025,stipes
+HAO:0000959,-6.01,23.205,-57.91,stylet
+HAO:0000960,-4.9175,23.205,-56.8175,subalar area
+HAO:0000961,-36.6,21.66,-88.5,subalar pit
+HAO:0000962,-35.5075,21.66,-87.4075,subalare
+HAO:0000963,-34.415,21.66,-86.315,hypoproct
+HAO:0000964,-33.3225,21.66,-85.2225,subantennal area
+HAO:0000965,-32.23,21.66,-84.13,subantennal groove
+HAO:0000966,-31.1375,21.66,-83.0375,subaxillular bar
+HAO:0000967,-30.045,21.66,-81.945,subcosta
+HAO:0000968,-28.9525,21.66,-80.8525,subgenal carina
+HAO:0000969,-27.86,21.66,-79.76,subgenal coronet
+HAO:0000970,-26.7675,21.66,-78.6675,submarginal carina of abdominal tergite
+HAO:0000971,-25.675,21.66,-77.575,submarginal groove
+HAO:0000972,-24.5825,21.66,-76.4825,submarginal vein
+HAO:0000973,-23.49,21.66,-75.39,submedian carina
+HAO:0000974,-22.3975,21.66,-74.2975,submetapleural carina
+HAO:0000975,-21.305,21.66,-73.205,subpleural signum
+HAO:0000976,-20.2125,21.66,-72.1125,subpleuron
+HAO:0000977,-19.12,21.66,-71.02,sucking pump
+HAO:0000978,-18.0275,21.66,-69.9275,sulcus
+HAO:0000979,-16.935,21.66,-68.835,supraalar area
+HAO:0000980,-15.8425,21.66,-67.7425,epiproct
+HAO:0000981,-14.75,21.66,-66.65,supraclypeal area
+HAO:0000982,-13.6575,21.66,-65.5575,suture
+HAO:0000983,-12.565,21.66,-64.465,synsternal setiferous patch
+HAO:0000984,-11.4725,21.66,-63.3725,synsternal translucent patch
+HAO:0000985,-10.38,21.66,-62.28,synsternum
+HAO:0000986,-9.2875,21.66,-61.1875,syntergal translucent patch
+HAO:0000987,-8.195,21.66,-60.095,syntergum
+HAO:0000988,-7.1025,21.66,-59.0025,tagma
+HAO:0000989,-6.01,21.66,-57.91,tarsal claw
+HAO:0000990,-4.9175,21.66,-56.8175,tarsal plantula
+HAO:0000991,-36.6,20.115,-88.5,tarsomere
+HAO:0000992,-35.5075,20.115,-87.4075,tarsus
+HAO:0000993,-34.415,20.115,-86.315,tegula
+HAO:0000994,-33.3225,20.115,-85.2225,telotarsus
+HAO:0000995,-32.23,20.115,-84.13,temple
+HAO:0000996,-31.1375,20.115,-83.0375,tendon
+HAO:0000997,-30.045,20.115,-81.945,tentorial arm
+HAO:0000998,-28.9525,20.115,-80.8525,tentorial bridge
+HAO:0000999,-27.86,20.115,-79.76,tentorial pit
+HAO:0001000,-26.7675,20.115,-78.6675,tentorio-antennal muscle
+HAO:0001001,-25.675,20.115,-77.575,tentorio-labial muscle
+HAO:0001002,-24.5825,20.115,-76.4825,tentorio-stipital muscle
+HAO:0001003,-23.49,20.115,-75.39,tentorium
+HAO:0001004,-22.3975,20.115,-74.2975,terebra
+HAO:0001005,-21.305,20.115,-73.205,tergite
+HAO:0001006,-20.2125,20.115,-72.1125,tergum
+HAO:0001007,-19.12,20.115,-71.02,testis
+HAO:0001008,-18.0275,20.115,-69.9275,third abdominal tergite
+HAO:0001009,-16.935,20.115,-68.835,third axillary
+HAO:0001010,-15.8425,20.115,-67.7425,third mesopleuro-mesonotal muscle
+HAO:0001011,-14.75,20.115,-66.65,third phragmo-second abdominal tergal muscle
+HAO:0001012,-13.6575,20.115,-65.5575,third valvula
+HAO:0001013,-12.565,20.115,-64.465,thoracic segment
+HAO:0001014,-11.4725,20.115,-63.3725,thoracic sternum
+HAO:0001015,-10.38,20.115,-62.28,thorax
+HAO:0001016,-9.2875,20.115,-61.1875,thyridium
+HAO:0001017,-8.195,20.115,-60.095,tibia
+HAO:0001018,-7.1025,20.115,-59.0025,tibial spur
+HAO:0001019,-6.01,20.115,-57.91,tooth
+HAO:0001020,-4.9175,20.115,-56.8175,torular space
+HAO:0001021,-36.6,18.57,-88.5,torular triangle
+HAO:0001022,-35.5075,18.57,-87.4075,torulus
+HAO:0001023,-34.415,18.57,-86.315,transaxillar carina
+HAO:0001024,-33.3225,18.57,-85.2225,translucent patch
+HAO:0001025,-32.23,18.57,-84.13,transmetanotal carina
+HAO:0001026,-31.1375,18.57,-83.0375,transpleural sulcus
+HAO:0001027,-30.045,18.57,-81.945,transscutal fissure
+HAO:0001028,-28.9525,18.57,-80.8525,transscutal line
+HAO:0001029,-27.86,18.57,-79.76,transverse carina on petiole
+HAO:0001030,-26.7675,18.57,-78.6675,transverse epipharyngeal muscle
+HAO:0001031,-25.675,18.57,-77.575,transverse pronotal carina
+HAO:0001032,-24.5825,18.57,-76.4825,transverse pronotal sulcus
+HAO:0001033,-23.49,18.57,-75.39,trochantellus
+HAO:0001034,-22.3975,18.57,-74.2975,trochanter
+HAO:0001035,-21.305,18.57,-73.205,trochantin
+HAO:0001036,-20.2125,18.57,-72.1125,tubercle
+HAO:0001037,-19.12,18.57,-71.02,tuberculate verricule
+HAO:0001038,-18.0275,18.57,-69.9275,type I sensillum trichodea
+HAO:0001039,-16.935,18.57,-68.835,mechanosensory hair
+HAO:0001040,-15.8425,18.57,-67.7425,umbilicated fovea
+HAO:0001041,-14.75,18.57,-66.65,uncus
+HAO:0001042,-13.6575,18.57,-65.5575,unguifer
+HAO:0001043,-12.565,18.57,-64.465,unguitractor plate
+HAO:0001044,-11.4725,18.57,-63.3725,upper face
+HAO:0001045,-10.38,18.57,-62.28,upper mesopleural rim
+HAO:0001046,-9.2875,18.57,-61.1875,valvar ridge
+HAO:0001047,-8.195,18.57,-60.095,valviceps
+HAO:0001048,-7.1025,18.57,-59.0025,valvispina
+HAO:0001049,-6.01,18.57,-57.91,valvula
+HAO:0001050,-4.9175,18.57,-56.8175,valvura
+HAO:0001051,-36.6,17.025,-88.5,vannal region
+HAO:0001052,-35.5075,17.025,-87.4075,vas deferens
+HAO:0001053,-34.415,17.025,-86.315,velum
+HAO:0001054,-33.3225,17.025,-85.2225,ventral apodeme of the first phragma
+HAO:0001055,-32.23,17.025,-84.13,ventral bridge of the pronotum
+HAO:0001056,-31.1375,17.025,-83.0375,ventral carina of the metapleuron
+HAO:0001057,-30.045,17.025,-81.945,ventral cibarial dilatator
+HAO:0001058,-28.9525,17.025,-80.8525,ventral edge of propleuron
+HAO:0001059,-27.86,17.025,-79.76,ventral lamella of the tentorium
+HAO:0001060,-26.7675,17.025,-78.6675,ventral mesopostnotal flange
+HAO:0001061,-25.675,17.025,-77.575,ventral metafurcal lamella
+HAO:0001062,-24.5825,17.025,-76.4825,ventral metapleural area
+HAO:0001063,-23.49,17.025,-75.39,ventral pharyngeal dilatator
+HAO:0001064,-22.3975,17.025,-74.2975,anterior tentorio-premental muscle
+HAO:0001065,-21.305,17.025,-73.205,ventral profurcal lamella
+HAO:0001066,-20.2125,17.025,-72.1125,ventral profurco-postoccipital muscle
+HAO:0001067,-19.12,17.025,-71.02,ventral pronotal pit
+HAO:0001068,-18.0275,17.025,-69.9275,ventral propleural area
+HAO:0001069,-16.935,17.025,-68.835,ventral propodeal carina
+HAO:0001070,-15.8425,17.025,-67.7425,ventral ridge of clypeus
+HAO:0001071,-14.75,17.025,-66.65,ventral row of spines
+HAO:0001072,-13.6575,17.025,-65.5575,ventral salivarial dilatator
+HAO:0001073,-12.565,17.025,-64.465,ventral vertical lobe of the propleuron
+HAO:0001074,-11.4725,17.025,-63.3725,ventrolateral cupolo-gonostyle/volsella complex
+HAO:0001075,-10.38,17.025,-62.28,ventromedial cupulo-gonostyle/volsella complex muscle
+HAO:0001076,-9.2875,17.025,-61.1875,verricule
+HAO:0001077,-8.195,17.025,-60.095,vertex
+HAO:0001078,-7.1025,17.025,-59.0025,vertex patch
+HAO:0001079,-6.01,17.025,-57.91,vertical apodemal lobe of the mesoscutellum
+HAO:0001080,-4.9175,17.025,-56.8175,vertical lobe of mesoscutum
+HAO:0001081,-36.6,15.48,-88.5,vesicula seminalis
+HAO:0001082,-35.5075,15.48,-87.4075,vestibulum
+HAO:0001083,-34.415,15.48,-86.315,villus
+HAO:0001084,-33.3225,15.48,-85.2225,volsella
+HAO:0001085,-32.23,15.48,-84.13,volsellar plate
+HAO:0001086,-31.1375,15.48,-83.0375,volsellar ridge
+HAO:0001087,-30.045,15.48,-81.945,vulva
+HAO:0001088,-28.9525,15.48,-80.8525,Waterston's evaporatorium
+HAO:0001089,-27.86,15.48,-79.76,wing
+HAO:0001090,-26.7675,15.48,-78.6675,wing base
+HAO:0001091,-25.675,15.48,-77.575,wing cell
+HAO:0001092,-24.5825,15.48,-76.4825,wing crease
+HAO:0001093,-23.49,15.48,-75.39,wing membrane
+HAO:0001094,-22.3975,15.48,-74.2975,wing region
+HAO:0001095,-21.305,15.48,-73.205,wing vein
+HAO:0001096,-20.2125,15.48,-72.1125,wing venation
+HAO:0001097,-19.12,15.48,-71.02,axillular groove
+HAO:0001098,-18.0275,15.48,-69.9275,capitate peg sensillum
+HAO:0001099,-16.935,15.48,-68.835,head muscle
+HAO:0001100,-15.8425,15.48,-67.7425,gaine
+HAO:0001101,-14.75,15.48,-66.65,gorgeret
+HAO:0001102,-13.6575,15.48,-65.5575,lanze
+HAO:0001103,-12.565,15.48,-64.465,olistheter
+HAO:0001104,-11.4725,15.48,-63.3725,postgenal ridge
+HAO:0001105,-10.38,15.48,-62.28,profurcal muscle
+HAO:0001106,-9.2875,15.48,-61.1875,probasitarsus
+HAO:0001107,-8.195,15.48,-60.095,ventral ramus of the second valvula
+HAO:0001108,-7.1025,15.48,-59.0025,pharyngeal muscle
+HAO:0001109,-6.01,15.48,-57.91,postoccipital muscle
+HAO:0001110,-4.9175,15.48,-56.8175,salivarial muscle
+HAO:0001111,-36.6,13.935,-88.5,mesotrochanteral muscle
+HAO:0001112,-35.5075,13.935,-87.4075,hypopharyngeal muscle
+HAO:0001113,-34.415,13.935,-86.315,procoxal muscle
+HAO:0001114,-33.3225,13.935,-85.2225,maxillar muscle
+HAO:0001115,-32.23,13.935,-84.13,anterior thoracic spiracle occlusor muscle
+HAO:0001116,-31.1375,13.935,-83.0375,laterocervical muscle
+HAO:0001117,-30.045,13.935,-81.945,thoracic muscle
+HAO:0001118,-28.9525,13.935,-80.8525,abdominal muscle
+HAO:0001119,-27.86,13.935,-79.76,leg muscle
+HAO:0001120,-26.7675,13.935,-78.6675,mesotibial spur
+HAO:0001121,-25.675,13.935,-77.575,metatibial spur
+HAO:0001122,-24.5825,13.935,-76.4825,procoxa
+HAO:0001123,-23.49,13.935,-75.39,protrochanter
+HAO:0001124,-22.3975,13.935,-74.2975,profemur
+HAO:0001125,-21.305,13.935,-73.205,protarsus
+HAO:0001126,-20.2125,13.935,-72.1125,second tarsomere of fore leg
+HAO:0001127,-19.12,13.935,-71.02,third tarsomere of fore leg
+HAO:0001128,-18.0275,13.935,-69.9275,fourth tarsomere of the fore leg
+HAO:0001129,-16.935,13.935,-68.835,fifth tarsomere of the fore leg
+HAO:0001130,-15.8425,13.935,-67.7425,mesotrochanter
+HAO:0001131,-14.75,13.935,-66.65,mesofemur
+HAO:0001132,-13.6575,13.935,-65.5575,mesotarsus
+HAO:0001133,-12.565,13.935,-64.465,mesobasitarsus
+HAO:0001134,-11.4725,13.935,-63.3725,second tarsomere of mid leg
+HAO:0001135,-10.38,13.935,-62.28,third tarsomere of hind leg
+HAO:0001136,-9.2875,13.935,-61.1875,third tarsomere of mid leg
+HAO:0001137,-8.195,13.935,-60.095,fourth tarsomere of mid leg
+HAO:0001138,-7.1025,13.935,-59.0025,fifth tarsomere of the mid leg
+HAO:0001139,-6.01,13.935,-57.91,metatrochanter
+HAO:0001140,-4.9175,13.935,-56.8175,metafemur
+HAO:0001141,-36.6,12.39,-88.5,metatarsus
+HAO:0001142,-35.5075,12.39,-87.4075,metabasitarsus
+HAO:0001143,-34.415,12.39,-86.315,second tarsomere of hind leg
+HAO:0001144,-33.3225,12.39,-85.2225,fourth tarsomere of hind leg
+HAO:0001145,-32.23,12.39,-84.13,fifth tarsomere of hind leg
+HAO:0001146,-31.1375,12.39,-83.0375,joint
+HAO:0001147,-30.045,12.39,-81.945,abdominal mediotergite 3
+HAO:0001148,-28.9525,12.39,-80.8525,first flagellomere
+HAO:0001149,-27.86,12.39,-79.76,abdominal laterotergite 8
+HAO:0001150,-26.7675,12.39,-78.6675,abdominal mediotergite 2
+HAO:0001151,-25.675,12.39,-77.575,abdominal mediotergite 4
+HAO:0001152,-24.5825,12.39,-76.4825,abdominal mediotergite 5
+HAO:0001153,-23.49,12.39,-75.39,abdominal mediotergite 6
+HAO:0001154,-22.3975,12.39,-74.2975,acidopore
+HAO:0001155,-21.305,12.39,-73.205,acropleuron
+HAO:0001156,-20.2125,12.39,-72.1125,acrotergite
+HAO:0001157,-19.12,12.39,-71.02,adnotaular setae
+HAO:0001158,-18.0275,12.39,-69.9275,adpetiolar strip
+HAO:0001159,-16.935,12.39,-68.835,axillular line
+HAO:0001160,-15.8425,12.39,-67.7425,axillary region of the fore wing
+HAO:0001161,-14.75,12.39,-66.65,axillar depression
+HAO:0001162,-13.6575,12.39,-65.5575,auxiliary propodeal carina
+HAO:0001163,-12.565,12.39,-64.465,anteroventral cavity
+HAO:0001164,-11.4725,12.39,-63.3725,anterior tentorio-scapal muscle
+HAO:0001165,-10.38,12.39,-62.28,anterior stipito-palpal muscle
+HAO:0001166,-9.2875,12.39,-61.1875,anterior second valvifer-second valvula muscle
+HAO:0001167,-8.195,12.39,-60.095,anterior scutellum
+HAO:0001168,-7.1025,12.39,-59.0025,anterior pronoto-laterocervical muscle
+HAO:0001169,-6.01,12.39,-57.91,anterior mesonoto-metanotal muscle
+HAO:0001170,-4.9175,12.39,-56.8175,anterior glossal plate
+HAO:0001171,-36.6,10.845,-88.5,anterior flange of abdominal tergum nine
+HAO:0001172,-35.5075,10.845,-87.4075,antennal muscle
+HAO:0001173,-34.415,10.845,-86.315,annulus
+HAO:0001174,-33.3225,10.845,-85.2225,anepimeron
+HAO:0001175,-32.23,10.845,-84.13,anapleurite
+HAO:0001176,-31.1375,10.845,-83.0375,banding pattern
+HAO:0001177,-30.045,10.845,-81.945,basal articulation
+HAO:0001178,-28.9525,10.845,-80.8525,admedian clypeal furrow
+HAO:0001179,-27.86,10.845,-79.76,basal hooklet
+HAO:0001180,-26.7675,10.845,-78.6675,basitarsal comb
+HAO:0001181,-25.675,10.845,-77.575,foretarsal rake
+HAO:0001182,-24.5825,10.845,-76.4825,cercal bristle
+HAO:0001183,-23.49,10.845,-75.39,chela
+HAO:0001184,-22.3975,10.845,-74.2975,clypeal tooth
+HAO:0001185,-21.305,10.845,-73.205,clava
+HAO:0001186,-20.2125,10.845,-72.1125,clavomere
+HAO:0001187,-19.12,10.845,-71.02,clypeal carina
+HAO:0001188,-18.0275,10.845,-69.9275,clypeogenal sulcus
+HAO:0001189,-16.935,10.845,-68.835,crenulate ring of the metasoma
+HAO:0001190,-15.8425,10.845,-67.7425,ctenidium
+HAO:0001191,-14.75,10.845,-66.65,wing blade
+HAO:0001192,-13.6575,10.845,-65.5575,ventral protibio-probasitarsal muscle
+HAO:0001193,-12.565,10.845,-64.465,ventral metatibio-metabasitarsal muscle
+HAO:0001194,-11.4725,10.845,-63.3725,ventral metapleuro-third axillary sclerite of hind wing muscle
+HAO:0001195,-10.38,10.845,-62.28,ventral mesotibio-mesobasitarsal muscle
+HAO:0001196,-9.2875,10.845,-61.1875,unguitractor plate of the protarsus
+HAO:0001197,-8.195,10.845,-60.095,unguitractor plate of the metatarsus
+HAO:0001198,-7.1025,10.845,-59.0025,unguitractor plate of the mesotarsus
+HAO:0001199,-6.01,10.845,-57.91,tyloid
+HAO:0001200,-4.9175,10.845,-56.8175,trochanteral fossa of the profemur
+HAO:0001201,-36.6,9.3,-88.5,trochanteral fossa of the metafemur
+HAO:0001202,-35.5075,9.3,-87.4075,trochanteral fossa of the mesofemur
+HAO:0001203,-34.415,9.3,-86.315,transverse metepisternal carina
+HAO:0001204,-33.3225,9.3,-85.2225,transscutal articulation
+HAO:0001205,-32.23,9.3,-84.13,transepisternal line
+HAO:0001206,-31.1375,9.3,-83.0375,tibial fossa of the profemur
+HAO:0001207,-30.045,9.3,-81.945,tibial fossa of the femur
+HAO:0001208,-28.9525,9.3,-80.8525,tibial condyle of the probasitarsus
+HAO:0001209,-27.86,9.3,-79.76,tibial condyle of the metabasitarsus
+HAO:0001210,-26.7675,9.3,-78.6675,tibial condyle of the mesobasitarsus
+HAO:0001211,-25.675,9.3,-77.575,tibial articular process of the probasitarsus
+HAO:0001212,-24.5825,9.3,-76.4825,tibial articular process of the metabasitarsus
+HAO:0001213,-23.49,9.3,-75.39,tibial articular process of the mesobasitarsus
+HAO:0001214,-22.3975,9.3,-74.2975,third mesopleuro-third axillary sclerite of fore wing muscle
+HAO:0001215,-21.305,9.3,-73.205,tergal muscle
+HAO:0001216,-20.2125,9.3,-72.1125,metanoto-metacoxal muscle
+HAO:0001217,-19.12,9.3,-71.02,subomaulus
+HAO:0001218,-18.0275,9.3,-69.9275,subforaminal bridge
+HAO:0001219,-16.935,9.3,-68.835,subapical tooth
+HAO:0001220,-15.8425,9.3,-67.7425,subantennal groove
+HAO:0001221,-14.75,9.3,-66.65,subalar ridge
+HAO:0001222,-13.6575,9.3,-65.5575,strigilis
+HAO:0001223,-12.565,9.3,-64.465,sternal muscle
+HAO:0001224,-11.4725,9.3,-63.3725,squama
+HAO:0001225,-10.38,9.3,-62.28,spiracular muscle
+HAO:0001226,-9.2875,9.3,-61.1875,tooth number 2
+HAO:0001227,-8.195,9.3,-60.095,tooth number 3
+HAO:0001228,-7.1025,9.3,-59.0025,tooth number 4
+HAO:0001229,-6.01,9.3,-57.91,scutellum
+HAO:0001230,-4.9175,9.3,-56.8175,scutellar plate
+HAO:0001231,-36.6,7.755,-88.5,proximodorsal process of the protibia
+HAO:0001232,-35.5075,7.755,-87.4075,proximodorsal process of the metatibia
+HAO:0001233,-34.415,7.755,-86.315,proximodorsal process of the mesotibia
+HAO:0001234,-33.3225,7.755,-85.2225,proximal profemoral apodeme
+HAO:0001235,-32.23,7.755,-84.13,proximal mesofemoral apodeme
+HAO:0001236,-31.1375,7.755,-83.0375,proximal condyle of the tarsomere
+HAO:0001237,-30.045,7.755,-81.945,proximal articular process of the tarsomere
+HAO:0001238,-28.9525,7.755,-80.8525,protrochantero-profemoral muscle
+HAO:0001239,-27.86,7.755,-79.76,protrochantero-profemoral joint
+HAO:0001240,-26.7675,7.755,-78.6675,protrochantero-profemoral articulation
+HAO:0001241,-25.675,7.755,-77.575,femoral condyle of the protrochanter
+HAO:0001242,-24.5825,7.755,-76.4825,protrochanteral apodeme
+HAO:0001243,-23.49,7.755,-75.39,protrochantellus
+HAO:0001244,-22.3975,7.755,-74.2975,protibio-probasitarsal joint
+HAO:0001245,-21.305,7.755,-73.205,protibio-probasitarsal articulation
+HAO:0001246,-20.2125,7.755,-72.1125,protibio-pretarsus of the protarsus muscle
+HAO:0001247,-19.12,7.755,-71.02,protelotarsus
+HAO:0001248,-18.0275,7.755,-69.9275,propodeum
+HAO:0001249,-16.935,7.755,-68.835,propodeum
+HAO:0001250,-15.8425,7.755,-67.7425,trochanteral articular process of the metafemur
+HAO:0001251,-14.75,7.755,-66.65,trochanteral condyle of the metafemur
+HAO:0001252,-13.6575,7.755,-65.5575,mesotibio-mesobasitarsal articulation
+HAO:0001253,-12.565,7.755,-64.465,mesotibio-mesobasitarsal joint
+HAO:0001254,-11.4725,7.755,-63.3725,articular membrane of the mesotibio-mesobasitarsal muscle
+HAO:0001255,-10.38,7.755,-62.28,mesotibio-pretarsus of mesotarsus muscle
+HAO:0001256,-9.2875,7.755,-61.1875,mesotrochanteral apodeme
+HAO:0001257,-8.195,7.755,-60.095,mesotrochantero-mesofemoral articulation
+HAO:0001258,-7.1025,7.755,-59.0025,femoral condyle of the mesotrochanter
+HAO:0001259,-6.01,7.755,-57.91,mesotrochantero-mesofemoral joint
+HAO:0001260,-4.9175,7.755,-56.8175,articular membrane
+HAO:0001261,-36.6,6.21,-88.5,mesotrochantero-mesofemoral muscle
+HAO:0001262,-35.5075,6.21,-87.4075,mesotrochantinal muscle
+HAO:0001263,-34.415,6.21,-86.315,metabasicoxite
+HAO:0001264,-33.3225,6.21,-85.2225,metacoxal foramen
+HAO:0001265,-32.23,6.21,-84.13,metacoxo-metatrochanteral joint
+HAO:0001266,-31.1375,6.21,-83.0375,metafemoro-metatibial joint
+HAO:0001267,-30.045,6.21,-81.945,metafemoro-pretarsus of the metatarsus muscle
+HAO:0001268,-28.9525,6.21,-80.8525,metapecto-metacoxal joint
+HAO:0001269,-27.86,6.21,-79.76,metapectus
+HAO:0001270,-26.7675,6.21,-78.6675,metapectus
+HAO:0001271,-25.675,6.21,-77.575,metapleuron
+HAO:0001272,-24.5825,6.21,-76.4825,metapleuron
+HAO:0001273,-23.49,6.21,-75.39,metapleuron
+HAO:0001274,-22.3975,6.21,-74.2975,metasomal condyle of the propodeum
+HAO:0001275,-21.305,6.21,-73.205,metatelotarsus
+HAO:0001276,-20.2125,6.21,-72.1125,metatibio-metabasitarsal articulation
+HAO:0001277,-19.12,6.21,-71.02,metatibio-metabasitarsal joint
+HAO:0001278,-18.0275,6.21,-69.9275,metatibio-pretarsus of the metatarsus muscle
+HAO:0001279,-16.935,6.21,-68.835,metatrochanteral apodeme
+HAO:0001280,-15.8425,6.21,-67.7425,metatrochantero-metafemoral muscle
+HAO:0001281,-14.75,6.21,-66.65,metatrochantero-metafemoral joint
+HAO:0001282,-13.6575,6.21,-65.5575,posterior mesotibio-mesobasitarsal muscle
+HAO:0001283,-12.565,6.21,-64.465,ninth abdominal tergal muscle
+HAO:0001284,-11.4725,6.21,-63.3725,cranial condyle of the propleuron
+HAO:0001285,-10.38,6.21,-62.28,occlusor muscle apodeme of the mesothoracic spiracle
+HAO:0001286,-9.2875,6.21,-61.1875,occlusor of the propodeal spiracle muscle
+HAO:0001287,-8.195,6.21,-60.095,odontoidea
+HAO:0001288,-7.1025,6.21,-59.0025,omaulus
+HAO:0001289,-6.01,6.21,-57.91,opisthogaster
+HAO:0001290,-4.9175,6.21,-56.8175,ovipositor muscle
+HAO:0001291,-36.6,4.665,-88.5,parameral seta
+HAO:0001292,-35.5075,4.665,-87.4075,pecto-coxal joint
+HAO:0001293,-34.415,4.665,-86.315,pleurostomal carina
+HAO:0001294,-33.3225,4.665,-85.2225,posterior trochanteral condyle of the mesocoxa
+HAO:0001295,-32.23,4.665,-84.13,posterior coxal fossa of the metatrochanter
+HAO:0001296,-31.1375,4.665,-83.0375,posterior trochanteral condyle of the metacoxa
+HAO:0001297,-30.045,4.665,-81.945,posterior coxal fossa of the protrochanter
+HAO:0001298,-28.9525,4.665,-80.8525,posterior trochanteral condyle of the procoxa
+HAO:0001299,-27.86,4.665,-79.76,posterior femoro-tibial articulation
+HAO:0001300,-26.7675,4.665,-78.6675,posterior mesocoxo-mesotrochanteral articulation
+HAO:0001301,-25.675,4.665,-77.575,posterior mesocoxo-mesotrochanteral muscle
+HAO:0001302,-24.5825,4.665,-76.4825,posterior mesonoto-metanotal muscle
+HAO:0001303,-23.49,4.665,-75.39,posterior metacoxo-metatrochanteral articulation of the metacoxa
+HAO:0001304,-22.3975,4.665,-74.2975,propodeal muscle
+HAO:0001305,-21.305,4.665,-73.205,propleural arm-protrochanteral muscle
+HAO:0001306,-20.2125,4.665,-72.1125,pronoto-third axillary sclerite of fore wing muscle
+HAO:0001307,-19.12,4.665,-71.02,propecto-procoxal joint
+HAO:0001308,-18.0275,4.665,-69.9275,prong of hypopygium
+HAO:0001309,-16.935,4.665,-68.835,profurco-protrochanteral muscle
+HAO:0001310,-15.8425,4.665,-67.7425,profurcasternum
+HAO:0001311,-14.75,4.665,-66.65,profemoro-protibial joint
+HAO:0001312,-13.6575,4.665,-65.5575,profemoro-pretarsus of protarsus muscle
+HAO:0001313,-12.565,4.665,-64.465,procuticle
+HAO:0001314,-11.4725,4.665,-63.3725,procoxo-protrochanteral joint
+HAO:0001315,-10.38,4.665,-62.28,procoxal foramen
+HAO:0001316,-9.2875,4.665,-61.1875,proboscidial fossa
+HAO:0001317,-8.195,4.665,-60.095,probasisternum
+HAO:0001318,-7.1025,4.665,-59.0025,probasicoxite
+HAO:0001319,-6.01,4.665,-57.91,pretarsus of protarsus
+HAO:0001320,-4.9175,4.665,-56.8175,pretarsus of metatarsus
+HAO:0001321,-36.6,3.12,-88.5,pretarsus of mesotarsus
+HAO:0001322,-35.5075,3.12,-87.4075,prepecto-procoxal muscle
+HAO:0001323,-34.415,3.12,-86.315,preomaular area
+HAO:0001324,-33.3225,3.12,-85.2225,precoxal carina
+HAO:0001325,-32.23,3.12,-84.13,pre-apical ledge
+HAO:0001326,-31.1375,3.12,-83.0375,postmedian metanotal wing process
+HAO:0001327,-30.045,3.12,-81.945,posterolateral metapleuro-metanotal muscle
+HAO:0001328,-28.9525,3.12,-80.8525,posterolateral metacoxo-metatrochanteral muscle
+HAO:0001329,-27.86,3.12,-79.76,posterior trochanteral articular process of the procoxa
+HAO:0001330,-26.7675,3.12,-78.6675,posterior trochanteral articular process of the metacoxa
+HAO:0001331,-25.675,3.12,-77.575,posterior trochanteral articular process of the mesocoxa
+HAO:0001332,-24.5825,3.12,-76.4825,posterior metafemoro-metatibial articulation
+HAO:0001333,-23.49,3.12,-75.39,posterior procoxo-protrochanteral articulation
+HAO:0001334,-22.3975,3.12,-74.2975,posterior metatibio-metabasitarsal muscle
+HAO:0001335,-21.305,3.12,-73.205,posterior procoxo-protrochanteral muscle
+HAO:0001336,-20.2125,3.12,-72.1125,posterior profemoro-protibial articulation
+HAO:0001337,-19.12,3.12,-71.02,posterior protibio-probasitarsal muscle
+HAO:0001338,-18.0275,3.12,-69.9275,posterior proximal process of the mesobasitarsus
+HAO:0001339,-16.935,3.12,-68.835,posterior proximal process of the metabasitarsus
+HAO:0001340,-15.8425,3.12,-67.7425,posterior proximal process of the probasitarsus
+HAO:0001341,-14.75,3.12,-66.65,prora
+HAO:0001342,-13.6575,3.12,-65.5575,rastellum
+HAO:0001343,-12.565,3.12,-64.465,posterior tentorial arm
+HAO:0001344,-11.4725,3.12,-63.3725,posterior metapleuro-metabasalar muscle
+HAO:0001345,-10.38,3.12,-62.28,ammochaetae
+HAO:0001346,-9.2875,3.12,-61.1875,psammophore
+HAO:0001347,-8.195,3.12,-60.095,posterior mesofemoro-mesotibial articulation
+HAO:0001348,-7.1025,3.12,-59.0025,posterior coxal fossa of the mesotrochanter
+HAO:0001349,-6.01,3.12,-57.91,metasomal tergum
+HAO:0001350,-4.9175,3.12,-56.8175,metasomal sternum
+HAO:0001351,-36.6,24.75,-88.5,mesotibia
+HAO:0001352,-35.5075,24.75,-87.4075,mesotelotarsus
+HAO:0001353,-34.415,24.75,-86.315,mesopostnotal apodeme
+HAO:0001354,-33.3225,24.75,-85.2225,mesopleuron
+HAO:0001355,-32.23,24.75,-84.13,mesopleuro-metanotal muscle
+HAO:0001356,-31.1375,24.75,-83.0375,mesopleural sulcus
+HAO:0001357,-30.045,24.75,-81.945,mesopleural ridge
+HAO:0001358,-28.9525,24.75,-80.8525,mesopleural pit
+HAO:0001359,-27.86,24.75,-79.76,mesopleural apodeme
+HAO:0001360,-26.7675,24.75,-78.6675,mesopecto-mesocoxal joint
+HAO:0001361,-25.675,24.75,-77.575,mesonoto-mesotrochantinal muscle
+HAO:0001362,-24.5825,24.75,-76.4825,mesolaterophragmo-hind wing base muscle
+HAO:0001363,-23.49,24.75,-75.39,mesofurco-profurcal muscle
+HAO:0001364,-22.3975,24.75,-74.2975,mesofurco-metafurcal muscle
+HAO:0001365,-21.305,24.75,-73.205,mesofemoro-pretarsus of the mesotarsus muscle
+HAO:0001366,-20.2125,24.75,-72.1125,mesofemoro-mesotibial joint
+HAO:0001367,-19.12,24.75,-71.02,mesocoxo-mesotrochanteral joint
+HAO:0001368,-18.0275,24.75,-69.9275,mesobasicoxite
+HAO:0001369,-16.935,24.75,-68.835,median propleuro-postoccipital muscle
+HAO:0001370,-15.8425,24.75,-67.7425,median pronoto-procoxal muscle
+HAO:0001371,-14.75,24.75,-66.65,median procoxo-protrochanteral muscle
+HAO:0001372,-13.6575,24.75,-65.5575,median metatrochantero-metafemoral articulation
+HAO:0001373,-12.565,24.75,-64.465,median metapleuro-metanotal muscle
+HAO:0001374,-11.4725,24.75,-63.3725,median metacoxo-metatrochanteral muscle
+HAO:0001375,-10.38,24.75,-62.28,median mesophragmo-metaphragmal muscle
+HAO:0001376,-9.2875,24.75,-61.1875,median mesofurco-metafurcal muscle
+HAO:0001377,-8.195,24.75,-60.095,median mesocoxo-mesotrochanteral muscle
+HAO:0001378,-7.1025,24.75,-59.0025,median longitudinal metepisternal carina
+HAO:0001379,-6.01,24.75,-57.91,medial profemoro-protibial muscle
+HAO:0001380,-4.9175,24.75,-56.8175,medial pectal fossa of the metacoxa
+HAO:0001381,-36.6,23.205,-88.5,medial pectal fossa of the mesocoxa
+HAO:0001382,-35.5075,23.205,-87.4075,medial metafemoro-metatibial muscle
+HAO:0001383,-34.415,23.205,-86.315,medial mesopecto-mesocoxal articulation
+HAO:0001384,-33.3225,23.205,-85.2225,medial mesofemoro-mesotibial muscle
+HAO:0001385,-32.23,23.205,-84.13,medial coxal condyle of the metapectus
+HAO:0001386,-31.1375,23.205,-83.0375,medial coxal condyle of the mesopectus
+HAO:0001387,-30.045,23.205,-81.945,medial metapecto-metacoxal articulation
+HAO:0001388,-28.9525,23.205,-80.8525,medial coxal articular process of the metapectus
+HAO:0001389,-27.86,23.205,-79.76,medial coxal articular process of the mesopectus
+HAO:0001390,-26.7675,23.205,-78.6675,mandibular condyle
+HAO:0001391,-25.675,23.205,-77.575,mandibular acetabulum
+HAO:0001392,-24.5825,23.205,-76.4825,male genitalia muscle
+HAO:0001393,-23.49,23.205,-75.39,malar area
+HAO:0001394,-22.3975,23.205,-74.2975,malar groove
+HAO:0001395,-21.305,23.205,-73.205,line of separation
+HAO:0001396,-20.2125,23.205,-72.1125,lateral propleuro-procoxal articulation
+HAO:0001397,-19.12,23.205,-71.02,lateral propleuro-postoccipital muscle
+HAO:0001398,-18.0275,23.205,-69.9275,lateral profemoro-protibial muscle
+HAO:0001399,-16.935,23.205,-68.835,malar depression
+HAO:0001400,-15.8425,23.205,-67.7425,lateral pectal fossa of the procoxa
+HAO:0001401,-14.75,23.205,-66.65,lateral pectal fossa of the metacoxa
+HAO:0001402,-13.6575,23.205,-65.5575,lateral pectal fossa of the mesocoxa
+HAO:0001403,-12.565,23.205,-64.465,lateral metepisternal projection
+HAO:0001404,-11.4725,23.205,-63.3725,lateral metatrochantero-metafemoral articulation
+HAO:0001405,-10.38,23.205,-62.28,lateral metapleuro-metacoxal articulation
+HAO:0001406,-9.2875,23.205,-61.1875,lateral metapleuro-metabasalar muscle
+HAO:0001407,-8.195,23.205,-60.095,lateral metafemoro-metatibial muscle
+HAO:0001408,-7.1025,23.205,-59.0025,lateral mesopleuro-mesocoxal articulation
+HAO:0001409,-6.01,23.205,-57.91,lateral mesophragmo-metaphragmal muscle
+HAO:0001410,-4.9175,23.205,-56.8175,lateral mesofemoro-mesotibial muscle
+HAO:0001411,-36.6,21.66,-88.5,lateral mesocoxo-mesotrochanteral muscle
+HAO:0001412,-35.5075,21.66,-87.4075,lateral longitudinal metepisternal carina
+HAO:0001413,-34.415,21.66,-86.315,lateral coxal condyle of the propleuron
+HAO:0001414,-33.3225,21.66,-85.2225,lateral coxal condyle of the metapleuron
+HAO:0001415,-32.23,21.66,-84.13,lateral coxal condyle of the mesopleuron
+HAO:0001416,-31.1375,21.66,-83.0375,lateral coxal articular process of the metapleuron
+HAO:0001417,-30.045,21.66,-81.945,Weber length
+HAO:0001418,-28.9525,21.66,-80.8525,3rd abdominal spiracle
+HAO:0001419,-27.86,21.66,-79.76,5th abdominal spiracle
+HAO:0001420,-26.7675,21.66,-78.6675,6th abdominal spiracle
+HAO:0001421,-25.675,21.66,-77.575,7th abdominal spiracle
+HAO:0001422,-24.5825,21.66,-76.4825,8th abdominal spiracle
+HAO:0001423,-23.49,21.66,-75.39,abdominal laterotergite 1
+HAO:0001424,-22.3975,21.66,-74.2975,abdominal spiracle
+HAO:0001425,-21.305,21.66,-73.205,abdominal sternum
+HAO:0001426,-20.2125,21.66,-72.1125,abdominal tergum
+HAO:0001427,-19.12,21.66,-71.02,accessory prong of hypopygium
+HAO:0001428,-18.0275,21.66,-69.9275,acetabular carina
+HAO:0001429,-16.935,21.66,-68.835,antennal condyle of the cranium
+HAO:0001430,-15.8425,21.66,-67.7425,basal knob
+HAO:0001431,-14.75,21.66,-66.65,antennafer
+HAO:0001432,-13.6575,21.66,-65.5575,antennal scrobe
+HAO:0001433,-12.565,21.66,-64.465,anterior coxal fossa of the mesotrochanter
+HAO:0001434,-11.4725,21.66,-63.3725,anterior coxal articular process of the mesotrochanter
+HAO:0001435,-10.38,21.66,-62.28,basitarsal articular process of the metatibia
+HAO:0001436,-9.2875,21.66,-61.1875,anterior femoro-tibial articulation
+HAO:0001437,-8.195,21.66,-60.095,anterior mesocoxo-mesotrochanteral muscle
+HAO:0001438,-7.1025,21.66,-59.0025,anterior mesofemoro-mesotibial articulation
+HAO:0001439,-6.01,21.66,-57.91,anterior mesofurcal arm
+HAO:0001440,-4.9175,21.66,-56.8175,anterior mesonoto-mesotrochanteral muscle
+HAO:0001441,-36.6,20.115,-88.5,anterior mesotibio-mesobasitarsal muscle
+HAO:0001442,-35.5075,20.115,-87.4075,anterior metacoxo-metatrochanteral articulation
+HAO:0001443,-34.415,20.115,-86.315,anterior metafemoro-metatibial articulation
+HAO:0001444,-33.3225,20.115,-85.2225,anterior metanotal wing process
+HAO:0001445,-32.23,20.115,-84.13,anterior metapleuro-metabasalar muscle
+HAO:0001446,-31.1375,20.115,-83.0375,anterior metatibio-metabasitarsal muscle
+HAO:0001447,-30.045,20.115,-81.945,anterior procoxo-protrochanteral articulation
+HAO:0001448,-28.9525,20.115,-80.8525,anterior procoxo-protrochanteral muscle
+HAO:0001449,-27.86,20.115,-79.76,anterior profemoro-protibial articulation
+HAO:0001450,-26.7675,20.115,-78.6675,anterior protibio-probasitarsal muscle
+HAO:0001451,-25.675,20.115,-77.575,anterior proximal process of the mesobasitarsus
+HAO:0001452,-24.5825,20.115,-76.4825,anterior proximal process of the metabasitarsus
+HAO:0001453,-23.49,20.115,-75.39,anterior proximal process of the probasitarsus
+HAO:0001454,-22.3975,20.115,-74.2975,anterior tentorial arm
+HAO:0001455,-21.305,20.115,-73.205,abdominal laterotergite 2
+HAO:0001456,-20.2125,20.115,-72.1125,abdominal laterotergite 3
+HAO:0001457,-19.12,20.115,-71.02,abdominal laterotergite 4
+HAO:0001458,-18.0275,20.115,-69.9275,abdominal laterotergite 5
+HAO:0001459,-16.935,20.115,-68.835,abdominal laterotergite 10
+HAO:0001460,-15.8425,20.115,-67.7425,abdominal laterotergite 6
+HAO:0001461,-14.75,20.115,-66.65,abdominal laterotergite 7
+HAO:0001462,-13.6575,20.115,-65.5575,abdominal laterotergite 9
+HAO:0001463,-12.565,20.115,-64.465,abdominal mediotergite 1
+HAO:0001464,-11.4725,20.115,-63.3725,lateral coxal articular process of the mesopleuron
+HAO:0001465,-10.38,20.115,-62.28,abdominal mediotergite 10
+HAO:0001466,-9.2875,20.115,-61.1875,intrinsic leg muscle
+HAO:0001467,-8.195,20.115,-60.095,intertarsomeral joint
+HAO:0001468,-7.1025,20.115,-59.0025,abdominal mediotergite 7
+HAO:0001469,-6.01,20.115,-57.91,abdominal mediotergite 8
+HAO:0001470,-4.9175,20.115,-56.8175,abdominal mediotergite 9
+HAO:0001471,-36.6,18.57,-88.5,dilator muscle of the 5th abdominal spiracle
+HAO:0001472,-35.5075,18.57,-87.4075,dilator muscle of the 4th abdominal spiracle
+HAO:0001473,-34.415,18.57,-86.315,dilator muscle of the 3rd abdominal spiracle
+HAO:0001474,-33.3225,18.57,-85.2225,dilator muscle of the 2nd abdominal spiracle
+HAO:0001475,-32.23,18.57,-84.13,cup-shaped socket on pleuron
+HAO:0001476,-31.1375,18.57,-83.0375,corbicula
+HAO:0001477,-30.045,18.57,-81.945,basitarsal articular process of the protibia
+HAO:0001478,-28.9525,18.57,-80.8525,basitarsal fossa of the metatibia
+HAO:0001479,-27.86,18.57,-79.76,basitarsal articular process of the mesotibia
+HAO:0001480,-26.7675,18.57,-78.6675,basitarsal fossa of the mesotibia
+HAO:0001481,-25.675,18.57,-77.575,axillar phragma
+HAO:0001482,-24.5825,18.57,-76.4825,auricle
+HAO:0001483,-23.49,18.57,-75.39,dilator muscle of the 6th abdominal spiracle
+HAO:0001484,-22.3975,18.57,-74.2975,pollen press
+HAO:0001485,-21.305,18.57,-73.205,articular surface
+HAO:0001486,-20.2125,18.57,-72.1125,articular membrane of the protibio-probasitarsal joint
+HAO:0001487,-19.12,18.57,-71.02,articular membrane of the metacoxo-metatrochanteral joint
+HAO:0001488,-18.0275,18.57,-69.9275,arcus
+HAO:0001489,-16.935,18.57,-68.835,anteroventral mesoscutal inflection
+HAO:0001490,-15.8425,18.57,-67.7425,anteromesoscutum
+HAO:0001491,-14.75,18.57,-66.65,anterolateral metapleuro-metanotal muscle
+HAO:0001492,-13.6575,18.57,-65.5575,anterolateral metacoxo-metatrochanteral muscle
+HAO:0001493,-12.565,18.57,-64.465,anterolateral mesopectal inflection
+HAO:0001494,-11.4725,18.57,-63.3725,anterior trochanteral fossa of the mesocoxa
+HAO:0001495,-10.38,18.57,-62.28,anterior trochanteral articular process of the procoxa
+HAO:0001496,-9.2875,18.57,-61.1875,anterior trochanteral condyle of the procoxa
+HAO:0001497,-8.195,18.57,-60.095,anterior trochanteral articular process of the metacoxa
+HAO:0001498,-7.1025,18.57,-59.0025,anterior trochanteral condyle of the mesocoxa
+HAO:0001499,-6.01,18.57,-57.91,anterior mesocoxo-mesotrochanteral articulation
+HAO:0001500,-4.9175,18.57,-56.8175,anterior coxal fossa of the protrochanter
+HAO:0001501,-36.6,17.025,-88.5,anterior coxal fossa of the metatrochanter
+HAO:0001502,-35.5075,17.025,-87.4075,anterior trochanteral condyle of the metacoxa
+HAO:0001503,-34.415,17.025,-86.315,dilator muscle of the 7th abdominal spiracle
+HAO:0001504,-33.3225,17.025,-85.2225,dilator muscle of the 8th abdominal spiracle
+HAO:0001505,-32.23,17.025,-84.13,dilator of the propodeal spiracle muscle
+HAO:0001506,-31.1375,17.025,-83.0375,distal fossa of the tarsomere
+HAO:0001507,-30.045,17.025,-81.945,dorsal metapleuro-third axillary sclerite of hind wing muscle
+HAO:0001508,-28.9525,17.025,-80.8525,syntergum
+HAO:0001509,-27.86,17.025,-79.76,episternal foveae
+HAO:0001510,-26.7675,17.025,-78.6675,epistomal line
+HAO:0001511,-25.675,17.025,-77.575,femoral articular process of the mesotrochanter
+HAO:0001512,-24.5825,17.025,-76.4825,femoral articular process of the metatrochanter
+HAO:0001513,-23.49,17.025,-75.39,femoral articular process of the protrochanter
+HAO:0001514,-22.3975,17.025,-74.2975,femoral condyle of the protibia
+HAO:0001515,-21.305,17.025,-73.205,femoral condyle of the tibia
+HAO:0001516,-20.2125,17.025,-72.1125,femoral fossa of the metatrochanter
+HAO:0001517,-19.12,17.025,-71.02,femoro-tibial joint
+HAO:0001518,-18.0275,17.025,-69.9275,first mesopleuro-third axillary sclerite of fore wing muscle
+HAO:0001519,-16.935,17.025,-68.835,flexor of the pretarsal claws of the fore leg
+HAO:0001520,-15.8425,17.025,-67.7425,flexor of the pretarsal claws of the hind leg
+HAO:0001521,-14.75,17.025,-66.65,flexor of the pretarsal claws of the middle leg
+HAO:0001522,-13.6575,17.025,-65.5575,retinaculum
+HAO:0001523,-12.565,17.025,-64.465,frons
+HAO:0001524,-11.4725,17.025,-63.3725,humeral complex of the fore wing
+HAO:0001525,-10.38,17.025,-62.28,groove
+HAO:0001526,-9.2875,17.025,-61.1875,genuflexor plate of the mid leg
+HAO:0001527,-8.195,17.025,-60.095,genuflexor plate of the hind leg
+HAO:0001528,-7.1025,17.025,-59.0025,genuflexor plate of the fore leg
+HAO:0001529,-6.01,17.025,-57.91,genuflexor plate
+HAO:0001530,-4.9175,17.025,-56.8175,frontal sulcus
+HAO:0001531,-36.6,15.48,-88.5,abdominal sternum 8
+HAO:0001532,-35.5075,15.48,-87.4075,inner orbit
+HAO:0001533,-34.415,15.48,-86.315,frontal carina
+HAO:0001534,-33.3225,15.48,-85.2225,fore wing blade
+HAO:0001535,-32.23,15.48,-84.13,basitarsal fossa of the protibia
+HAO:0001536,-31.1375,15.48,-83.0375,4th abdominal spiracle
+HAO:0001537,-30.045,15.48,-81.945,articular membrane of the mesotibio-mesobasitarsal joint
+HAO:0001538,-28.9525,15.48,-80.8525,2nd abdominal spiracle
+HAO:0001539,-27.86,15.48,-79.76,supraorbital suture
+HAO:0001540,-26.7675,15.48,-78.6675,supraorbital trabecula
+HAO:0001541,-25.675,15.48,-77.575,surcoxal depression
+HAO:0001542,-24.5825,15.48,-76.4825,pronoto-propleural arm muscle
+HAO:0001543,-23.49,15.48,-75.39,lateral pronoto-prophragmal muscle
+HAO:0001544,-22.3975,15.48,-74.2975,median pronoto-prophragmal muscle
+HAO:0001545,-21.305,15.48,-73.205,adipose system
+HAO:0001546,-20.2125,15.48,-72.1125,alary muscle
+HAO:0001547,-19.12,15.48,-71.02,chorion
+HAO:0001548,-18.0275,15.48,-69.9275,laminated bridge
+HAO:0001549,-16.935,15.48,-68.835,labral muscle
+HAO:0001550,-15.8425,15.48,-67.7425,labral apodeme
+HAO:0001551,-14.75,15.48,-66.65,labial muscle
+HAO:0001552,-13.6575,15.48,-65.5575,knee
+HAO:0001553,-12.565,15.48,-64.465,intrinsic muscle of the propleuron
+HAO:0001554,-11.4725,15.48,-63.3725,intrinsic muscle of the metapleuron
+HAO:0001555,-10.38,15.48,-62.28,intrinsic muscle of the mesopleuron
+HAO:0001556,-9.2875,15.48,-61.1875,intrinsic muscle of the harpe
+HAO:0001557,-8.195,15.48,-60.095,intrinsic maxillary palp muscle
+HAO:0001558,-7.1025,15.48,-59.0025,intervalvifer articulation
+HAO:0001559,-6.01,15.48,-57.91,interorbital plane
+HAO:0001560,-4.9175,15.48,-56.8175,interocular separation
+HAO:0001561,-36.6,13.935,-88.5,intermalar distance
+HAO:0001562,-35.5075,13.935,-87.4075,interarticular ridge of the first valvifer
+HAO:0001563,-34.415,13.935,-86.315,infrabuccal pouch
+HAO:0001564,-33.3225,13.935,-85.2225,inferior pronotal spine
+HAO:0001565,-32.23,13.935,-84.13,hypopharyngeal lobe
+HAO:0001566,-31.1375,13.935,-83.0375,hind wing third axillary muscle
+HAO:0001567,-30.045,13.935,-81.945,hind wing base
+HAO:0001568,-28.9525,13.935,-80.8525,vertical epomia
+HAO:0001569,-27.86,13.935,-79.76,dorsal T9-second valvifer muscle
+HAO:0001570,-26.7675,13.935,-78.6675,endite
+HAO:0001571,-25.675,13.935,-77.575,dorsal T8-T9 muscle
+HAO:0001572,-24.5825,13.935,-76.4825,dorsal surface of the mesoscutellum
+HAO:0001573,-23.49,13.935,-75.39,dorsal salivarial wall
+HAO:0001574,-22.3975,13.935,-74.2975,digital spine
+HAO:0001575,-21.305,13.935,-73.205,distal hypopharynx
+HAO:0001576,-20.2125,13.935,-72.1125,dorsal aperture of the phallobase
+HAO:0001577,-19.12,13.935,-71.02,dorsal flange of the second valvifer
+HAO:0001578,-18.0275,13.935,-69.9275,dorsal pronoto-procoxal muscle
+HAO:0001579,-16.935,13.935,-68.835,dorsal ramus of the first valvula
+HAO:0001580,-15.8425,13.935,-67.7425,digestive system
+HAO:0001581,-14.75,13.935,-66.65,metacoxo-metabasalar muscle
+HAO:0001582,-13.6575,13.935,-65.5575,mesocoxo-mesobasalar muscle
+HAO:0001583,-12.565,13.935,-64.465,central nervous system
+HAO:0001584,-11.4725,13.935,-63.3725,circulatory system
+HAO:0001585,-10.38,13.935,-62.28,cordate apodeme
+HAO:0001586,-9.2875,13.935,-61.1875,line
+HAO:0001587,-8.195,13.935,-60.095,lobe
+HAO:0001588,-7.1025,13.935,-59.0025,lower mesepimeron
+HAO:0001589,-6.01,13.935,-57.91,macrotergite
+HAO:0001590,-4.9175,13.935,-56.8175,malar carina
+HAO:0001591,-36.6,12.39,-88.5,coxopleurite
+HAO:0001592,-35.5075,12.39,-87.4075,occipito-cardinal muscle
+HAO:0001593,-34.415,12.39,-86.315,occipito-lacinial muscle
+HAO:0001594,-33.3225,12.39,-85.2225,occlusor of posterior thoracic spiracle
+HAO:0001595,-32.23,12.39,-84.13,ocellar hair patch
+HAO:0001596,-31.1375,12.39,-83.0375,vertexal sulcus
+HAO:0001597,-30.045,12.39,-81.945,preorbital suture
+HAO:0001598,-28.9525,12.39,-80.8525,orbital furrow
+HAO:0001599,-27.86,12.39,-79.76,organ system
+HAO:0001600,-26.7675,12.39,-78.6675,ovipositor apparatus
+HAO:0001601,-25.675,12.39,-77.575,paraclypeal margin
+HAO:0001602,-24.5825,12.39,-76.4825,parapsidal hair line of mesoscutum
+HAO:0001603,-23.49,12.39,-75.39,parapsidal ridge
+HAO:0001604,-22.3975,12.39,-74.2975,parapsidal furrow
+HAO:0001605,-21.305,12.39,-73.205,paraspiracular carina
+HAO:0001606,-20.2125,12.39,-72.1125,pars articulares
+HAO:0001607,-19.12,12.39,-71.02,acrosternite 3
+HAO:0001608,-18.0275,12.39,-69.9275,acrosternite 4
+HAO:0001609,-16.935,12.39,-68.835,acrosternite 2
+HAO:0001610,-15.8425,12.39,-67.7425,acrosternite 5
+HAO:0001611,-14.75,12.39,-66.65,acrosternite 6
+HAO:0001612,-13.6575,12.39,-65.5575,acrosternite 7
+HAO:0001613,-12.565,12.39,-64.465,acrosternite 8
+HAO:0001614,-11.4725,12.39,-63.3725,acrosternite 9
+HAO:0001615,-10.38,12.39,-62.28,ventral pronoto-procoxal muscle
+HAO:0001616,-9.2875,12.39,-61.1875,ventral T9-second valvifer muscle
+HAO:0001617,-8.195,12.39,-60.095,ventral plaque
+HAO:0001618,-7.1025,12.39,-59.0025,venter
+HAO:0001619,-6.01,12.39,-57.91,valvillus
+HAO:0001620,-4.9175,12.39,-56.8175,upper mesepisternum
+HAO:0001621,-36.6,10.845,-88.5,trochantinal lobe
+HAO:0001622,-35.5075,10.845,-87.4075,transverse suture
+HAO:0001623,-34.415,10.845,-86.315,transscutal impression
+HAO:0001624,-33.3225,10.845,-85.2225,transoccipital suture
+HAO:0001625,-32.23,10.845,-84.13,transepimeral sulcus
+HAO:0001626,-31.1375,10.845,-83.0375,transepimeral line
+HAO:0001627,-30.045,10.845,-81.945,frenal carina
+HAO:0001628,-28.9525,10.845,-80.8525,frenal sulcus
+HAO:0001629,-27.86,10.845,-79.76,mesotrochantero-mesobasalar muscle
+HAO:0001630,-26.7675,10.845,-78.6675,torma
+HAO:0001631,-25.675,10.845,-77.575,third axillary sclerite of the hind wing
+HAO:0001632,-24.5825,10.845,-76.4825,third axillary sclerite of the fore wing
+HAO:0001633,-23.49,10.845,-75.39,third axillary sclerite
+HAO:0001634,-22.3975,10.845,-74.2975,terminal spine
+HAO:0001635,-21.305,10.845,-73.205,tergosternal sulcus
+HAO:0001636,-20.2125,10.845,-72.1125,tergo-valvifer articulation
+HAO:0001637,-19.12,10.845,-71.02,tentorio-mandibular muscle
+HAO:0001638,-18.0275,10.845,-69.9275,tentorio-cardinal muscle
+HAO:0001639,-16.935,10.845,-68.835,T9-genital membrane muscle
+HAO:0001640,-15.8425,10.845,-67.7425,T8-first valvifer muscle
+HAO:0001641,-14.75,10.845,-66.65,anterior metanoto-metacoxal muscle
+HAO:0001642,-13.6575,10.845,-65.5575,metanoto-metabasalar muscle
+HAO:0001643,-12.565,10.845,-64.465,mesonoto-mesolaterophragmal muscle
+HAO:0001644,-11.4725,10.845,-63.3725,mesonoto-mesocoxal muscle
+HAO:0001645,-10.38,10.845,-62.28,mesonoto-mesobasalar muscle
+HAO:0001646,-9.2875,10.845,-61.1875,subsalivarial gland
+HAO:0001647,-8.195,10.845,-60.095,mesosternal shelf
+HAO:0001648,-7.1025,10.845,-59.0025,subpetiolar process
+HAO:0001649,-6.01,10.845,-57.91,subocular area
+HAO:0001650,-4.9175,10.845,-56.8175,submetapleural ridge
+HAO:0001651,-36.6,9.3,-88.5,submedian groove
+HAO:0001652,-35.5075,9.3,-87.4075,submedian carina of propodeum
+HAO:0001653,-34.415,9.3,-86.315,sublateral groove
+HAO:0001654,-33.3225,9.3,-85.2225,mediosternite
+HAO:0001655,-32.23,9.3,-84.13,subglossal brush
+HAO:0001656,-31.1375,9.3,-83.0375,subcoxa
+HAO:0001657,-30.045,9.3,-81.945,stylus of the third valvula
+HAO:0001658,-28.9525,9.3,-80.8525,dorsal valve
+HAO:0001659,-27.86,9.3,-79.76,stridulatory organ
+HAO:0001660,-26.7675,9.3,-78.6675,stipito-lacinial muscle
+HAO:0001661,-25.675,9.3,-77.575,stipito-galeal muscle
+HAO:0001662,-24.5825,9.3,-76.4825,sternopleurite
+HAO:0001663,-23.49,9.3,-75.39,sternaular area
+HAO:0001664,-22.3975,9.3,-74.2975,prospinasterno-profurcal muscle
+HAO:0001665,-21.305,9.3,-73.205,paraspiracular sulcus
+HAO:0001666,-20.2125,9.3,-72.1125,spiracular groove
+HAO:0001667,-19.12,9.3,-71.02,speculum
+HAO:0001668,-18.0275,9.3,-69.9275,S7-first valvula muscle
+HAO:0001669,-16.935,9.3,-68.835,setal line
+HAO:0001670,-15.8425,9.3,-67.7425,serrula
+HAO:0001671,-14.75,9.3,-66.65,sensillar patch of the second valvifer
+HAO:0001672,-13.6575,9.3,-65.5575,second valvifer-genital membrane muscle
+HAO:0001673,-12.565,9.3,-64.465,second axillary sclerite of the fore wing
+HAO:0001674,-11.4725,9.3,-63.3725,second abdominal tergal muscle
+HAO:0001675,-10.38,9.3,-62.28,second abdominal sternal muscle
+HAO:0001676,-9.2875,9.3,-61.1875,scutum
+HAO:0001677,-8.195,9.3,-60.095,scutellar tubercular projection
+HAO:0001678,-7.1025,9.3,-59.0025,glandular release pit of the scutellum
+HAO:0001679,-6.01,9.3,-57.91,scrobal sulcus
+HAO:0001680,-4.9175,9.3,-56.8175,scapular flange
+HAO:0001681,-36.6,7.755,-88.5,sawtooth
+HAO:0001682,-35.5075,7.755,-87.4075,salivarial sclerite
+HAO:0001683,-34.415,7.755,-86.315,salivarial orifice
+HAO:0001684,-33.3225,7.755,-85.2225,metasterno-second abdominal sternal muscle
+HAO:0001685,-32.23,7.755,-84.13,second sterno-metacoxal muscle
+HAO:0001686,-31.1375,7.755,-83.0375,row of spurs
+HAO:0001687,-30.045,7.755,-81.945,rod-like sensilla
+HAO:0001688,-28.9525,7.755,-80.8525,ramus
+HAO:0001689,-27.86,7.755,-79.76,radix
+HAO:0001690,-26.7675,7.755,-78.6675,pteralia of the fore wing
+HAO:0001691,-25.675,7.755,-77.575,protuberance on malar space
+HAO:0001692,-24.5825,7.755,-76.4825,protrochanteral muscle
+HAO:0001693,-23.49,7.755,-75.39,protibial apical pegs
+HAO:0001694,-22.3975,7.755,-74.2975,prospinasternum
+HAO:0001695,-21.305,7.755,-73.205,propodeal spine
+HAO:0001696,-20.2125,7.755,-72.1125,propodeal areola
+HAO:0001697,-19.12,7.755,-71.02,propleural muscle
+HAO:0001698,-18.0275,7.755,-69.9275,mesofurco-propleural arm muscle
+HAO:0001699,-16.935,7.755,-68.835,prophragmal muscle
+HAO:0001700,-15.8425,7.755,-67.7425,pronotal triangle
+HAO:0001701,-14.75,7.755,-66.65,pronotal ridge
+HAO:0001702,-13.6575,7.755,-65.5575,pronotal disc
+HAO:0001703,-12.565,7.755,-64.465,processus musculares
+HAO:0001704,-11.4725,7.755,-63.3725,processus articularis
+HAO:0001705,-10.38,7.755,-62.28,mesopleural muscle
+HAO:0001706,-9.2875,7.755,-61.1875,mesopleural suture
+HAO:0001707,-8.195,7.755,-60.095,mesopleuro-anterior thoracic spiracle muscle
+HAO:0001708,-7.1025,7.755,-59.0025,mesospinasternum
+HAO:0001709,-6.01,7.755,-57.91,mesotarsal pegs
+HAO:0001710,-4.9175,7.755,-56.8175,mesothoracic venter
+HAO:0001711,-36.6,6.21,-88.5,mesotibial apical peg
+HAO:0001712,-35.5075,6.21,-87.4075,metabasalar muscle
+HAO:0001713,-34.415,6.21,-86.315,metacoxal muscle
+HAO:0001714,-33.3225,6.21,-85.2225,metafurcal muscle
+HAO:0001715,-32.23,6.21,-84.13,metalaterophragma
+HAO:0001716,-31.1375,6.21,-83.0375,metalaterophragmal muscle
+HAO:0001717,-30.045,6.21,-81.945,metanotal flange
+HAO:0001718,-28.9525,6.21,-80.8525,metanotal muscle
+HAO:0001719,-27.86,6.21,-79.76,metanoto-metatrochantinal muscle
+HAO:0001720,-26.7675,6.21,-78.6675,metaphragmal muscle
+HAO:0001721,-25.675,6.21,-77.575,metapleural muscle
+HAO:0001722,-24.5825,6.21,-76.4825,metasomal spiracle
+HAO:0001723,-23.49,6.21,-75.39,metasubalare muscle
+HAO:0001724,-22.3975,6.21,-74.2975,metatrochanteral muscle
+HAO:0001725,-21.305,6.21,-73.205,metatrochantin
+HAO:0001726,-20.2125,6.21,-72.1125,metatrochantinal muscle
+HAO:0001727,-19.12,6.21,-71.02,mouth margin
+HAO:0001728,-18.0275,6.21,-69.9275,mucro
+HAO:0001729,-16.935,6.21,-68.835,multiporous gustatory sensillum
+HAO:0001730,-15.8425,6.21,-67.7425,multiporous olfactory sensillum
+HAO:0001731,-14.75,6.21,-66.65,multiporous plate
+HAO:0001732,-13.6575,6.21,-65.5575,nervous system
+HAO:0001733,-12.565,6.21,-64.465,notal membrane
+HAO:0001734,-11.4725,6.21,-63.3725,peduncle
+HAO:0001735,-10.38,6.21,-62.28,petiolar flange
+HAO:0001736,-9.2875,6.21,-61.1875,prophragmo-laterocervical muscle
+HAO:0001737,-8.195,6.21,-60.095,mesolaterophragmo-metabasalar muscle
+HAO:0001738,-7.1025,6.21,-59.0025,metalaterophragmo-metafurcal muscle
+HAO:0001739,-6.01,6.21,-57.91,pharyngeal wall
+HAO:0001740,-4.9175,6.21,-56.8175,pharynx
+HAO:0001741,-36.6,4.665,-88.5,posterior propleuro-postoccipital muscle
+HAO:0001742,-35.5075,4.665,-87.4075,second mesopleuro-third axillary sclerite of fore wing muscle
+HAO:0001743,-34.415,4.665,-86.315,mesopleuro-mesosubalar muscle
+HAO:0001744,-33.3225,4.665,-85.2225,anterior metapleuro-metafurcal muscle
+HAO:0001745,-32.23,4.665,-84.13,posterior metapleuro-metafurcal muscle
+HAO:0001746,-31.1375,4.665,-83.0375,first valvifer-genital membrane muscle
+HAO:0001747,-30.045,4.665,-81.945,fore wing base
+HAO:0001748,-28.9525,4.665,-80.8525,fore wing third axillary muscle
+HAO:0001749,-27.86,4.665,-79.76,fore wing venation
+HAO:0001750,-26.7675,4.665,-78.6675,lateral mesofurco-metafurcal muscle
+HAO:0001751,-25.675,4.665,-77.575,lateral metafurco-metacoxal muscle
+HAO:0001752,-24.5825,4.665,-76.4825,median metafurco-metacoxal muscle
+HAO:0001753,-23.49,4.665,-75.39,funicular segment
+HAO:0001754,-22.3975,4.665,-74.2975,gastral tail
+HAO:0001755,-21.305,4.665,-73.205,genal carina
+HAO:0001756,-20.2125,4.665,-72.1125,genal space
+HAO:0001757,-19.12,4.665,-71.02,genital membrane
+HAO:0001758,-18.0275,4.665,-69.9275,dorsal profurco-procoxal muscle
+HAO:0001759,-16.935,4.665,-68.835,hairy lobe
+HAO:0001760,-15.8425,4.665,-67.7425,hairy ring of the metasoma
+HAO:0001761,-14.75,4.665,-66.65,lamnium
+HAO:0001762,-13.6575,4.665,-65.5575,lateral fovea
+HAO:0001763,-12.565,4.665,-64.465,lateral frontal septum
+HAO:0001764,-11.4725,4.665,-63.3725,epicuticle
+HAO:0001765,-10.38,4.665,-62.28,epipharyngeal brush
+HAO:0001766,-9.2875,4.665,-61.1875,epipharyngeal muscle
+HAO:0001767,-8.195,4.665,-60.095,ventral clypeal margin
+HAO:0001768,-7.1025,4.665,-59.0025,external female genitalia
+HAO:0001769,-6.01,4.665,-57.91,extrinsic muscle of the antenna
+HAO:0001770,-4.9175,4.665,-56.8175,periepistomal striation
+HAO:0001771,-36.6,3.12,-88.5,first abdominal tergal spiracle muscle
+HAO:0001772,-35.5075,3.12,-87.4075,first axillary sclerite of the fore wing
+HAO:0001773,-34.415,3.12,-86.315,preorbital trabecula
+HAO:0001774,-33.3225,3.12,-85.2225,profurco-prophragmal muscle
+HAO:0001775,-32.23,3.12,-84.13,lateral scapo-pedicellar muscle
+HAO:0001776,-31.1375,3.12,-83.0375,lateral T8-T9 muscle
+HAO:0001777,-30.045,3.12,-81.945,lateral tentorio-scapal muscle
+HAO:0001778,-28.9525,3.12,-80.8525,laterodorsal projection of mesoscutellum
+HAO:0001779,-27.86,3.12,-79.76,mandibular muscle
+HAO:0001780,-26.7675,3.12,-78.6675,median bridge of the second valvifers
+HAO:0001781,-25.675,3.12,-77.575,median mesoscutal keel
+HAO:0001782,-24.5825,3.12,-76.4825,median scapo-pedicellar muscle
+HAO:0001783,-23.49,3.12,-75.39,mediotergite
+HAO:0001784,-22.3975,3.12,-74.2975,mesobasalar muscle
+HAO:0001785,-21.305,3.12,-73.205,mesocoxal foramen
+HAO:0001786,-20.2125,3.12,-72.1125,mesocoxal muscle
+HAO:0001787,-19.12,3.12,-71.02,mesofurcal muscle
+HAO:0001788,-18.0275,3.12,-69.9275,mesolaterophragma
+HAO:0001789,-16.935,3.12,-68.835,mesolaterophragmal muscle
+HAO:0001790,-15.8425,3.12,-67.7425,mesonotal muscle
+HAO:0001791,-14.75,3.12,-66.65,mesopectus-pronotum intersegmental membrane
+HAO:0001792,-13.6575,3.12,-65.5575,mesophragmal muscle
+HAO:0001793,-12.565,3.12,-64.465,lateral metapleuro-second abdominal sternal muscle
+HAO:0001794,-11.4725,3.12,-63.3725,metapleuro-propodeal muscle
+HAO:0001795,-10.38,3.12,-62.28,mandibular appendage
+HAO:0001796,-9.2875,3.12,-61.1875,marginal rim of scutellum
+HAO:0001797,-8.195,3.12,-60.095,median frontal septum
+HAO:0001798,-7.1025,3.12,-59.0025,median tentorio-scapal muscle
+HAO:0001799,-6.01,3.12,-57.91,intervolsellar process
+HAO:0001800,-4.9175,3.12,-56.8175,prespiracular carina
+HAO:0001801,-36.6,24.75,-88.5,prepecto-anterior thoracic spiracle muscle
+HAO:0001802,-35.5075,24.75,-87.4075,prepectal shelf
+HAO:0001803,-34.415,24.75,-86.315,prepectal carina
+HAO:0001804,-33.3225,24.75,-85.2225,prealare
+HAO:0001805,-32.23,24.75,-84.13,prepecto-mesobasalar muscle
+HAO:0001806,-31.1375,24.75,-83.0375,propleural arm-postoccipital muscle
+HAO:0001807,-30.045,24.75,-81.945,propleural arm-procoxal muscle
+HAO:0001808,-28.9525,24.75,-80.8525,pouch
+HAO:0001809,-27.86,24.75,-79.76,postscutellum
+HAO:0001810,-26.7675,24.75,-78.6675,postoccipital carina
+HAO:0001811,-25.675,24.75,-77.575,occipital suture
+HAO:0001812,-24.5825,24.75,-76.4825,posterior tentorio-scapal muscle
+HAO:0001813,-23.49,24.75,-75.39,posterior T9-second valvifer muscle
+HAO:0001814,-22.3975,24.75,-74.2975,posterior stipito-palpal muscle
+HAO:0001815,-21.305,24.75,-73.205,posterior second valvifer-second valvula muscle
+HAO:0001816,-20.2125,24.75,-72.1125,posterior scutellum
+HAO:0001817,-19.12,24.75,-71.02,posterior pronoto-laterocervical muscle
+HAO:0001818,-18.0275,24.75,-69.9275,posterior projection of mesoscutellum
+HAO:0001819,-16.935,24.75,-68.835,posterior metanoto-metacoxal muscle
+HAO:0001820,-15.8425,24.75,-67.7425,frontal lobe
+HAO:0001821,-14.75,24.75,-66.65,frontal triangle
+HAO:0001822,-13.6575,24.75,-65.5575,frontofacial ridge
+HAO:0001823,-12.565,24.75,-64.465,frontovertex
+HAO:0001824,-11.4725,24.75,-63.3725,transverse trabecula
+HAO:0001825,-10.38,24.75,-62.28,frontal line
+HAO:0001826,-9.2875,24.75,-61.1875,callus
+HAO:0001827,-8.195,24.75,-60.095,proctiger
+HAO:0001828,-7.1025,24.75,-59.0025,mesosubalare muscle
+HAO:0001829,-6.01,24.75,-57.91,mediosternite 2
+HAO:0001830,-4.9175,24.75,-56.8175,mediosternite 3
+HAO:0001831,-36.6,23.205,-88.5,mediosternite 4
+HAO:0001832,-35.5075,23.205,-87.4075,mediosternite 5
+HAO:0001833,-34.415,23.205,-86.315,mediosternite 6
+HAO:0001834,-33.3225,23.205,-85.2225,mediosternite 7
+HAO:0001835,-32.23,23.205,-84.13,mediosternite 8
+HAO:0001836,-31.1375,23.205,-83.0375,mediosternite 9
+HAO:0001837,-30.045,23.205,-81.945,mediosternite 10
+HAO:0001838,-28.9525,23.205,-80.8525,laterosternite
+HAO:0001839,-27.86,23.205,-79.76,laterosternite 2
+HAO:0001840,-26.7675,23.205,-78.6675,laterosternite 3
+HAO:0001841,-25.675,23.205,-77.575,laterosternite 5
+HAO:0001842,-24.5825,23.205,-76.4825,laterosternite 6
+HAO:0001843,-23.49,23.205,-75.39,laterosternite 7
+HAO:0001844,-22.3975,23.205,-74.2975,laterosternite 8
+HAO:0001845,-21.305,23.205,-73.205,laterosternite 9
+HAO:0001846,-20.2125,23.205,-72.1125,laterosternite 10
+HAO:0001847,-19.12,23.205,-71.02,metasomal spiracle
+HAO:0001848,-18.0275,23.205,-69.9275,laterosternite 4
+HAO:0001849,-16.935,23.205,-68.835,interscrobal surface
+HAO:0001850,-15.8425,23.205,-67.7425,frontofacial sulcus
+HAO:0001851,-14.75,23.205,-66.65,posterolateral tooth-like section of the anterior part of the pronotal plate
+HAO:0001852,-13.6575,23.205,-65.5575,submedian pronotal apodeme
+HAO:0001853,-12.565,23.205,-64.465,antecostal sulcus of the first abdominal tergum
+HAO:0001854,-11.4725,23.205,-63.3725,ventral impressed area of metanotum
+HAO:0001855,-10.38,23.205,-62.28,dorsal plate
+HAO:0001856,-9.2875,23.205,-61.1875,ventral spine of hypopygium
+HAO:0001857,-8.195,23.205,-60.095,posterior carina of subaxillular bar
+HAO:0001858,-7.1025,23.205,-59.0025,mesotrochantellus
+HAO:0001859,-6.01,23.205,-57.91,metatrochantellus
+HAO:0001860,-4.9175,23.205,-56.8175,mediotergite
+HAO:0001861,-36.6,21.66,-88.5,laterotergite
+HAO:0001862,-35.5075,21.66,-87.4075,axillary cord of the hind wing
+HAO:0001863,-34.415,21.66,-86.315,axillary cord of the fore wing
+HAO:0001864,-33.3225,21.66,-85.2225,fifth tarsomere
+HAO:0001865,-32.23,21.66,-84.13,fourth tarsomere
+HAO:0001866,-31.1375,21.66,-83.0375,palpomere
+HAO:0001867,-30.045,21.66,-81.945,second tarsomere
+HAO:0001868,-28.9525,21.66,-80.8525,third tarsomere
+HAO:0001869,-27.86,21.66,-79.76,metapleuron
+HAO:0001870,-26.7675,21.66,-78.6675,lateral metapleuro-metanotal muscle
+HAO:0001871,-25.675,21.66,-77.575,transverse carina of T2
+HAO:0001872,-24.5825,21.66,-76.4825,mesepisternum
+HAO:0001873,-23.49,21.66,-75.39,abdominal tergite 9
+HAO:0001874,-22.3975,21.66,-74.2975,abdominal tergite 10
+HAO:0001875,-21.305,21.66,-73.205,abdominal sternite 8
+HAO:0001876,-20.2125,21.66,-72.1125,postspiracular furrow
+HAO:0001877,-19.12,21.66,-71.02,metapostnotum
+HAO:0001878,-18.0275,21.66,-69.9275,median longitudinal carina of first metasomal sternum
+HAO:0001879,-16.935,21.66,-68.835,median longitudinal carina of the metasomal tergum
+HAO:0001880,-15.8425,21.66,-67.7425,median longitudinal furrow of mesoscutellum
+HAO:0001881,-14.75,21.66,-66.65,sublateral carina of tergum
+HAO:0001882,-13.6575,21.66,-65.5575,transverse carina on S2
+HAO:0001883,-12.565,21.66,-64.465,second flagellomere
+HAO:0001884,-11.4725,21.66,-63.3725,tenth flagellomere
+HAO:0001885,-10.38,21.66,-62.28,fifth flagellomere
+HAO:0001886,-9.2875,21.66,-61.1875,frontal ledge
+HAO:0001887,-8.195,21.66,-60.095,transmetapectal carina
+HAO:0001888,-7.1025,21.66,-59.0025,dorsal area of the metapectus
+HAO:0001889,-6.01,21.66,-57.91,stridulitrum
+HAO:0001890,-4.9175,21.66,-56.8175,abdominal sternum 10
+HAO:0001891,-36.6,20.115,-88.5,profurco-procoxal muscle
+HAO:0001892,-35.5075,20.115,-87.4075,profurco-postoccipital muscle
+HAO:0001893,-34.415,20.115,-86.315,release and spread structure
+HAO:0001894,-33.3225,20.115,-85.2225,mesonoto-mesotrochanteral muscle
+HAO:0001895,-32.23,20.115,-84.13,third flagellomere
+HAO:0001896,-31.1375,20.115,-83.0375,fourth flagellomere
+HAO:0001897,-30.045,20.115,-81.945,sixth flagellomere
+HAO:0001898,-28.9525,20.115,-80.8525,seventh flagellomere
+HAO:0001899,-27.86,20.115,-79.76,eighth flagellomere
+HAO:0001900,-26.7675,20.115,-78.6675,ninth flagellomere
+HAO:0001901,-25.675,20.115,-77.575,eleventh flagellomere
+HAO:0001902,-24.5825,20.115,-76.4825,notaular ridge
+HAO:0001903,-23.49,20.115,-75.39,mesoscutellar arm
+HAO:0001904,-22.3975,20.115,-74.2975,acropleural ridge
+HAO:0001905,-21.305,20.115,-73.205,posterior rim of the propodeum
+HAO:0001906,-20.2125,20.115,-72.1125,profurcal bridge
+HAO:0001907,-19.12,20.115,-71.02,flexor apodeme
+HAO:0001908,-18.0275,20.115,-69.9275,dorsal prepectal inflection
+HAO:0001909,-16.935,20.115,-68.835,posterior prepectal inflection
+HAO:0001910,-15.8425,20.115,-67.7425,anus
+HAO:0001911,-14.75,20.115,-66.65,transverse carina on T2
+HAO:0001912,-13.6575,20.115,-65.5575,mesoscutum length
+HAO:0001913,-12.565,20.115,-64.465,lateral pectal fossa of the coxa
+HAO:0001914,-11.4725,20.115,-63.3725,lateral coxal condyle of the pleuron
+HAO:0001915,-10.38,20.115,-62.28,pectal fossa of the coxa
+HAO:0001916,-9.2875,20.115,-61.1875,medial pectal fossa of the coxa
+HAO:0001917,-8.195,20.115,-60.095,coxal condyle of the pectus
+HAO:0001918,-7.1025,20.115,-59.0025,medial coxal condyle of the pectus
+HAO:0001919,-6.01,20.115,-57.91,lateral propodeal carina
+HAO:0001920,-4.9175,20.115,-56.8175,inner orbit
+HAO:0001921,-36.6,18.57,-88.5,Metanoto-propodeo-metapecto-mesopectal complex
+HAO:0001922,-35.5075,18.57,-87.4075,skeletal muscle
+HAO:0001923,-34.415,18.57,-86.315,visceral muscle
+HAO:0001924,-33.3225,18.57,-85.2225,cuticular evagination
+HAO:0001925,-32.23,18.57,-84.13,protarsal claw
+HAO:0001926,-31.1375,18.57,-83.0375,mesotarsal claw
+HAO:0001927,-30.045,18.57,-81.945,metatarsal claw
+HAO:0001928,-28.9525,18.57,-80.8525,anterior extension of lateral axillar area
+HAO:0001929,-27.86,18.57,-79.76,central keel
+HAO:0001930,-26.7675,18.57,-78.6675,transverse propodeal carina
+HAO:0001931,-25.675,18.57,-77.575,metasternum
+HAO:0001932,-24.5825,18.57,-76.4825,mucro
+HAO:0001933,-23.49,18.57,-75.39,gastral scrobe
+HAO:0001934,-22.3975,18.57,-74.2975,lateral carina of the gastral scrobe
+HAO:0001935,-21.305,18.57,-73.205,interantennal area
+HAO:0001936,-20.2125,18.57,-72.1125,longitudinal sensillum
+HAO:0001937,-19.12,18.57,-71.02,remigium
+HAO:0001938,-18.0275,18.57,-69.9275,interocular distance
+HAO:0001939,-16.935,18.57,-68.835,anterior cranio-mandibular articulation
+HAO:0001940,-15.8425,18.57,-67.7425,annulus of petiole
+HAO:0001941,-14.75,18.57,-66.65,anterior metatibial spur
+HAO:0001942,-13.6575,18.57,-65.5575,calyptra
+HAO:0001943,-12.565,18.57,-64.465,circumscutellar carina
+HAO:0001944,-11.4725,18.57,-63.3725,facial impression
+HAO:0001945,-10.38,18.57,-62.28,hairy ring of T3
+HAO:0001946,-9.2875,18.57,-61.1875,intertergal suture
+HAO:0001947,-8.195,18.57,-60.095,lateroventral mesopleural carina
+HAO:0001948,-7.1025,18.57,-59.0025,longitudinal scutellar carina
+HAO:0001949,-6.01,18.57,-57.91,longitudinal ridge on the posterior surface of metatibia
+HAO:0001950,-4.9175,18.57,-56.8175,median carina of lower face
+HAO:0001951,-36.6,17.025,-88.5,median mesoscutal impression
+HAO:0001952,-35.5075,17.025,-87.4075,mesopleural impression
+HAO:0001953,-34.415,17.025,-86.315,metafemoral spine
+HAO:0001954,-33.3225,17.025,-85.2225,metapleural cavity
+HAO:0001955,-32.23,17.025,-84.13,metepimeron
+HAO:0001956,-31.1375,17.025,-83.0375,pronotal crest
+HAO:0001957,-30.045,17.025,-81.945,facial triangle
+HAO:0001958,-28.9525,17.025,-80.8525,setal pit
+HAO:0001959,-27.86,17.025,-79.76,posteroventral cavity of female T7
+HAO:0001960,-26.7675,17.025,-78.6675,scutellar spine
+HAO:0001961,-25.675,17.025,-77.575,transverse median carina on scutellar plate
+HAO:0001962,-24.5825,17.025,-76.4825,ventral keel of petiole
+HAO:0001963,-23.49,17.025,-75.39,occipital margin
+HAO:0001964,-22.3975,17.025,-74.2975,aporous sensillum
+HAO:0001965,-21.305,17.025,-73.205,scutellar sensillum
+HAO:0001966,-20.2125,17.025,-72.1125,secretory pore
+HAO:0001967,-19.12,17.025,-71.02,specialized area of mesoscutellum
+HAO:0001968,-18.0275,17.025,-69.9275,anterior propodeal projection
+HAO:0001969,-16.935,17.025,-68.835,metasomal segment
+HAO:0001970,-15.8425,17.025,-67.7425,thorax
+HAO:0001971,-14.75,17.025,-66.65,subantennal carina
+HAO:0001972,-13.6575,17.025,-65.5575,apical tooth of mandible
+HAO:0001973,-12.565,17.025,-64.465,campaniform sensillum
+HAO:0001974,-11.4725,17.025,-63.3725,medial tooth
+HAO:0001975,-10.38,17.025,-62.28,lateral projection
+HAO:0001976,-9.2875,17.025,-61.1875,basal tooth of mandible
+HAO:0001977,-8.195,17.025,-60.095,costal margin
+HAO:0001978,-7.1025,17.025,-59.0025,palpal fossa of the prementum
+HAO:0001979,-6.01,17.025,-57.91,cardo
+HAO:0001980,-4.9175,17.025,-56.8175,anatomical region
+HAO:0001981,-36.6,15.48,-88.5,margin
+HAO:0001982,-35.5075,15.48,-87.4075,dorsal area of the metapectal-propodeal complex
+HAO:0001983,-34.415,15.48,-86.315,dorsal pronotal corner
+HAO:0001984,-33.3225,15.48,-85.2225,anteclypeal setal pair
+HAO:0001985,-32.23,15.48,-84.13,antespiracular setal patch
+HAO:0001986,-31.1375,15.48,-83.0375,basal node
+HAO:0001987,-30.045,15.48,-81.945,genal pilosity
+HAO:0001988,-28.9525,15.48,-80.8525,lateral occipital carina
+HAO:0001989,-27.86,15.48,-79.76,lateral epomia
+HAO:0001990,-26.7675,15.48,-78.6675,pilosity
+HAO:0001991,-25.675,15.48,-77.575,orbital carina
+HAO:0001992,-24.5825,15.48,-76.4825,S2 felt field
+HAO:0001993,-23.49,15.48,-75.39,S3 felt field
+HAO:0001994,-22.3975,15.48,-74.2975,propodeum
+HAO:0001995,-21.305,15.48,-73.205,mandibular lancea
+HAO:0001996,-20.2125,15.48,-72.1125,precoxal sulcus
+HAO:0001997,-19.12,15.48,-71.02,anterior area of the second abdominal sternite
+HAO:0001998,-18.0275,15.48,-69.9275,dorsal petiolar carina
+HAO:0001999,-16.935,15.48,-68.835,dorsope
+HAO:0002000,-15.8425,15.48,-67.7425,lateral petiolar carina
+HAO:0002001,-14.75,15.48,-66.65,coeloconic sensillum
+HAO:0002002,-13.6575,15.48,-65.5575,gastral spiracles
+HAO:0002003,-12.565,15.48,-64.465,gastral tergite
+HAO:0002004,-11.4725,15.48,-63.3725,abdominal sternite 3
+HAO:0002005,-10.38,15.48,-62.28,metasomal tergite
+HAO:0002006,-9.2875,15.48,-61.1875,epimeral notch
+HAO:0002007,-8.195,15.48,-60.095,sternal apodeme
+HAO:0002008,-7.1025,15.48,-59.0025,areola
+HAO:0002009,-6.01,15.48,-57.91,anterior declivity of mesoscutum
+HAO:0002010,-4.9175,15.48,-56.8175,dorsal tendon attachment
+HAO:0002011,-36.6,13.935,-88.5,face
+HAO:0002012,-35.5075,13.935,-87.4075,facial midridge
+HAO:0002013,-34.415,13.935,-86.315,supra-marginal carina
+HAO:0002014,-33.3225,13.935,-85.2225,lateral longitudinal carina
+HAO:0002015,-32.23,13.935,-84.13,lower tooth
+HAO:0002016,-31.1375,13.935,-83.0375,transfacial sulcus
+HAO:0002017,-30.045,13.935,-81.945,upper ocular sulcus
+HAO:0002018,-28.9525,13.935,-80.8525,petiolar lamina
+HAO:0002019,-27.86,13.935,-79.76,postgenal groove
+HAO:0002020,-26.7675,13.935,-78.6675,postgenal lamella
+HAO:0002021,-25.675,13.935,-77.575,cuticular invagination
+HAO:0002022,-24.5825,13.935,-76.4825,vertical ocellar sulcus
+HAO:0002023,-23.49,13.935,-75.39,gastral sternum
+HAO:0002024,-22.3975,13.935,-74.2975,gastral tergum
+HAO:0002025,-21.305,13.935,-73.205,lateral panel of pronotum
+HAO:0002026,-20.2125,13.935,-72.1125,horn of T1
+HAO:0002027,-19.12,13.935,-71.02,mid ocellar diameter
+HAO:0002028,-18.0275,13.935,-69.9275,posterior mesoscutellar ridge
+HAO:0002029,-16.935,13.935,-68.835,antennal sclerite
+HAO:0002030,-15.8425,13.935,-67.7425,cercal plate
+HAO:0002031,-14.75,13.935,-66.65,cercal seta
+HAO:0002032,-13.6575,13.935,-65.5575,cercus
+HAO:0002033,-12.565,13.935,-64.465,gonostyle/volsella complex
+HAO:0002034,-11.4725,13.935,-63.3725,distodorsal submedian notch of gonostyle/volsella complex
+HAO:0002035,-10.38,13.935,-62.28,distolateral projection of the harpe
+HAO:0002036,-9.2875,13.935,-61.1875,dorsal apodeme of penisvalva
+HAO:0002037,-8.195,13.935,-60.095,dorsal submedian impression of cupula
+HAO:0002038,-7.1025,13.935,-59.0025,cupulo-gonostyle/volsella complex muscle
+HAO:0002039,-6.01,13.935,-57.91,dorsomedian apodeme of the aedeagus
+HAO:0002040,-4.9175,13.935,-56.8175,dorsomedian conjunctiva of the gonostyle/volsella complex
+HAO:0002041,-36.6,12.39,-88.5,gonostyle-parossiculal muscle
+HAO:0002042,-35.5075,12.39,-87.4075,gonostyle/volsella complex-volsellal muscle
+HAO:0002043,-34.415,12.39,-86.315,gonostyle/volsella complex-harpal muscle
+HAO:0002044,-33.3225,12.39,-85.2225,gonostyle/volsella complex-penisvalval muscle
+HAO:0002045,-32.23,12.39,-84.13,gonossiculal muscle
+HAO:0002046,-31.1375,12.39,-83.0375,medioventral conjunctiva of the gonostyle/volsella complex
+HAO:0002047,-30.045,12.39,-81.945,proximal lobe of vas deferens
+HAO:0002048,-28.9525,12.39,-80.8525,proximodorsal notch of cupula
+HAO:0002049,-27.86,12.39,-79.76,proximodorsal notch of harpe
+HAO:0002050,-26.7675,12.39,-78.6675,proximomedian apodeme of the harpe
+HAO:0002051,-25.675,12.39,-77.575,penisvalval muscle
+HAO:0002052,-24.5825,12.39,-76.4825,ventral gonostyle/volsella complex-penisvalval muscle
+HAO:0002053,-23.49,12.39,-75.39,S9
+HAO:0002054,-22.3975,12.39,-74.2975,semen
+HAO:0002055,-21.305,12.39,-73.205,submedial notch on distoventral margin of gonostyle/volsella complex
+HAO:0002056,-20.2125,12.39,-72.1125,submedian conjunctiva on the distoventral margin of gonostyle/volsella complex
+HAO:0002057,-19.12,12.39,-71.02,T10
+HAO:0002058,-18.0275,12.39,-69.9275,T8
+HAO:0002059,-16.935,12.39,-68.835,T9
+HAO:0002060,-15.8425,12.39,-67.7425,T9-T10 muscle
+HAO:0002061,-14.75,12.39,-66.65,ventral rod of aedeagus
+HAO:0002062,-13.6575,12.39,-65.5575,dorsalmost digital spine
+HAO:0002063,-12.565,12.39,-64.465,gonostyle/volsella complex-gonossiculus articulation
+HAO:0002064,-11.4725,12.39,-63.3725,ventromedian apodeme of the aedeagus
+HAO:0002065,-10.38,12.39,-62.28,sternite
+HAO:0002066,-9.2875,12.39,-61.1875,fore wing vein
+HAO:0002067,-8.195,12.39,-60.095,flagellomere 14
+HAO:0002068,-7.1025,12.39,-59.0025,inner spur
+HAO:0002069,-6.01,12.39,-57.91,mesotibial outer spur
+HAO:0002070,-4.9175,12.39,-56.8175,metatarsomere
+HAO:0002071,-36.6,10.845,-88.5,anterior plate of pronotum
+HAO:0002072,-35.5075,10.845,-87.4075,anterior conjunctival thickening
+HAO:0002073,-34.415,10.845,-86.315,maxillary process of the hypostoma
+HAO:0002074,-33.3225,10.845,-85.2225,cardinal articular condyle of the cranium
+HAO:0002075,-32.23,10.845,-84.13,cardinal lever
+HAO:0002076,-31.1375,10.845,-83.0375,cardino-stipital hinge
+HAO:0002077,-30.045,10.845,-81.945,outer cardinal process
+HAO:0002078,-28.9525,10.845,-80.8525,inner cardinal process
+HAO:0002079,-27.86,10.845,-79.76,fragmental articulation
+HAO:0002080,-26.7675,10.845,-78.6675,loral fossa of cardo
+HAO:0002081,-25.675,10.845,-77.575,cardinal condyle of lorum
+HAO:0002082,-24.5825,10.845,-76.4825,cardinal ridge
+HAO:0002083,-23.49,10.845,-75.39,basal cardinal ridge
+HAO:0002084,-22.3975,10.845,-74.2975,laterodistal cardinal ridge
+HAO:0002085,-21.305,10.845,-73.205,mediodistal cardinal ridge
+HAO:0002086,-20.2125,10.845,-72.1125,distal cardinal cavity
+HAO:0002087,-19.12,10.845,-71.02,median cardinal cavity
+HAO:0002088,-18.0275,10.845,-69.9275,lateral cardinal cavity
+HAO:0002089,-16.935,10.845,-68.835,cardinal macula
+HAO:0002090,-15.8425,10.845,-67.7425,basistipital process
+HAO:0002091,-14.75,10.845,-66.65,stipital fossa of the cardo
+HAO:0002092,-13.6575,10.845,-65.5575,medial stipital wall
+HAO:0002093,-12.565,10.845,-64.465,basal lacinial sclerite
+HAO:0002094,-11.4725,10.845,-63.3725,stipital thickening
+HAO:0002095,-10.38,10.845,-62.28,medial dististipital process
+HAO:0002096,-9.2875,10.845,-61.1875,stipital sclerite
+HAO:0002097,-8.195,10.845,-60.095,posterior stipital wall
+HAO:0002098,-7.1025,10.845,-59.0025,posterior stipital sclerite
+HAO:0002099,-6.01,10.845,-57.91,principal carina of stipes
+HAO:0002100,-4.9175,10.845,-56.8175,maxillary palpal socket
+HAO:0002101,-36.6,9.3,-88.5,cardinal condyle of the stipes
+HAO:0002102,-35.5075,9.3,-87.4075,ventral dististipital process
+HAO:0002103,-34.415,9.3,-86.315,anterior tentorio-stipital muscle
+HAO:0002104,-33.3225,9.3,-85.2225,posterior tentorio-stipital muscle
+HAO:0002105,-32.23,9.3,-84.13,cardinal fragmentum
+HAO:0002106,-31.1375,9.3,-83.0375,medial stipital groove
+HAO:0002107,-30.045,9.3,-81.945,ocellar diameter
+HAO:0002108,-28.9525,9.3,-80.8525,palpal formula
+HAO:0002109,-27.86,9.3,-79.76,first sclerite of the maxillary palp
+HAO:0002110,-26.7675,9.3,-78.6675,stipito-palpal muscle
+HAO:0002111,-25.675,9.3,-77.575,second sclerite of the maxillary palp
+HAO:0002112,-24.5825,9.3,-76.4825,third sclerite of the maxillary palp
+HAO:0002113,-23.49,9.3,-75.39,fourth sclerite of the maxillary palp
+HAO:0002114,-22.3975,9.3,-74.2975,first intrinsic muscle of the maxillary palp
+HAO:0002115,-21.305,9.3,-73.205,second intrinsic muscle of the maxillary palp
+HAO:0002116,-20.2125,9.3,-72.1125,third intrinsic muscle of the maxillary palp
+HAO:0002117,-19.12,9.3,-71.02,lacinial bar
+HAO:0002118,-18.0275,9.3,-69.9275,occipital margin
+HAO:0002119,-16.935,9.3,-68.835,acantha
+HAO:0002120,-15.8425,9.3,-67.7425,outer lobe of the lacinia
+HAO:0002121,-14.75,9.3,-66.65,inner lobe of the lacinia
+HAO:0002122,-13.6575,9.3,-65.5575,anterior lacinial fimbriae
+HAO:0002123,-12.565,9.3,-64.465,posterior lacinial fimbriae
+HAO:0002124,-11.4725,9.3,-63.3725,lacinial comb
+HAO:0002125,-10.38,9.3,-62.28,stipito-premental conjunctiva
+HAO:0002126,-9.2875,9.3,-61.1875,galeo-lacinial complex
+HAO:0002127,-8.195,9.3,-60.095,distolateral galeal sclerite
+HAO:0002128,-7.1025,9.3,-59.0025,distolateral galeal setiferous patch
+HAO:0002129,-6.01,9.3,-57.91,proximolateral galeal setiferous patch
+HAO:0002130,-4.9175,9.3,-56.8175,proximolateral galeal sclerite
+HAO:0002131,-36.6,7.755,-88.5,lateral galeal crease
+HAO:0002132,-35.5075,7.755,-87.4075,galeal crown
+HAO:0002133,-34.415,7.755,-86.315,galeal fringe
+HAO:0002134,-33.3225,7.755,-85.2225,galeal comb
+HAO:0002135,-32.23,7.755,-84.13,proximal galeal brush
+HAO:0002136,-31.1375,7.755,-83.0375,galeal lamina
+HAO:0002137,-30.045,7.755,-81.945,galeal midrib
+HAO:0002138,-28.9525,7.755,-80.8525,spiculate patch of lacinia
+HAO:0002139,-27.86,7.755,-79.76,spiculate patch of the galea
+HAO:0002140,-26.7675,7.755,-78.6675,velum
+HAO:0002141,-25.675,7.755,-77.575,coeloconic sensillum of the galea
+HAO:0002142,-24.5825,7.755,-76.4825,apicomedial galeal plate
+HAO:0002143,-23.49,7.755,-75.39,basal galeal sclerite
+HAO:0002144,-22.3975,7.755,-74.2975,postmental area
+HAO:0002145,-21.305,7.755,-73.205,intercardinal area
+HAO:0002146,-20.2125,7.755,-72.1125,interstipital area
+HAO:0002147,-19.12,7.755,-71.02,postmental articular zone
+HAO:0002148,-18.0275,7.755,-69.9275,intercardinal sclerite
+HAO:0002149,-16.935,7.755,-68.835,postarticular portion of the postmentum
+HAO:0002150,-15.8425,7.755,-67.7425,prearticular portion of the postmentum
+HAO:0002151,-14.75,7.755,-66.65,basal process of the prementum
+HAO:0002152,-13.6575,7.755,-65.5575,lateral premental face
+HAO:0002153,-12.565,7.755,-64.465,labial palpal excision
+HAO:0002154,-11.4725,7.755,-63.3725,subligular process
+HAO:0002155,-10.38,7.755,-62.28,premental arm
+HAO:0002156,-9.2875,7.755,-61.1875,ventral premental face
+HAO:0002157,-8.195,7.755,-60.095,premental carina
+HAO:0002158,-7.1025,7.755,-59.0025,first valvifer-first valvula complex
+HAO:0002159,-6.01,7.755,-57.91,posterior margin of the first valvifer
+HAO:0002160,-4.9175,7.755,-56.8175,ninth tergal condyle of the first valvifer
+HAO:0002161,-36.6,6.21,-88.5,first valviferal fossa of the ninth tergite
+HAO:0002162,-35.5075,6.21,-87.4075,transvalviferal conjunctiva
+HAO:0002163,-34.415,6.21,-86.315,dorsal sclerite of the first valvifer
+HAO:0002164,-33.3225,6.21,-85.2225,ventral sclerite of the first valvifer
+HAO:0002165,-32.23,6.21,-84.13,intravalvifer articulation
+HAO:0002166,-31.1375,6.21,-83.0375,anterior flange of the first valvifer
+HAO:0002167,-30.045,6.21,-81.945,second valviferal condyle of the first valvifer
+HAO:0002168,-28.9525,6.21,-80.8525,anterior angle of the first valvifer
+HAO:0002169,-27.86,6.21,-79.76,anterior area of the second valvifer
+HAO:0002170,-26.7675,6.21,-78.6675,posterior area of the second valvifer
+HAO:0002171,-25.675,6.21,-77.575,basal line of the second valvifer
+HAO:0002172,-24.5825,6.21,-76.4825,dorsal projection of the second valvifer
+HAO:0002173,-23.49,6.21,-75.39,anterior section of dorsal flange of second valvifer
+HAO:0002174,-22.3975,6.21,-74.2975,posterior section of dorsal flange of second valvifer
+HAO:0002175,-21.305,6.21,-73.205,second valvifer-second valvula-third valvula complex
+HAO:0002176,-20.2125,6.21,-72.1125,venom gland reservoir of the second valvifer
+HAO:0002177,-19.12,6.21,-71.02,bulb
+HAO:0002178,-18.0275,6.21,-69.9275,anterior notch of the dorsal valve
+HAO:0002179,-16.935,6.21,-68.835,distal notch of the dorsal valve
+HAO:0002180,-15.8425,6.21,-67.7425,distal vertical conjunctiva of the second valvifer-third valvula complex
+HAO:0002181,-14.75,6.21,-66.65,second valvifer-third valvula complex
+HAO:0002182,-13.6575,6.21,-65.5575,anterior ridge of T9
+HAO:0002183,-12.565,6.21,-64.465,sclerite of the maxillary palp
+HAO:0002184,-11.4725,6.21,-63.3725,muscle attachment site
+HAO:0002185,-10.38,6.21,-62.28,S7
+HAO:0002186,-9.2875,6.21,-61.1875,T9
+HAO:0002187,-8.195,6.21,-60.095,lateral T9-second valvifer muscle
+HAO:0002188,-7.1025,6.21,-59.0025,female T8
+HAO:0002189,-6.01,6.21,-57.91,first valvifer-second valvifer muscle
+HAO:0002190,-4.9175,6.21,-56.8175,dorsal ramus of the second valvula
+HAO:0002191,-36.6,4.665,-88.5,egg canal
+HAO:0002192,-35.5075,4.665,-87.4075,medial conjunctiva of the first valvula
+HAO:0002193,-34.415,4.665,-86.315,length of dorsal projection
+HAO:0002194,-33.3225,4.665,-85.2225,first sclerite of the labial palp
+HAO:0002195,-32.23,4.665,-84.13,second sclerite of the labial palp
+HAO:0002196,-31.1375,4.665,-83.0375,third sclerite of the labial palp
+HAO:0002197,-30.045,4.665,-81.945,ligula
+HAO:0002198,-28.9525,4.665,-80.8525,basiparaglossa
+HAO:0002199,-27.86,4.665,-79.76,basiparaglossal brush
+HAO:0002200,-26.7675,4.665,-78.6675,paraglossal sclerite
+HAO:0002201,-25.675,4.665,-77.575,basiparaglossal sclerite
+HAO:0002202,-24.5825,4.665,-76.4825,ventrolateral basiglossal arm
+HAO:0002203,-23.49,4.665,-75.39,median conjunctiva of the anterior glossal plate
+HAO:0002204,-22.3975,4.665,-74.2975,glossal annulus
+HAO:0002205,-21.305,4.665,-73.205,annular hair
+HAO:0002206,-20.2125,4.665,-72.1125,distal glossal edge
+HAO:0002207,-19.12,4.665,-71.02,posterior surface of the glossa
+HAO:0002208,-18.0275,4.665,-69.9275,anterior surface of the glossa
+HAO:0002209,-16.935,4.665,-68.835,apical glossal hairs
+HAO:0002210,-15.8425,4.665,-67.7425,apical glossal setae
+HAO:0002211,-14.75,4.665,-66.65,styloconic sensillum
+HAO:0002212,-13.6575,4.665,-65.5575,campaniform sensillum of the glossa
+HAO:0002213,-12.565,4.665,-64.465,distal hypopharyngeal invagination
+HAO:0002214,-11.4725,4.665,-63.3725,hypopharyngeal pecten
+HAO:0002215,-10.38,4.665,-62.28,anterolateral wall of the stipes
+HAO:0002216,-9.2875,4.665,-61.1875,marginal fringe of the stipes
+HAO:0002217,-8.195,4.665,-60.095,distomedial stipital flange
+HAO:0002218,-7.1025,4.665,-59.0025,proximomedial stipital flange
+HAO:0002219,-6.01,4.665,-57.91,cranial fossa of the cardo
+HAO:0002220,-4.9175,4.665,-56.8175,fifth sclerite of the maxillary palp
+HAO:0002221,-36.6,3.12,-88.5,uniporous sensillum
+HAO:0002222,-35.5075,3.12,-87.4075,fourth intrinsic muscle of the maxillary palp
+HAO:0002223,-34.415,3.12,-86.315,interstipital sclerite
+HAO:0002224,-33.3225,3.12,-85.2225,Stipital articular surface of the postmentum
+HAO:0002225,-32.23,3.12,-84.13,median postmental ridge
+HAO:0002226,-31.1375,3.12,-83.0375,postmento-premental hinge
+HAO:0002227,-30.045,3.12,-81.945,premental ditch
+HAO:0002228,-28.9525,3.12,-80.8525,distal hypopharyngeal sclerite
+HAO:0002229,-27.86,3.12,-79.76,ligament
+HAO:0002230,-26.7675,3.12,-78.6675,ventral glossal lines
+HAO:0002231,-25.675,3.12,-77.575,basal glossal invagination
+HAO:0002232,-24.5825,3.12,-76.4825,paraglossal acroglossal button
+HAO:0002233,-23.49,3.12,-75.39,paraglossal annulus
+HAO:0002234,-22.3975,3.12,-74.2975,hypopharyngeal button
+HAO:0002235,-21.305,3.12,-73.205,salivary gland
+HAO:0002236,-20.2125,3.12,-72.1125,salivary duct
+HAO:0002237,-19.12,3.12,-71.02,first intrinsic muscle of the labial palp
+HAO:0002238,-18.0275,3.12,-69.9275,second intrinsic muscle of the labial palp
+HAO:0002239,-16.935,3.12,-68.835,posteroventral corner of the first valvifer
+HAO:0002240,-15.8425,3.12,-67.7425,length of anterior area of second valvifer
+HAO:0002241,-14.75,3.12,-66.65,length of female T9
+HAO:0002242,-13.6575,3.12,-65.5575,mandibular dentition
+HAO:0002243,-12.565,3.12,-64.465,galeal comb
+HAO:0002244,-11.4725,3.12,-63.3725,campaniform sensillum of the premenum
+HAO:0002245,-10.38,3.12,-62.28,distolateral premental incision
+HAO:0002246,-9.2875,3.12,-61.1875,labial palpomere
+HAO:0002247,-8.195,3.12,-60.095,glossal styloconic sensillum
+HAO:0002248,-7.1025,3.12,-59.0025,medial apodeme of female S7
+HAO:0002249,-6.01,3.12,-57.91,tubular A9
+HAO:0002250,-4.9175,3.12,-56.8175,metapleural sulcus
+HAO:0002251,-36.6,24.75,-88.5,mesosoma height
+HAO:0002252,-35.5075,24.75,-87.4075,posterior tooth of the mandible
+HAO:0002253,-34.415,24.75,-86.315,clypeo-compound eye distance
+HAO:0002254,-33.3225,24.75,-85.2225,eye height
+HAO:0002255,-32.23,24.75,-84.13,cranial scrobe of mesoscutum
+HAO:0002256,-31.1375,24.75,-83.0375,scrobal carina of the mesoscutum
+HAO:0002257,-30.045,24.75,-81.945,metanoto-metapectal-propodeal conjunctiva
+HAO:0002258,-28.9525,24.75,-80.8525,profemoral scrobe of the mesopectus
+HAO:0002259,-27.86,24.75,-79.76,dorsolateral setal patch of propodeum
+HAO:0002260,-26.7675,24.75,-78.6675,anterodistal notch of the fore wing
+HAO:0002261,-25.675,24.75,-77.575,posterodistal notch of the fore wing
+HAO:0002262,-24.5825,24.75,-76.4825,petiole length
+HAO:0002263,-23.49,24.75,-75.39,epistomal distance
+HAO:0002264,-22.3975,24.75,-74.2975,anterolateral mesopectal projection
+HAO:0002265,-21.305,24.75,-73.205,petiolar scrobe
+HAO:0002266,-20.2125,24.75,-72.1125,lateroventral carina of the petiole
+HAO:0002267,-19.12,24.75,-71.02,median conjunctiva of abdominal tergum 9
+HAO:0002268,-18.0275,24.75,-69.9275,head width
+HAO:0002269,-16.935,24.75,-68.835,facet
+HAO:0002270,-15.8425,24.75,-67.7425,ventral margin of the mesopectus
+HAO:0002271,-14.75,24.75,-66.65,ventral margin of the metapectus
+HAO:0002272,-13.6575,24.75,-65.5575,median anatomical line
+HAO:0002273,-12.565,24.75,-64.465,proximodistal anatomical line
+HAO:0002274,-11.4725,24.75,-63.3725,head+mesosoma length
+HAO:0002275,-10.38,24.75,-62.28,head+mesosoma length
+HAO:0002276,-9.2875,24.75,-61.1875,mesosoma height
+HAO:0002277,-8.195,24.75,-60.095,posterior mesoscutellar area
+HAO:0002278,-7.1025,24.75,-59.0025,posterior mesoscutellar carina
+HAO:0002279,-6.01,24.75,-57.91,posterolateral mesoscutellar area
+HAO:0002280,-4.9175,24.75,-56.8175,posterolateral mesoscutellar carina
+HAO:0002281,-36.6,23.205,-88.5,anterior part of pronotal plate
+HAO:0002282,-35.5075,23.205,-87.4075,anteroventral depression of pronotum
+HAO:0002283,-34.415,23.205,-86.315,anteroventral foramen of metapleuron
+HAO:0002284,-33.3225,23.205,-85.2225,propodeo-second abdominal segment muscle
+HAO:0002285,-32.23,23.205,-84.13,scutellar rim
+HAO:0002286,-31.1375,23.205,-83.0375,dorsal rim of pronotal plate
+HAO:0002287,-30.045,23.205,-81.945,pronotal fovea
+HAO:0002288,-28.9525,23.205,-80.8525,median septum of scutellum
+HAO:0002289,-27.86,23.205,-79.76,ovipositor clip
+HAO:0002290,-26.7675,23.205,-78.6675,posterior lobe of scutellum
+HAO:0002291,-25.675,23.205,-77.575,posterior part of pronotal plate
+HAO:0002292,-24.5825,23.205,-76.4825,subcalyptral area
+HAO:0002293,-23.49,23.205,-75.39,window under lateral bar
+HAO:0002294,-22.3975,23.205,-74.2975,posteroventral corner of metapleuron
+HAO:0002295,-21.305,23.205,-73.205,pronoto-mesoscutal suture
+HAO:0002296,-20.2125,23.205,-72.1125,pronoto-mesopectal suture
+HAO:0002297,-19.12,23.205,-71.02,mesopleural line
+HAO:0002298,-18.0275,23.205,-69.9275,metapleuron
+HAO:0002299,-16.935,23.205,-68.835,sensillum trichodeum
+HAO:0002300,-15.8425,23.205,-67.7425,sensillum basiconicum
+HAO:0002301,-14.75,23.205,-66.65,lateral clypeal seta
+HAO:0002302,-13.6575,23.205,-65.5575,large volcano sensilla
+HAO:0002303,-12.565,23.205,-64.465,large disc sensilla
+HAO:0002304,-11.4725,23.205,-63.3725,sensillum coeloconicum A
+HAO:0002305,-10.38,23.205,-62.28,sensillum coeloconicum B
+HAO:0002306,-9.2875,23.205,-61.1875,axillar crescent
+HAO:0002307,-8.195,23.205,-60.095,appendage segment
+HAO:0002308,-7.1025,23.205,-59.0025,width
+HAO:0002309,-6.01,23.205,-57.91,mesosoma length
+HAO:0002310,-4.9175,23.205,-56.8175,anterior petiolar length
+HAO:0002311,-36.6,21.66,-88.5,anterior pronotal slope
+HAO:0002312,-35.5075,21.66,-87.4075,anterior setal pit
+HAO:0002313,-34.415,21.66,-86.315,dorsal petiolar scrobe
+HAO:0002314,-33.3225,21.66,-85.2225,dorsal head width
+HAO:0002315,-32.23,21.66,-84.13,dorsal head width
+HAO:0002316,-31.1375,21.66,-83.0375,distal clypeal line
+HAO:0002317,-30.045,21.66,-81.945,diagonal petiolar length
+HAO:0002318,-28.9525,21.66,-80.8525,caudal cylinder
+HAO:0002319,-27.86,21.66,-79.76,apical spine distance
+HAO:0002320,-26.7675,21.66,-78.6675,external area of the scape
+HAO:0002321,-25.675,21.66,-77.575,facial area of the scape
+HAO:0002322,-24.5825,21.66,-76.4825,transverse torular line
+HAO:0002323,-23.49,21.66,-75.39,frontal carina line
+HAO:0002324,-22.3975,21.66,-74.2975,lateral carina of clypeus
+HAO:0002325,-21.305,21.66,-73.205,maximum cephalic length
+HAO:0002326,-20.2125,21.66,-72.1125,maximum diameter of the compound eye
+HAO:0002327,-19.12,21.66,-71.02,maximum height of petiolar node
+HAO:0002328,-18.0275,21.66,-69.9275,maximum petiole height
+HAO:0002329,-16.935,21.66,-68.835,angle
+HAO:0002330,-15.8425,21.66,-67.7425,setal angle
+HAO:0002331,-14.75,21.66,-66.65,maximum cephalic length in median line
+HAO:0002332,-13.6575,21.66,-65.5575,median clypeal notch
+HAO:0002333,-12.565,21.66,-64.465,median clypeal notch depth
+HAO:0002334,-11.4725,21.66,-63.3725,Maximum spiracle distance of propodeum
+HAO:0002335,-10.38,21.66,-62.28,pronotum width
+HAO:0002336,-9.2875,21.66,-61.1875,length of petiolar node
+HAO:0002337,-8.195,21.66,-60.095,anterodorsal spine of the petiolar node
+HAO:0002338,-7.1025,21.66,-59.0025,apical petiolar spine distance
+HAO:0002339,-6.01,21.66,-57.91,petiole width
+HAO:0002340,-4.9175,21.66,-56.8175,postocular distance
+HAO:0002341,-36.6,20.115,-88.5,postpetiole length
+HAO:0002342,-35.5075,20.115,-87.4075,postpetiole width
+HAO:0002343,-34.415,20.115,-86.315,cranial scrobe of the pronotum
+HAO:0002344,-33.3225,20.115,-85.2225,pronotal spine
+HAO:0002345,-32.23,20.115,-84.13,apical distance of pronotal spines
+HAO:0002346,-31.1375,20.115,-83.0375,scape length
+HAO:0002347,-30.045,20.115,-81.945,minimum spine distance
+HAO:0002348,-28.9525,20.115,-80.8525,spine length
+HAO:0002349,-27.86,20.115,-79.76,arithmetic mean
+HAO:0002350,-26.7675,20.115,-78.6675,absolute cephalic size
+HAO:0002351,-25.675,20.115,-77.575,anterodorsal rim of petiole
+HAO:0002352,-24.5825,20.115,-76.4825,circumantennal carinae
+HAO:0002353,-23.49,20.115,-75.39,anterior profile of petiolar node
+HAO:0002354,-22.3975,20.115,-74.2975,dorsal petiolar profile
+HAO:0002355,-21.305,20.115,-73.205,caudal petiolar profile
+HAO:0002356,-20.2125,20.115,-72.1125,portion of epithelium
+HAO:0002357,-19.12,20.115,-71.02,postocular area
+HAO:0002358,-18.0275,20.115,-69.9275,postocular contour line
+HAO:0002359,-16.935,20.115,-68.835,postocular head width
+HAO:0002360,-15.8425,20.115,-67.7425,metapleural area of the mesonoto-metanoto-mesopecto-metapecto-propodeal complex
+HAO:0002361,-14.75,20.115,-66.65,mesonoto-metanoto-mesopecto-metapecto-propodeal complex
+HAO:0002362,-13.6575,20.115,-65.5575,metanotal depression
+HAO:0002363,-12.565,20.115,-64.465,mesopleural area of the mesonoto-metanoto-mesopecto-metapecto-propodeal complex
+HAO:0002364,-11.4725,20.115,-63.3725,median carina of clypeus
+HAO:0002365,-10.38,20.115,-62.28,submedian area of clypeus
+HAO:0002366,-9.2875,20.115,-61.1875,ventral head line
+HAO:0002367,-8.195,20.115,-60.095,torular head width
+HAO:0002368,-7.1025,20.115,-59.0025,ventral head width
+HAO:0002369,-6.01,20.115,-57.91,contour line
+HAO:0002370,-4.9175,20.115,-56.8175,gena contour line
+HAO:0002371,-36.6,18.57,-88.5,anterior profile of petiolar node contour line
+HAO:0002372,-35.5075,18.57,-87.4075,dorsal petiolar profile contour line
+HAO:0002373,-34.415,18.57,-86.315,malar striae
+HAO:0002374,-33.3225,18.57,-85.2225,pleural pit line
+HAO:0002375,-32.23,18.57,-84.13,width
+HAO:0002376,-31.1375,18.57,-83.0375,facial striae
+HAO:0002377,-30.045,18.57,-81.945,maximum width
+HAO:0002378,-28.9525,18.57,-80.8525,minimum width
+HAO:0002379,-27.86,18.57,-79.76,reticulate
+HAO:0002380,-26.7675,18.57,-78.6675,supraclypeal depression
+HAO:0002381,-25.675,18.57,-77.575,ventromedian setiferous patch
+HAO:0002382,-24.5825,18.57,-76.4825,ventrolateral setiferous patch
+HAO:0002383,-23.49,18.57,-75.39,intertorular area
+HAO:0002384,-22.3975,18.57,-74.2975,facial process
+HAO:0002385,-21.305,18.57,-73.205,postocellar carina
+HAO:0002386,-20.2125,18.57,-72.1125,distal projection of the parossiculus
+HAO:0002387,-19.12,18.57,-71.02,facial apodeme
+HAO:0002388,-18.0275,18.57,-69.9275,median facial keel
+HAO:0002389,-16.935,18.57,-68.835,median flange of occipital carina
+HAO:0002390,-15.8425,18.57,-67.7425,submedial flange of occipital carina
+HAO:0002391,-14.75,18.57,-66.65,distal projection of the penisvalva
+HAO:0002392,-13.6575,18.57,-65.5575,sensillar ring of harpe
+HAO:0002393,-12.565,18.57,-64.465,anterior discrimenal pit
+HAO:0002394,-11.4725,18.57,-63.3725,proximolateral projection of the cupula
+HAO:0002395,-10.38,18.57,-62.28,proximoventral notch of cupula
+HAO:0002396,-9.2875,18.57,-61.1875,transverse line of the metanotum/propodeum
+HAO:0002397,-8.195,18.57,-60.095,anteromedian projection of the metanoto-propodeo-metapecto-mesopectal complex
+HAO:0002398,-7.1025,18.57,-59.0025,transverse frontal carina
+HAO:0002399,-6.01,18.57,-57.91,torulo-clypeal carina
+HAO:0002400,-4.9175,18.57,-56.8175,subtorular carina
+HAO:0002401,-36.6,17.025,-88.5,ventrolateral invagination of the pronotum
+HAO:0002402,-35.5075,17.025,-87.4075,sternaulus length
+HAO:0002403,-34.415,17.025,-86.315,mesopleuron length
+HAO:0002404,-33.3225,17.025,-85.2225,anterior mesoscutal width
+HAO:0002405,-32.23,17.025,-84.13,posterior mesoscutal width
+HAO:0002406,-31.1375,17.025,-83.0375,harpe width
+HAO:0002407,-30.045,17.025,-81.945,head height
+HAO:0002408,-28.9525,17.025,-80.8525,head length
+HAO:0002409,-27.86,17.025,-79.76,harpe length
+HAO:0002410,-26.7675,17.025,-78.6675,axillary muscle
+HAO:0002411,-25.675,17.025,-77.575,petiole neck
+HAO:0002412,-24.5825,17.025,-76.4825,buccal lobe
+HAO:0002413,-23.49,17.025,-75.39,body length
+HAO:0002414,-22.3975,17.025,-74.2975,distoventral submedian corner of the cupula
+HAO:0002415,-21.305,17.025,-73.205,trachea
+HAO:0002416,-20.2125,17.025,-72.1125,atrium
+HAO:0002417,-19.12,17.025,-71.02,resilin rich articulation of the ramus
+HAO:0002418,-18.0275,17.025,-69.9275,posteromedian process of the mesoscutellum
+HAO:0002419,-16.935,17.025,-68.835,sensillar plate of the aedeagus
+HAO:0002420,-15.8425,17.025,-67.7425,metapecto-propodeal conjunctiva
+HAO:0002421,-14.75,17.025,-66.65,posterodorsal metapleural area
+HAO:0002422,-13.6575,17.025,-65.5575,odontoid process
+HAO:0002423,-12.565,17.025,-64.465,specillum
+HAO:0002424,-11.4725,17.025,-63.3725,twelfth flagellomere
+HAO:0002425,-10.38,17.025,-62.28,axillular spine
+HAO:0002426,-9.2875,17.025,-61.1875,anterior ocellar-orbital line
+HAO:0002427,-8.195,17.025,-60.095,apical setae of T3
+HAO:0002428,-7.1025,17.025,-59.0025,stigmal vein
+HAO:0002429,-6.01,17.025,-57.91,postpetiole height
+HAO:0002430,-4.9175,17.025,-56.8175,scute
+HAO:0002431,-36.6,15.48,-88.5,lateral mesosoma length
+HAO:0002432,-35.5075,15.48,-87.4075,transverse carina of the metasomal depression
+HAO:0002433,-34.415,15.48,-86.315,coriaceous
+HAO:0002434,-33.3225,15.48,-85.2225,alutaceous
+HAO:0002435,-32.23,15.48,-84.13,dorsomedian area of the mesoscutellar-axillar complex
+HAO:0002436,-31.1375,15.48,-83.0375,prepalpal ventral premental area
+HAO:0002437,-30.045,15.48,-81.945,postpalpal ventral premental area
+HAO:0002438,-28.9525,15.48,-80.8525,latero-proximal stipital process
+HAO:0002439,-27.86,15.48,-79.76,cranial condyle of cardo
+HAO:0002440,-26.7675,15.48,-78.6675,Distal lateral projection of cardo
+HAO:0002441,-25.675,15.48,-77.575,Distal mesal projection of cardo
+HAO:0002442,-24.5825,15.48,-76.4825,lateral flange of the principal carina of the stipes
+HAO:0002443,-23.49,15.48,-75.39,distal lobe of the lateral flange of the principal carina of the stipes
+HAO:0002444,-22.3975,15.48,-74.2975,proximal lobe of lateral flange of the principal carina of the stipes
+HAO:0002445,-21.305,15.48,-73.205,lateral galeal sclerite
+HAO:0002446,-20.2125,15.48,-72.1125,trichoid sensillum of the glossa
+HAO:0002447,-19.12,15.48,-71.02,campaniform stipital sensillum
+HAO:0002448,-18.0275,15.48,-69.9275,triangular mesopleural furrow
