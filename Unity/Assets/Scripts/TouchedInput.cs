@@ -8,18 +8,30 @@ public class TouchedInput : MonoBehaviour {
 
 	public InputField input;
 	public string label;
+	public GameObject rightController;
+	public GameObject sp;
 
 	// Use this for initialization
 	void Start () {
-		
+		rightController = GameObject.FindGameObjectWithTag("RightController");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		VRTK_InteractableObject io = GetComponent(typeof(VRTK_InteractableObject)) as VRTK_InteractableObject;
+		//Debug.Log("touchpadControl enabled = " + rightController.GetComponent<VRTK_TouchpadControl>().enabled);
 		if(io.IsTouched()){
 			//Debug.Log("is touched");
 			input.text = label;
+		}
+
+		if(io.IsGrabbed()){
+			//rightController.GetComponent<VRTK_TouchpadControl>().enabled = true;
+			//Debug.Log("touchpadControl status = " + rightController.GetComponent<VRTK_TouchpadControl>().enabled);
+			rightController.GetComponent<VRTK_TouchpadControl>().controlOverrideObject = sp;
+			//Debug.Log("sphere position: " + sp.transform.position);
+		}else{
+			//rightController.GetComponent<VRTK_TouchpadControl>().enabled = false;
 		}
 	}
 }
