@@ -22,10 +22,10 @@ def halp(file_in, file_out):
 	data = np.genfromtxt(file_in, skip_header=1, dtype="U100, f8, f8, f8, U100", delimiter=",")
 	num_rows = data.shape[0] 
 
-	orig_x = -36.6
-	orig_y = 28.75
+	orig_x = -32.13
+	orig_y = 31.02
 	y = orig_y 
-	orig_z = -13.5
+	orig_z = -8.76
 	distance = 1.5
 
 	i = 0 
