@@ -108,7 +108,7 @@ namespace VRTK.GrabAttachMechanics
                     grabbedObjectRigidBody.angularVelocity = calculatedAngularVelocity;
                 }
             }
-
+            
             Vector3 velocityTarget = positionDelta / Time.fixedDeltaTime;
             Vector3 calculatedVelocity = Vector3.MoveTowards(grabbedObjectRigidBody.velocity, velocityTarget, maxDistanceDelta);
 
@@ -116,6 +116,7 @@ namespace VRTK.GrabAttachMechanics
             {
                 grabbedObjectRigidBody.velocity = calculatedVelocity;
             }
+
         }
 
         protected override void Initialise()

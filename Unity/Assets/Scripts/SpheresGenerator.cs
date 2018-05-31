@@ -44,7 +44,7 @@ public class SpheresGenerator : MonoBehaviour {
             
             //enable sphere collider isTrigger
             SphereCollider sc = sp.GetComponent(typeof(SphereCollider)) as SphereCollider;
-            sc.isTrigger = true;
+            sc.isTrigger = false;
 
             //add Rigidbody component
             Rigidbody rb = sp.AddComponent(typeof(Rigidbody)) as Rigidbody;
@@ -53,13 +53,15 @@ public class SpheresGenerator : MonoBehaviour {
 
             //add VRTK component
             VRTK_InteractableObject io = sp.AddComponent(typeof(VRTK_InteractableObject)) as VRTK_InteractableObject;
-            VRTK_FixedJointGrabAttach fjga = sp.AddComponent(typeof(VRTK_FixedJointGrabAttach)) as VRTK_FixedJointGrabAttach;
+            //VRTK_FixedJointGrabAttach fjga = sp.AddComponent(typeof(VRTK_FixedJointGrabAttach)) as VRTK_FixedJointGrabAttach;
+            VRTK_TrackObjectGrabAttach toga = sp.AddComponent(typeof(VRTK_TrackObjectGrabAttach)) as VRTK_TrackObjectGrabAttach;
             VRTK_SwapControllerGrabAction scga = sp.AddComponent(typeof(VRTK_SwapControllerGrabAction)) as VRTK_SwapControllerGrabAction;
             VRTK_InteractHaptics ih = sp.AddComponent(typeof(VRTK_InteractHaptics)) as VRTK_InteractHaptics;
-            io.holdButtonToGrab = true;
+            io.holdButtonToGrab = false;
             io.isGrabbable = true;
             io.touchHighlightColor = Color.yellow;
-            io.grabAttachMechanicScript = fjga;
+            //io.grabAttachMechanicScript = fjga;
+            io.grabAttachMechanicScript = toga;
             io.secondaryGrabActionScript = scga;
 
             /*
@@ -72,6 +74,10 @@ public class SpheresGenerator : MonoBehaviour {
             TouchedInput ti = sp.AddComponent(typeof(TouchedInput)) as TouchedInput;
             ti.input = labelInput;
             ti.label = CSVManager.GetRowList()[i].Description;
+            ti.sp = sp;
+
+            //move grabbed object
+            // MoveGrabbedObject mgo = sp.AddComponent(typeof(MoveGrabbedObject)) as MoveGrabbedObject;
         }
     }
 
