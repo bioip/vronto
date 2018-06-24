@@ -10,10 +10,10 @@ This project explores the integration of virtual reality environments and multi-
 
 3) With a reference coordinate system we can classify 2D images by simply annotating them with 2 or more points.  For example when images are databased they are typically assigned an annotation defining the "view" (e.g. anterior head; lateral thorax).  If instead the user annotates the image using annatomical points that have 3D coordinates then we can infer the view.
 
-# Operation Guide
+# Getting Started
 
-The Unity version we use is 2017.3.1f1.
-
+1) Download or clone this repository
+2) Open the folder in Unity (version 2017.3.1f1) to load the project.
 
 # Collaboration
 
