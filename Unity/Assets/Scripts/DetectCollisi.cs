@@ -15,6 +15,7 @@ public class DetectCollisi : MonoBehaviour {
 		//Debug.Log("update works");
 	}
 
+	//detect if sphere is within model
 	void OnTriggerStay(Collider other){
 		if(other.name == "Sphere"){
 			//Debug.Log("Triggered!!!");
@@ -23,6 +24,7 @@ public class DetectCollisi : MonoBehaviour {
 		}
 	}
 
+	//detect if sphere has exited model
 	void OnTriggerExit(Collider other){
 		if(other.name == "Sphere"){
 			//Debug.Log("Trigger Exit");

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ExcludeTeleport
   - RightController
+  - LeftController
   layers:
   - Default
   - TransparentFX
