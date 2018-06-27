@@ -22,13 +22,18 @@ public class TouchedInput : MonoBehaviour {
 		//Debug.Log("touchpadControl enabled = " + rightController.GetComponent<VRTK_TouchpadControl>().enabled);
 		if(io.IsTouched()){
 			//Debug.Log("is touched");
+
+			//output sphere label to HUD inputfield
 			input.text = label;
 		}
 
 		if(io.IsGrabbed()){
 			//rightController.GetComponent<VRTK_TouchpadControl>().enabled = true;
 			//Debug.Log("touchpadControl status = " + rightController.GetComponent<VRTK_TouchpadControl>().enabled);
-			rightController.GetComponent<VRTK_TouchpadControl>().controlOverrideObject = sp;
+			
+			//overide control object to sphere
+			//rightController.GetComponent<VRTK_TouchpadControl>().controlOverrideObject = sp;
+			
 			//Debug.Log("sphere position: " + sp.transform.position);
 		}else{
 			//rightController.GetComponent<VRTK_TouchpadControl>().enabled = false;

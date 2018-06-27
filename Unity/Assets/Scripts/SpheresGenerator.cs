@@ -53,22 +53,21 @@ public class SpheresGenerator : MonoBehaviour {
 
             //add VRTK component
             VRTK_InteractableObject io = sp.AddComponent(typeof(VRTK_InteractableObject)) as VRTK_InteractableObject;
-            //VRTK_FixedJointGrabAttach fjga = sp.AddComponent(typeof(VRTK_FixedJointGrabAttach)) as VRTK_FixedJointGrabAttach;
             VRTK_TrackObjectGrabAttach toga = sp.AddComponent(typeof(VRTK_TrackObjectGrabAttach)) as VRTK_TrackObjectGrabAttach;
             VRTK_SwapControllerGrabAction scga = sp.AddComponent(typeof(VRTK_SwapControllerGrabAction)) as VRTK_SwapControllerGrabAction;
             VRTK_InteractHaptics ih = sp.AddComponent(typeof(VRTK_InteractHaptics)) as VRTK_InteractHaptics;
             io.holdButtonToGrab = false;
             io.isGrabbable = true;
             io.touchHighlightColor = Color.yellow;
-            //io.grabAttachMechanicScript = fjga;
             io.grabAttachMechanicScript = toga;
-            io.secondaryGrabActionScript = scga;
+            
+            //set detach distance
+            //toga.detachDistance = 5.0f;
 
-            /*
-            //attach text to spheres
-            ObjectText ot = sp.AddComponent(typeof(ObjectText)) as ObjectText;
-            ot.description = CSVManager.GetRowList()[i].Description;
-            */
+            //use precision grab
+            toga.precisionGrab = true;
+            
+            io.secondaryGrabActionScript = scga;
 
             //show the label in HUD when touched
             TouchedInput ti = sp.AddComponent(typeof(TouchedInput)) as TouchedInput;
@@ -76,8 +75,7 @@ public class SpheresGenerator : MonoBehaviour {
             ti.label = CSVManager.GetRowList()[i].Description;
             ti.sp = sp;
 
-            //move grabbed object
-            // MoveGrabbedObject mgo = sp.AddComponent(typeof(MoveGrabbedObject)) as MoveGrabbedObject;
+
         }
     }
 
