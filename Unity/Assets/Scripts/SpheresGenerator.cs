@@ -14,8 +14,11 @@ public class SpheresGenerator : MonoBehaviour {
     private int sphere_offset = 0;
     private int pageNum = 1;
     private List<GameObject> spheres = new List<GameObject>();
+    public List<string> labelList = new List<string>();
+    public List<string> m_dropdownList = new List<string>();
     public InputField PageInput;
     public InputField labelInput;
+    public Dropdown DropDownList;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +31,7 @@ public class SpheresGenerator : MonoBehaviour {
         {
             if(i >= 2448)
             {
+                DropDownList.AddOptions(m_dropdownList);
                 return;
             }
             //generate spheres according to coord in csv file
@@ -36,6 +40,8 @@ public class SpheresGenerator : MonoBehaviour {
             sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[i].X), float.Parse(CSVManager.GetRowList()[i].Y), 
                                                 float.Parse(CSVManager.GetRowList()[i].Z));
             sp.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            sp.name = CSVManager.GetRowList()[i].Description;
+            sp.tag = "Sphere";
             spheres.Add(sp);
 
             //disable shadow
@@ -62,7 +68,7 @@ public class SpheresGenerator : MonoBehaviour {
             io.grabAttachMechanicScript = toga;
             
             //set detach distance
-            //toga.detachDistance = 5.0f;
+            toga.detachDistance = 5.0f;
 
             //use precision grab
             toga.precisionGrab = true;
@@ -74,9 +80,16 @@ public class SpheresGenerator : MonoBehaviour {
             ti.input = labelInput;
             ti.label = CSVManager.GetRowList()[i].Description;
             ti.sp = sp;
+            ti.labelList = labelList;
+            ti.input_dropdown = DropDownList;
+            ti.m_dropdownList = m_dropdownList;
+
+            //Add the label to the dropdown list
+            m_dropdownList.Add(CSVManager.GetRowList()[i].Description);
 
 
         }
+        DropDownList.AddOptions(m_dropdownList);
     }
 
     private void deactivate_spheres() {
@@ -85,6 +98,8 @@ public class SpheresGenerator : MonoBehaviour {
             Destroy(sphere);
         }
         spheres.Clear();
+        m_dropdownList.Clear();
+        DropDownList.ClearOptions();
     }
 
 	// Update is called once per frame
@@ -102,5 +117,11 @@ public class SpheresGenerator : MonoBehaviour {
         }
         generate_spheres();
         PageInput.text = "P" + pageNum.ToString() + "/6";
+    }
+
+    public void showLabelList() {
+        foreach (string label in labelList){
+            Debug.Log("label = " + label);
+        }
     }
 }
