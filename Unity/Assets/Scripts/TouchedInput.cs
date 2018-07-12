@@ -7,9 +7,12 @@ using VRTK;
 public class TouchedInput : MonoBehaviour {
 
 	public InputField input;
+	public Dropdown input_dropdown;
 	public string label;
 	public GameObject rightController;
 	public GameObject sp;
+	public List<string> labelList;
+	public List<string> m_dropdownList;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +28,7 @@ public class TouchedInput : MonoBehaviour {
 
 			//output sphere label to HUD inputfield
 			input.text = label;
+			input_dropdown.value = m_dropdownList.IndexOf(label);
 		}
 
 		if(io.IsGrabbed()){
@@ -35,8 +39,19 @@ public class TouchedInput : MonoBehaviour {
 			//rightController.GetComponent<VRTK_TouchpadControl>().controlOverrideObject = sp;
 			
 			//Debug.Log("sphere position: " + sp.transform.position);
+			input.text = label;
+			if(!labelList.Contains(label)){
+				labelList.Add(label);
+			}else{
+				/*
+				labelList.Remove(label);
+				labelList.Add(label);
+				*/
+			}
+
 		}else{
 			//rightController.GetComponent<VRTK_TouchpadControl>().enabled = false;
 		}
 	}
+
 }

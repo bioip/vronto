@@ -120,6 +120,7 @@ namespace VRTK.GrabAttachMechanics
             {
                 grabbedObjectRigidBody.velocity = calculatedVelocity;
 
+                //modified script
                 GameObject rightController = GameObject.FindGameObjectWithTag("RightController");
                 VRTK_ControllerEvents controllerEvents = rightController.GetComponent<VRTK_ControllerEvents>();
 

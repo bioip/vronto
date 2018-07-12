@@ -28,7 +28,6 @@ public class TutorialPopUp : MonoBehaviour {
 	void Update () {
 		if(leftControllerEvents.IsButtonPressed(VRTK_ControllerEvents.ButtonAlias.ButtonTwoPress) || rightControllerEvents.IsButtonPressed(VRTK_ControllerEvents.ButtonAlias.ButtonTwoPress)){
 			if(!buttonPressed){
-				Debug.Log("menu button pressed");
 				active = !active;
 				tutorialPage.SetActive(active);
 			}
