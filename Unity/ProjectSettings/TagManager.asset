@@ -9,6 +9,8 @@ TagManager:
   - LeftController
   - Sphere
   - Sphere_blinking
+  - Model
+  - SphereInModel
   layers:
   - Default
   - TransparentFX

@@ -13,7 +13,7 @@ public class SpheresGenerator : MonoBehaviour {
     public CSV CSVManager;
     private int sphere_offset = 0;
     private int pageNum = 1;
-    private List<GameObject> spheres = new List<GameObject>();
+    public List<GameObject> spheres = new List<GameObject>();
     public List<string> labelList = new List<string>();
     public List<string> m_dropdownList = new List<string>();
     public InputField PageInput;
@@ -31,6 +31,7 @@ public class SpheresGenerator : MonoBehaviour {
         {
             if(i >= 2448)
             {
+                m_dropdownList.Sort();
                 DropDownList.AddOptions(m_dropdownList);
                 return;
             }
@@ -84,11 +85,16 @@ public class SpheresGenerator : MonoBehaviour {
             ti.input_dropdown = DropDownList;
             ti.m_dropdownList = m_dropdownList;
 
+            //add connectSphere component
+            ConnectSpheres cs = sp.AddComponent(typeof(ConnectSpheres)) as ConnectSpheres;
+            cs.spheres = spheres;
+
             //Add the label to the dropdown list
             m_dropdownList.Add(CSVManager.GetRowList()[i].Description);
 
 
         }
+        m_dropdownList.Sort();
         DropDownList.AddOptions(m_dropdownList);
     }
 
