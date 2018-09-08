@@ -13,7 +13,7 @@ This project explores the integration of virtual reality environments and multi-
 # Getting Started
 
 1) Download or clone this repository
-2) Open the "Unity" folder in Unity (version 2017.3.1f1 recommended to avoid version conflicts) to load the project.
+2) Open the "Unity" folder in Unity 3d (version 2017.3.1f1 recommended to avoid version conflicts) to load the project.
 
 # Collaboration
 
