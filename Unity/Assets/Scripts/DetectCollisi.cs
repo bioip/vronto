@@ -22,6 +22,7 @@ public class DetectCollisi : MonoBehaviour {
 			other.gameObject.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.green;
 			other.gameObject.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
 			other.tag = "SphereInModel";
+
 		}
 	}
 

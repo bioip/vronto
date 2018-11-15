@@ -1,5 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System;
 using UnityEngine;
 using UnityEngine.Rendering;
 using VRTK;
@@ -20,10 +23,13 @@ public class SpheresGenerator : MonoBehaviour {
     public InputField labelInput;
     public Dropdown DropDownList;
 
+    private List<string[]> rowData = new List<string[]>();
+
 	// Use this for initialization
 	void Start () {
         generate_spheres();
         PageInput.text = "P" + pageNum.ToString() + "/6";
+        //SaveToCSV();
 	}
 
 	private void generate_spheres() {
@@ -112,6 +118,12 @@ public class SpheresGenerator : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    void OnApplicationQuit(){
+        Debug.Log("Application quit");
+        SaveToCSV();
+    }
+
     public void increment_offset() {
         deactivate_spheres();
         sphere_offset += 450;
@@ -129,5 +141,53 @@ public class SpheresGenerator : MonoBehaviour {
         foreach (string label in labelList){
             Debug.Log("label = " + label);
         }
+    }
+
+    private void SaveToCSV() {
+        Debug.Log("Start saving to csv file");
+        string[] rowDataTmp = new string[6];
+        rowDataTmp[0] = "URI";
+        rowDataTmp[1] = "label";
+        rowDataTmp[2] = "X";
+        rowDataTmp[3] = "Y";
+        rowDataTmp[4] = "Z";
+        rowDataTmp[5] = "placed";
+        rowData.Add(rowDataTmp);
+
+        for(int i = 0; i < 2448; i++){
+            rowDataTmp = new string[6];
+            rowDataTmp[0] = CSVManager.GetRowList()[i].ID;
+            rowDataTmp[1] = CSVManager.GetRowList()[i].Description;
+            rowDataTmp[2] = CSVManager.GetRowList()[i].X;
+            rowDataTmp[3] = CSVManager.GetRowList()[i].Y;
+            rowDataTmp[4] = CSVManager.GetRowList()[i].Z;
+            GameObject sp = spheres.Find(sphere => sphere.name == CSVManager.GetRowList()[i].Description);
+            if(sp != null && sp.tag == "SphereInModel"){
+                rowDataTmp[5] = "" + true;
+            }else{
+                rowDataTmp[5] = "" + false;
+            }
+            rowData.Add(rowDataTmp);
+        }
+
+        string[][]output = new string[rowData.Count][];
+
+        for(int i = 0; i < output.Length; i++){
+            output[i] = rowData[i];
+        }
+
+        int length = output.GetLength(0);
+        string delimiter = ",";
+        StringBuilder sb = new StringBuilder();
+
+        for(int i = 0; i < length; i++){
+            sb.AppendLine(string.Join(delimiter, output[i]));
+        }
+
+        string filePath = Application.dataPath + "/data/" + "Saved_data.csv";
+
+        StreamWriter outStream = System.IO.File.CreateText(filePath);
+        outStream.WriteLine(sb);
+        outStream.Close();
     }
 }
