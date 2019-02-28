@@ -39,35 +39,39 @@ public class AxisXYZ : MonoBehaviour
 
 		// Draw lines
 		GL.Begin(GL.LINES);
-		//Draw X axis
-		GL.Color(Color.red);
+		//Draw X axes
+		GL.Color(Color.grey);
 		GL.Vertex3(0, 0, 0);
 		GL.Vertex3(AxisLength, 0.0f, 0.0f);
-		for(float i = 0.0f; i <= AxisLength; i++){
-			GL.Vertex3(i, 0, 0);
-			GL.Vertex3(i, 0.5f, 0);
+		for(float i = 0.0f; i <= AxisLength; i += 2.5f){
+			for(float j = 0.0f; j <= AxisLength; j += 2.5f){
+				GL.Vertex3(0, j, i);
+				GL.Vertex3(AxisLength, j ,i);
+			}
 		}
 
-		//Draw Y axis
-		GL.Color(Color.green);
+
+		//Draw Y axes
+		GL.Color(Color.grey);
 		GL.Vertex3(0, 0, 0);
 		GL.Vertex3(0.0f, AxisLength, 0.0f);
-		for(float i = 0.0f; i <= AxisLength; i++){
-			GL.Vertex3(0, i, 0);
-			GL.Vertex3(0, i, 0.5f);
-		}
-		for(float i = 0.0f; i <= AxisLength; i++){
-			GL.Vertex3(0, i, 0);
-			GL.Vertex3(0.5f, i, 0);
+		for(float i = 0.0f; i <= AxisLength; i += 2.5f){
+			for(float j = 0.0f; j <= AxisLength; j += 2.5f){
+				GL.Vertex3(j, 0, i);
+				GL.Vertex3(j, AxisLength ,i);
+			}
 		}
 
-		//Draw Z axis
-		GL.Color(Color.blue);
+
+		//Draw Z axes
+		GL.Color(Color.grey);
 		GL.Vertex3(0, 0, 0);
 		GL.Vertex3(0.0f, 0.0f, AxisLength);
-		for(float i = 0.0f; i <= AxisLength; i++){
-			GL.Vertex3(0, 0, i);
-			GL.Vertex3(0, 0.5f, i);
+		for(float i = 0.0f; i <= AxisLength; i += 2.5f){
+			for(float j = 0.0f; j <= AxisLength; j += 2.5f){
+				GL.Vertex3(j, i, 0);
+				GL.Vertex3(j, i ,AxisLength);
+			}
 		}
 
 		GL.End();

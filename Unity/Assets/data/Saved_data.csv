@@ -862,11 +862,11 @@ HAO:0000860, propleuro-procoxal muscle, -11.977457, 11.520000, 11.392543,False
 HAO:0000861, propleuro-protrochanteral muscle, -10.916797, 11.520000, 12.453203,False
 HAO:0000862, propleuron, -9.856136, 11.520000, 13.513864,False
 HAO:0000863, propodeal bridge, -8.795476, 11.520000, 14.574524,False
-HAO:0000864, propodeal carina, -7.734816, 11.520000, 15.635184,True
+HAO:0000864, propodeal carina, -7.734816, 11.520000, 15.635184,False
 HAO:0000865, propodeal foramen, -6.674156, 11.520000, 16.695844,False
 HAO:0000866, propodeal tooth, -5.613496, 11.520000, 17.756504,False
 HAO:0000867, propodeo-first metasomal spiracle muscle, -4.552836, 11.520000, 18.817164,False
-HAO:0000868, propodeo-second abdominal sternal muscle, -3.492175, 11.520000, 19.877825,True
+HAO:0000868, propodeo-second abdominal sternal muscle, -3.492175, 11.520000, 19.877825,False
 HAO:0000869, propodeo-second abdominal tergal muscle, -2.431515, 11.520000, 20.938485,False
 HAO:0000870, prospinasterno-mesofurcal muscle, -1.370855, 11.520000, 21.999145,False
 HAO:0000871, prosternal incision, -32.130000, 10.020000, -8.760000,False
@@ -894,7 +894,7 @@ HAO:0000892, rami valvularum, -9.856136, 10.020000, 13.513864,False
 HAO:0000893, region, -8.795476, 10.020000, 14.574524,False
 HAO:0000894, remigial region, -7.734816, 10.020000, 15.635184,False
 HAO:0000895, reproductive system, -6.674156, 10.020000, 16.695844,False
-HAO:0000896, retractor of the epipharynx, -5.613496, 10.020000, 17.756504,True
+HAO:0000896, retractor of the epipharynx, -5.613496, 10.020000, 17.756504,False
 HAO:0000897, retractor of the mouth angle, -4.552836, 10.020000, 18.817164,False
 HAO:0000898, rhachis, -3.492175, 10.020000, 19.877825,False
 HAO:0000899, ridge, -2.431515, 10.020000, 20.938485,False
