@@ -18,7 +18,9 @@ Demo 2: https://drive.google.com/open?id=1a3PFtfv3hjlgBXJGRsC7_yODdTkwA8DA
 
 1) Download or clone this repository
 2) Open the "Unity" folder in Unity 3d (version 2017.3.1f1 recommended to avoid version conflicts) to load the project.
-3) To load your own model, first drag your model into the "Assets"-"Models" folder in the Unity Editor. Then drag your model to the "Hierachy". The default position should be (X: 48, Y: 1.15, Z: -2.2). You can also tweak the scale and rotation of the model in the "Inspector".
+3) To load your own model, first drag your model into the "Assets"-"Models" folder in the Unity Editor. Then drag your model to the "Hierachy", under the Gameobject "Model". The default position should be (X: 0, Y: 0, Z: 0). You can also tweak the scale and rotation of the model in the "Inspector".
+![image](https://user-images.githubusercontent.com/36896710/53604222-7f0ab300-3b79-11e9-809e-2dd6243353e1.png)
+
 4) To load your own CSV file, first drag your file into the "Assets"-"data" folder in the Unity Editor. Then find the CSV gameobject in the Hierachy. Drag your CSV file to the variable "File" in the CSV script component.
 
 # Collaboration
