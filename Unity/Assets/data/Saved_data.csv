@@ -1,5 +1,5 @@
 URI,label,X,Y,Z,placed
-HAO:0000000, anatomical entity, -32.130000, 31.020000, -8.760000,True
+HAO:0000000, anatomical entity, -32.130000, 31.020000, -8.760000,False
 HAO:0000001, ventral mesofurco-profurcal muscle, -31.069340, 31.020000, -7.699340,False
 HAO:0000002, A1 flap, -30.008680, 31.020000, -6.638680,False
 HAO:0000003, anatomical structure, -28.948019, 31.020000, -5.578019,False
@@ -898,7 +898,7 @@ HAO:0000896, retractor of the epipharynx, -5.613496, 10.020000, 17.756504,False
 HAO:0000897, retractor of the mouth angle, -4.552836, 10.020000, 18.817164,False
 HAO:0000898, rhachis, -3.492175, 10.020000, 19.877825,False
 HAO:0000899, ridge, -2.431515, 10.020000, 20.938485,False
-HAO:0000900, rim, -1.370855, 10.020000, 21.999145,False
+HAO:0000900, rim, -1.370855, 10.020000, 21.999145,True
 HAO:0000901, row, -32.130000, 31.020000, -8.760000,False
 HAO:0000902, row of impressions, -31.069340, 31.020000, -7.699340,False
 HAO:0000903, row of setae, -30.008680, 31.020000, -6.638680,False

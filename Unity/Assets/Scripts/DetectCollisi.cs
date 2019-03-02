@@ -10,6 +10,8 @@ public class DetectCollisi : MonoBehaviour {
 	private float z0 = 9.35f;
 	private float offset = 2.5f;
 
+	public GameObject rightController;
+
 	// Use this for initialization
 	void Start () {
 		Debug.Log("detection started");
@@ -30,44 +32,51 @@ public class DetectCollisi : MonoBehaviour {
 			sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
 			other.tag = "SphereInModel";
 
-			//snapping to the grid
+			GameObject grabbedObject = rightController.GetComponent<VRTK_InteractGrab>().GetGrabbedObject();
 
-			float x = sphere.transform.position.x;
-			float y = sphere.transform.position.y;
-			float z = sphere.transform.position.z;
 
-			//get the index of the target cell
-			float i = Mathf.Floor(Mathf.Abs((x - x0) / offset));
-			float j = Mathf.Floor(Mathf.Abs((y - y0) / offset));
-			float k = Mathf.Floor(Mathf.Abs((z - z0) / offset));
+			if(grabbedObject == null || rightController.GetComponent<VRTK_InteractGrab>().GetGrabbedObject().name !=sphere.name){
+				//snapping to the grid
 
-			//get the coordinates of the 8 corners of the target cell
+				float x = sphere.transform.position.x;
+				float y = sphere.transform.position.y;
+				float z = sphere.transform.position.z;
 
-			List<Vector3> corners = new List<Vector3>();
+				//get the index of the target cell
+				float i = Mathf.Floor(Mathf.Abs((x - x0) / offset));
+				float j = Mathf.Floor(Mathf.Abs((y - y0) / offset));
+				float k = Mathf.Floor(Mathf.Abs((z - z0) / offset));
 
-			corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*k));
-			corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*k));
-			corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*k));
-			corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*k));
-			corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*(k+1)));
-			corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*(k+1)));
-			corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*(k+1)));
-			corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*(k+1)));
+				//get the coordinates of the 8 corners of the target cell
 
-			float minDistance = float.MaxValue;
-			Vector3 target = new Vector3(0f, 0f, 0f);
+				List<Vector3> corners = new List<Vector3>();
 
-			foreach(Vector3 v in corners){
-				if(Vector3.Distance(sphere.transform.position, v) < minDistance){
-					target = v;
-					minDistance = Vector3.Distance(sphere.transform.position, v);
+				corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*k));
+				corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*k));
+				corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*k));
+				corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*k));
+				corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*(k+1)));
+				corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*(k+1)));
+				corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*(k+1)));
+				corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*(k+1)));
+
+				float minDistance = float.MaxValue;
+				Vector3 target = new Vector3(0f, 0f, 0f);
+
+				foreach(Vector3 v in corners){
+					if(Vector3.Distance(sphere.transform.position, v) < minDistance){
+						target = v;
+						minDistance = Vector3.Distance(sphere.transform.position, v);
+					}
 				}
+
+
+
+				//sphere.transform.position = new Vector3( (x0 + offset*i) + offset/2, (y0 + offset*j) + offset/2, (z0 - offset*k) - offset/2);
+				Debug.Log("color = " + sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor);
+				sphere.transform.position = target;
+
 			}
-
-
-
-			//sphere.transform.position = new Vector3( (x0 + offset*i) + offset/2, (y0 + offset*j) + offset/2, (z0 - offset*k) - offset/2);
-			sphere.transform.position = target;
 
 		}
 	}
