@@ -36,11 +36,38 @@ public class DetectCollisi : MonoBehaviour {
 			float y = sphere.transform.position.y;
 			float z = sphere.transform.position.z;
 
+			//get the index of the target cell
 			float i = Mathf.Floor(Mathf.Abs((x - x0) / offset));
 			float j = Mathf.Floor(Mathf.Abs((y - y0) / offset));
 			float k = Mathf.Floor(Mathf.Abs((z - z0) / offset));
 
-			sphere.transform.position = new Vector3( (x0 + offset*i) + offset/2, (y0 + offset*j) + offset/2, (z0 - offset*k) - offset/2);
+			//get the coordinates of the 8 corners of the target cell
+
+			List<Vector3> corners = new List<Vector3>();
+
+			corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*k));
+			corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*k));
+			corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*k));
+			corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*k));
+			corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*(k+1)));
+			corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*(k+1)));
+			corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*(k+1)));
+			corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*(k+1)));
+
+			float minDistance = float.MaxValue;
+			Vector3 target = new Vector3(0f, 0f, 0f);
+
+			foreach(Vector3 v in corners){
+				if(Vector3.Distance(sphere.transform.position, v) < minDistance){
+					target = v;
+					minDistance = Vector3.Distance(sphere.transform.position, v);
+				}
+			}
+
+
+
+			//sphere.transform.position = new Vector3( (x0 + offset*i) + offset/2, (y0 + offset*j) + offset/2, (z0 - offset*k) - offset/2);
+			sphere.transform.position = target;
 
 		}
 	}
