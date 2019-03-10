@@ -1,5 +1,5 @@
 URI,label,X,Y,Z,placed
-HAO:0000000, anatomical entity, -32.130000, 31.020000, -8.760000,True
+HAO:0000000, anatomical entity, -32.130000, 31.020000, -8.760000,False
 HAO:0000001, ventral mesofurco-profurcal muscle, -31.069340, 31.020000, -7.699340,False
 HAO:0000002, A1 flap, -30.008680, 31.020000, -6.638680,False
 HAO:0000003, anatomical structure, -28.948019, 31.020000, -5.578019,False
