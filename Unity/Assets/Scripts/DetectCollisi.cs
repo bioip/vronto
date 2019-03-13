@@ -25,7 +25,6 @@ public class DetectCollisi : MonoBehaviour {
 	//detect if sphere is within model
 	void OnTriggerStay(Collider other){
 		if(other.tag == "Sphere" || other.tag == "SphereInModel"){
-			//Debug.Log("Triggered!!!");
 			GameObject sphere = other.gameObject;
 
 			sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.green;
@@ -70,10 +69,6 @@ public class DetectCollisi : MonoBehaviour {
 					}
 				}
 
-
-
-				//sphere.transform.position = new Vector3( (x0 + offset*i) + offset/2, (y0 + offset*j) + offset/2, (z0 - offset*k) - offset/2);
-				Debug.Log("color = " + sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor);
 				sphere.transform.position = target;
 
 			}
@@ -84,7 +79,6 @@ public class DetectCollisi : MonoBehaviour {
 	//detect if sphere has exited model
 	void OnTriggerExit(Collider other){
 		if(other.tag == "Sphere" || other.tag == "SphereInModel"){
-			//Debug.Log("Trigger Exit");
 			GameObject sphere = other.gameObject;
 
 			sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(false);

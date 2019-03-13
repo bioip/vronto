@@ -1,7 +1,7 @@
 URI,label,X,Y,Z,placed
 HAO:0000000, anatomical entity, -32.130000, 31.020000, -8.760000,False
 HAO:0000001, ventral mesofurco-profurcal muscle, -31.069340, 31.020000, -7.699340,False
-HAO:0000002, A1 flap, -30.008680, 31.020000, -6.638680,False
+HAO:0000002, A1 flap, -30.008680, 31.020000, -6.638680,True
 HAO:0000003, anatomical structure, -28.948019, 31.020000, -5.578019,False
 HAO:0000004, portion of organism substance, -27.887359, 31.020000, -4.517359,False
 HAO:0000005, anatomical space, -26.826699, 31.020000, -3.456699,False
@@ -14,7 +14,7 @@ HAO:0000011, anatomical system, -20.462738, 31.020000, 2.907262,False
 HAO:0000012, multi-cellular organism, -19.402078, 31.020000, 3.967922,False
 HAO:0000013, cell, -18.341418, 31.020000, 5.028582,False
 HAO:0000014, cell component, -17.280758, 31.020000, 6.089242,False
-HAO:0000015, abdomen, -16.220097, 31.020000, 7.149903,False
+HAO:0000015, abdomen, -16.220097, 31.020000, 7.149903,True
 HAO:0000016, abdominal segment, -15.159437, 31.020000, 8.210563,False
 HAO:0000017, abdominal segment 1, -14.098777, 31.020000, 9.271223,False
 HAO:0000018, abdominal segment 10, -13.038117, 31.020000, 10.331883,False

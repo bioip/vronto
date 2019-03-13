@@ -29,10 +29,11 @@ public class SpheresGenerator : MonoBehaviour {
 	void Start () {
         generate_spheres();
         PageInput.text = "P" + pageNum.ToString() + "/6";
-        //SaveToCSV();
 	}
 
 	private void generate_spheres() {
+
+
         for(int i = sphere_offset; i < sphere_offset + 450; i++)
         {
             if(i >= 2448)
@@ -41,6 +42,11 @@ public class SpheresGenerator : MonoBehaviour {
                 DropDownList.AddOptions(m_dropdownList);
                 return;
             }
+
+            if(spheres.Exists(x => x.name == CSVManager.GetRowList()[i].Description)){
+                continue;
+            }
+
             //generate spheres according to coord in csv file
             GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             sp.transform.parent = transform;
@@ -50,6 +56,7 @@ public class SpheresGenerator : MonoBehaviour {
             sp.name = CSVManager.GetRowList()[i].Description;
             sp.tag = "Sphere";
             spheres.Add(sp);
+
 
             //disable shadow
             MeshRenderer mr = sp.GetComponent(typeof(MeshRenderer)) as MeshRenderer;
@@ -95,28 +102,59 @@ public class SpheresGenerator : MonoBehaviour {
             ConnectSpheres cs = sp.AddComponent(typeof(ConnectSpheres)) as ConnectSpheres;
             cs.spheres = spheres;
 
-            //Add the label to the dropdown list
-            m_dropdownList.Add(CSVManager.GetRowList()[i].Description);
-
 
         }
+
+        //Add the label to the dropdown list
+        foreach(GameObject sphere in spheres){
+            m_dropdownList.Add(sphere.name);
+        }
+
         m_dropdownList.Sort();
         DropDownList.AddOptions(m_dropdownList);
     }
 
     private void deactivate_spheres() {
+
+        List<GameObject> spheresToKeep = new List<GameObject>();
+
         foreach (GameObject sphere in spheres) 
         {
+
+            if(sphere.tag == "SphereInModel"){
+                
+                spheresToKeep.Add(sphere);
+                continue;
+                
+            }
+
             Destroy(sphere);
         }
+        
+
         spheres.Clear();
+
+        foreach(GameObject sphere in spheresToKeep){
+            spheres.Add(sphere);
+        }
+
+        spheresToKeep.Clear();
+
         m_dropdownList.Clear();
         DropDownList.ClearOptions();
     }
 
 	// Update is called once per frame
 	void Update () {
-		
+        
+        // For debug purpose
+        /*
+		if(Input.GetKeyDown(KeyCode.N)){
+			Debug.Log("Next page");
+			increment_offset();
+		}
+        */
+        
 	}
 
     void OnApplicationQuit(){
