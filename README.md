@@ -22,7 +22,7 @@ Demo 2: https://drive.google.com/open?id=1a3PFtfv3hjlgBXJGRsC7_yODdTkwA8DA
 
 ![image](https://user-images.githubusercontent.com/36896710/53604222-7f0ab300-3b79-11e9-809e-2dd6243353e1.png)
 
-4) To load your own CSV file, first drag your file into the "Assets"-"data" folder in the Unity Editor. Then find the CSV gameobject in the Hierachy. Drag your CSV file to the variable "File" in the CSV script component.
+4) To load your own CSV file, first drag your file into the "Assets"-"data" folder in the Unity Editor. Then find the CSV gameobject in the Hierachy.
 
 Your data should look like this:
 
@@ -31,6 +31,8 @@ Your data should look like this:
 Then run the csv_mod.py file with python. After that, you should get the data_final.csv file which looks like this, with coordinates assigned for each term.
 
 ![image](https://user-images.githubusercontent.com/36896710/54091708-1bd70880-4351-11e9-9f78-a6272d1a0a08.png)
+
+Then use the final version of the CSV file - "data_final.csv". Drag the CSV file to the variable "File" in the CSV script component.
 
 
 # Collaboration
