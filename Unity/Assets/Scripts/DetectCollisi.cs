@@ -10,6 +10,8 @@ public class DetectCollisi : MonoBehaviour {
 	private float z0 = 9.35f;
 	private float offset = 2.5f;
 
+	private bool snappingOnOff = true;
+
 	public GameObject rightController;
 
 	// Use this for initialization
@@ -20,6 +22,10 @@ public class DetectCollisi : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Debug.Log("update works");
+	}
+
+	public void ToggleSnappingOnOff(){
+		snappingOnOff = !snappingOnOff;
 	}
 
 	//detect if sphere is within model
@@ -46,30 +52,34 @@ public class DetectCollisi : MonoBehaviour {
 				float j = Mathf.Floor(Mathf.Abs((y - y0) / offset));
 				float k = Mathf.Floor(Mathf.Abs((z - z0) / offset));
 
-				//get the coordinates of the 8 corners of the target cell
+				if(snappingOnOff){
+					//get the coordinates of the 8 corners of the target cell
 
-				List<Vector3> corners = new List<Vector3>();
+					List<Vector3> corners = new List<Vector3>();
 
-				corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*k));
-				corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*k));
-				corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*k));
-				corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*k));
-				corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*(k+1)));
-				corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*(k+1)));
-				corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*(k+1)));
-				corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*(k+1)));
+					corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*k));
+					corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*k));
+					corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*k));
+					corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*k));
+					corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*(k+1)));
+					corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*(k+1)));
+					corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*(k+1)));
+					corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*(k+1)));
 
-				float minDistance = float.MaxValue;
-				Vector3 target = new Vector3(0f, 0f, 0f);
+					float minDistance = float.MaxValue;
+					Vector3 target = new Vector3(0f, 0f, 0f);
 
-				foreach(Vector3 v in corners){
-					if(Vector3.Distance(sphere.transform.position, v) < minDistance){
-						target = v;
-						minDistance = Vector3.Distance(sphere.transform.position, v);
+					foreach(Vector3 v in corners){
+						if(Vector3.Distance(sphere.transform.position, v) < minDistance){
+							target = v;
+							minDistance = Vector3.Distance(sphere.transform.position, v);
+						}
 					}
+
+					sphere.transform.position = target;
 				}
 
-				sphere.transform.position = target;
+				
 
 			}
 
