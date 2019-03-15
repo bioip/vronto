@@ -29,7 +29,7 @@ public class InteractWithLabeledSphere : MonoBehaviour {
 		//Debug.Log("dropdownlist value = " + DropDownList.value);
 		sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
 		if(sp != null){
-			sp.transform.position = rightController.transform.position;
+			sp.transform.position = rightController.transform.position + rightController.transform.forward;
 		}
 	}
 
@@ -39,7 +39,10 @@ public class InteractWithLabeledSphere : MonoBehaviour {
 		sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
 		if(sp != null){
 			sp.tag = "Sphere_blinking";
-			coroutine = Blink(2.0f);
+			coroutine = Blink(3.0f);
+			StartCoroutine(coroutine);
+
+			coroutine = Resize(3.0f);
 			StartCoroutine(coroutine);
 		}
 		
@@ -53,11 +56,28 @@ public class InteractWithLabeledSphere : MonoBehaviour {
 			sp.GetComponent<VRTK_InteractableObject>().touchHighlightColor = colors[i % 3];
 			sp.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
 			i++;
-			yield return new WaitForSeconds(0.2f);
+			yield return new WaitForSeconds(0.3f);
 		}
 		sp.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
 		sp.GetComponent<VRTK_InteractableObject>().ToggleHighlight(false);
 		sp.tag = "Sphere";
+	}
+
+	private IEnumerator Resize(float waitTime){
+		float endTime = Time.time + waitTime;
+		bool enlarge = true;
+		Vector3 originalScale = sp.transform.localScale;
+		while(Time.time < endTime){
+			if(enlarge){
+				sp.transform.localScale = new Vector3(2.0f, 2.0f, 2.0f);
+				enlarge = false;
+			}else{
+				sp.transform.localScale = originalScale;
+				enlarge = true;
+			}
+			yield return new WaitForSeconds(0.3f);
+		}
+		sp.transform.localScale = originalScale;
 	}
 
 	public void lastLabel(){

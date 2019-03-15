@@ -6,6 +6,8 @@ public class AxisXYZ : MonoBehaviour
 	static Material lineMaterial;
 	public float AxisLength;
 
+	public float offset;
+
 	static void CreateLineMaterial()
 	{
 		if (!lineMaterial)
@@ -43,8 +45,8 @@ public class AxisXYZ : MonoBehaviour
 		GL.Color(Color.grey);
 		GL.Vertex3(0, 0, 0);
 		GL.Vertex3(AxisLength, 0.0f, 0.0f);
-		for(float i = 0.0f; i <= AxisLength; i += 2.5f){
-			for(float j = 0.0f; j <= AxisLength; j += 2.5f){
+		for(float i = 0.0f; i <= AxisLength; i += offset){
+			for(float j = 0.0f; j <= AxisLength; j += offset){
 				GL.Vertex3(0, j, i);
 				GL.Vertex3(AxisLength, j ,i);
 			}
@@ -55,8 +57,8 @@ public class AxisXYZ : MonoBehaviour
 		GL.Color(Color.grey);
 		GL.Vertex3(0, 0, 0);
 		GL.Vertex3(0.0f, AxisLength, 0.0f);
-		for(float i = 0.0f; i <= AxisLength; i += 2.5f){
-			for(float j = 0.0f; j <= AxisLength; j += 2.5f){
+		for(float i = 0.0f; i <= AxisLength; i += offset){
+			for(float j = 0.0f; j <= AxisLength; j += offset){
 				GL.Vertex3(j, 0, i);
 				GL.Vertex3(j, AxisLength ,i);
 			}
@@ -67,8 +69,8 @@ public class AxisXYZ : MonoBehaviour
 		GL.Color(Color.grey);
 		GL.Vertex3(0, 0, 0);
 		GL.Vertex3(0.0f, 0.0f, AxisLength);
-		for(float i = 0.0f; i <= AxisLength; i += 2.5f){
-			for(float j = 0.0f; j <= AxisLength; j += 2.5f){
+		for(float i = 0.0f; i <= AxisLength; i += offset){
+			for(float j = 0.0f; j <= AxisLength; j += offset){
 				GL.Vertex3(j, i, 0);
 				GL.Vertex3(j, i ,AxisLength);
 			}
