@@ -38,6 +38,12 @@ public class SpheresGenerator : MonoBehaviour {
         {
             if(i >= 2448)
             {
+                
+                //Add the label to the dropdown list
+                foreach(GameObject sphere in spheres){
+                    m_dropdownList.Add(sphere.name);
+                }
+
                 m_dropdownList.Sort();
                 DropDownList.AddOptions(m_dropdownList);
                 return;
