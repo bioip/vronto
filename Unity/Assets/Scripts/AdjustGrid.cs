@@ -10,7 +10,11 @@ public class AdjustGrid : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		this.offset = 2.5f;
 		grid = this.gameObject.transform.GetChild(0).gameObject;
+		AxisXYZ axes = grid.GetComponent(typeof(AxisXYZ)) as AxisXYZ;
+		axes.AdjustOffset(this.offset);
+		grid.SetActive(true);
 	}
 	
 	// Update is called once per frame
