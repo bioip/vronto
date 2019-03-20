@@ -7,7 +7,7 @@ public class AxisXYZ : MonoBehaviour
 	static Material lineMaterial;
 	public float AxisLength;
 
-	public float offset;
+	protected float offset;
 
 	static void CreateLineMaterial()
 	{
@@ -33,7 +33,6 @@ public class AxisXYZ : MonoBehaviour
 	{
 
 		if(offset <= 0){
-			Debug.Log("Invalid offset value");
 			return;
 		}
 
