@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class AxisXYZ : MonoBehaviour
 {    
@@ -30,6 +31,12 @@ public class AxisXYZ : MonoBehaviour
 	// Will be called after all regular rendering is done
 	public void OnRenderObject()
 	{
+
+		if(offset <= 0){
+			Debug.Log("Invalid offset value");
+			return;
+		}
+
 		CreateLineMaterial();
 		// Apply the line material
 		lineMaterial.SetPass(0);
@@ -78,5 +85,10 @@ public class AxisXYZ : MonoBehaviour
 
 		GL.End();
 		GL.PopMatrix();
+	}
+
+	public void AdjustOffset(float newOffset){
+		offset = newOffset;
+		Debug.Log("offset = " + offset);
 	}
 }
