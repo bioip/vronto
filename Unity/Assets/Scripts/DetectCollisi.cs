@@ -8,7 +8,7 @@ public class DetectCollisi : MonoBehaviour {
 	private float x0 = 36.45f;
 	private float y0 = -6.85f;
 	private float z0 = 9.35f;
-	private float offset = 2.5f;
+	public float offset;
 
 	private bool snappingOnOff = true;
 
@@ -95,6 +95,10 @@ public class DetectCollisi : MonoBehaviour {
 			sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
 			other.tag = "Sphere";
 		}
+	}
+
+	public void UpdateOffset(float newOffset){
+		offset = newOffset;
 	}
 
 
