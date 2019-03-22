@@ -10,7 +10,8 @@ using VRTK.GrabAttachMechanics;
 using VRTK.SecondaryControllerGrabActions;
 using UnityEngine.UI;
 
-public class SpheresGenerator : MonoBehaviour {
+public class SpheresGenerator : MonoBehaviour
+{
 
     private int[] objects;
     public CSV CSVManager;
@@ -25,22 +26,25 @@ public class SpheresGenerator : MonoBehaviour {
 
     private List<string[]> rowData = new List<string[]>();
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         generate_spheres();
         PageInput.text = "P" + pageNum.ToString() + "/6";
-	}
+    }
 
-	private void generate_spheres() {
+    private void generate_spheres()
+    {
 
 
-        for(int i = sphere_offset; i < sphere_offset + 450; i++)
+        for (int i = sphere_offset; i < sphere_offset + 450; i++)
         {
-            if(i >= 2448)
+            if (i >= 2448)
             {
-                
+
                 //Add the label to the dropdown list
-                foreach(GameObject sphere in spheres){
+                foreach (GameObject sphere in spheres)
+                {
                     m_dropdownList.Add(sphere.name);
                 }
 
@@ -49,14 +53,15 @@ public class SpheresGenerator : MonoBehaviour {
                 return;
             }
 
-            if(spheres.Exists(x => x.name == CSVManager.GetRowList()[i].Description)){
+            if (spheres.Exists(x => x.name == CSVManager.GetRowList()[i].Description))
+            {
                 continue;
             }
 
             //generate spheres according to coord in csv file
             GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             sp.transform.parent = transform;
-            sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[i].X), float.Parse(CSVManager.GetRowList()[i].Y), 
+            sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[i].X), float.Parse(CSVManager.GetRowList()[i].Y),
                                                 float.Parse(CSVManager.GetRowList()[i].Z));
             sp.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             sp.name = CSVManager.GetRowList()[i].Description;
@@ -67,7 +72,7 @@ public class SpheresGenerator : MonoBehaviour {
             //disable shadow
             MeshRenderer mr = sp.GetComponent(typeof(MeshRenderer)) as MeshRenderer;
             mr.shadowCastingMode = ShadowCastingMode.Off;
-            
+
             //enable sphere collider isTrigger
             SphereCollider sc = sp.GetComponent(typeof(SphereCollider)) as SphereCollider;
             sc.isTrigger = false;
@@ -86,13 +91,13 @@ public class SpheresGenerator : MonoBehaviour {
             io.isGrabbable = true;
             io.touchHighlightColor = Color.yellow;
             io.grabAttachMechanicScript = toga;
-            
+
             //set detach distance
             toga.detachDistance = 5.0f;
 
             //use precision grab
             toga.precisionGrab = true;
-            
+
             io.secondaryGrabActionScript = scga;
 
             //show the label in HUD when touched
@@ -112,7 +117,8 @@ public class SpheresGenerator : MonoBehaviour {
         }
 
         //Add the label to the dropdown list
-        foreach(GameObject sphere in spheres){
+        foreach (GameObject sphere in spheres)
+        {
             m_dropdownList.Add(sphere.name);
         }
 
@@ -120,27 +126,30 @@ public class SpheresGenerator : MonoBehaviour {
         DropDownList.AddOptions(m_dropdownList);
     }
 
-    private void deactivate_spheres() {
+    private void deactivate_spheres()
+    {
 
         List<GameObject> spheresToKeep = new List<GameObject>();
 
-        foreach (GameObject sphere in spheres) 
+        foreach (GameObject sphere in spheres)
         {
 
-            if(sphere.tag == "SphereInModel"){
-                
+            if (sphere.tag == "SphereInModel")
+            {
+
                 spheresToKeep.Add(sphere);
                 continue;
-                
+
             }
 
             Destroy(sphere);
         }
-        
+
 
         spheres.Clear();
 
-        foreach(GameObject sphere in spheresToKeep){
+        foreach (GameObject sphere in spheresToKeep)
+        {
             spheres.Add(sphere);
         }
 
@@ -150,9 +159,10 @@ public class SpheresGenerator : MonoBehaviour {
         DropDownList.ClearOptions();
     }
 
-	// Update is called once per frame
-	void Update () {
-        
+    // Update is called once per frame
+    void Update()
+    {
+
         // For debug purpose
         /*
 		if(Input.GetKeyDown(KeyCode.N)){
@@ -160,19 +170,21 @@ public class SpheresGenerator : MonoBehaviour {
 			increment_offset();
 		}
         */
-        
-	}
 
-    void OnApplicationQuit(){
+    }
+
+    void OnApplicationQuit()
+    {
         Debug.Log("Application quit");
         SaveToCSV();
     }
 
-    public void increment_offset() {
+    public void increment_offset()
+    {
         deactivate_spheres();
         sphere_offset += 450;
         pageNum += 1;
-        if(sphere_offset >= 2449)
+        if (sphere_offset >= 2449)
         {
             sphere_offset = 0;
             pageNum = 1;
@@ -181,13 +193,16 @@ public class SpheresGenerator : MonoBehaviour {
         PageInput.text = "P" + pageNum.ToString() + "/6";
     }
 
-    public void showLabelList() {
-        foreach (string label in labelList){
+    public void showLabelList()
+    {
+        foreach (string label in labelList)
+        {
             Debug.Log("label = " + label);
         }
     }
 
-    private void SaveToCSV() {
+    private void SaveToCSV()
+    {
         Debug.Log("Start saving to csv file");
         string[] rowDataTmp = new string[6];
         rowDataTmp[0] = "URI";
@@ -198,7 +213,8 @@ public class SpheresGenerator : MonoBehaviour {
         rowDataTmp[5] = "placed";
         rowData.Add(rowDataTmp);
 
-        for(int i = 0; i < 2448; i++){
+        for (int i = 0; i < 2448; i++)
+        {
             rowDataTmp = new string[6];
             rowDataTmp[0] = CSVManager.GetRowList()[i].ID;
             rowDataTmp[1] = CSVManager.GetRowList()[i].Description;
@@ -206,17 +222,21 @@ public class SpheresGenerator : MonoBehaviour {
             rowDataTmp[3] = CSVManager.GetRowList()[i].Y;
             rowDataTmp[4] = CSVManager.GetRowList()[i].Z;
             GameObject sp = spheres.Find(sphere => sphere.name == CSVManager.GetRowList()[i].Description);
-            if(sp != null && sp.tag == "SphereInModel"){
+            if (sp != null && sp.tag == "SphereInModel")
+            {
                 rowDataTmp[5] = "" + true;
-            }else{
+            }
+            else
+            {
                 rowDataTmp[5] = "" + false;
             }
             rowData.Add(rowDataTmp);
         }
 
-        string[][]output = new string[rowData.Count][];
+        string[][] output = new string[rowData.Count][];
 
-        for(int i = 0; i < output.Length; i++){
+        for (int i = 0; i < output.Length; i++)
+        {
             output[i] = rowData[i];
         }
 
@@ -224,7 +244,8 @@ public class SpheresGenerator : MonoBehaviour {
         string delimiter = ",";
         StringBuilder sb = new StringBuilder();
 
-        for(int i = 0; i < length; i++){
+        for (int i = 0; i < length; i++)
+        {
             sb.AppendLine(string.Join(delimiter, output[i]));
         }
 

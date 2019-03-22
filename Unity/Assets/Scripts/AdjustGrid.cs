@@ -2,33 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AdjustGrid : MonoBehaviour {
+public class AdjustGrid : MonoBehaviour
+{
 
-	private float offset = 0.0f;
+    private float offset = 0.0f;
 
-	private GameObject grid;
+    private GameObject grid;
 
-	// Use this for initialization
-	void Start () {
-		this.offset = 2.5f;
-		grid = this.gameObject.transform.GetChild(0).gameObject;
-		AxisXYZ axes = grid.GetComponent(typeof(AxisXYZ)) as AxisXYZ;
-		axes.AdjustOffset(this.offset);
-		grid.SetActive(true);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Use this for initialization
+    void Start()
+    {
+        this.offset = 2.5f;
+        grid = this.gameObject.transform.GetChild(0).gameObject;
+        AxisXYZ axes = grid.GetComponent(typeof(AxisXYZ)) as AxisXYZ;
+        axes.AdjustOffset(this.offset);
+        grid.SetActive(true);
+    }
 
-	public void AdjustOffset(float newOffset){
-		offset = newOffset;
-		Debug.Log("adjust grid: offset = " + offset);
-		grid.SetActive(false);
-		AxisXYZ axes = grid.GetComponent(typeof(AxisXYZ)) as AxisXYZ;
-		axes.AdjustOffset(this.offset);
-		grid.SetActive(true);
+    // Update is called once per frame
+    void Update()
+    {
 
-	}
+    }
+
+    public void AdjustOffset(float newOffset)
+    {
+        offset = newOffset;
+        Debug.Log("adjust grid: offset = " + offset);
+        grid.SetActive(false);
+        AxisXYZ axes = grid.GetComponent(typeof(AxisXYZ)) as AxisXYZ;
+        axes.AdjustOffset(this.offset);
+        grid.SetActive(true);
+
+    }
 }

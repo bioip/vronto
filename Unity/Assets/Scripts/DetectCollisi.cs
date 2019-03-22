@@ -3,104 +3,117 @@ using System.Collections.Generic;
 using UnityEngine;
 using VRTK;
 
-public class DetectCollisi : MonoBehaviour {
+public class DetectCollisi : MonoBehaviour
+{
 
-	private float x0 = 36.45f;
-	private float y0 = -6.85f;
-	private float z0 = 9.35f;
-	public float offset;
+    private float x0 = 36.45f;
+    private float y0 = -6.85f;
+    private float z0 = 9.35f;
+    public float offset;
 
-	private bool snappingOnOff = true;
+    private bool snappingOnOff = true;
 
-	public GameObject rightController;
+    public GameObject rightController;
 
-	// Use this for initialization
-	void Start () {
-		Debug.Log("detection started");
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		//Debug.Log("update works");
-	}
+    // Use this for initialization
+    void Start()
+    {
+        Debug.Log("detection started");
+    }
 
-	public void ToggleSnappingOnOff(){
-		snappingOnOff = !snappingOnOff;
-	}
+    // Update is called once per frame
+    void Update()
+    {
+        //Debug.Log("update works");
+    }
 
-	//detect if sphere is within model
-	void OnTriggerStay(Collider other){
-		if(other.tag == "Sphere" || other.tag == "SphereInModel"){
-			GameObject sphere = other.gameObject;
+    public void ToggleSnappingOnOff()
+    {
+        snappingOnOff = !snappingOnOff;
+    }
 
-			sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.green;
-			sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
-			other.tag = "SphereInModel";
+    //detect if sphere is within model
+    void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Sphere" || other.tag == "SphereInModel")
+        {
+            GameObject sphere = other.gameObject;
 
-			GameObject grabbedObject = rightController.GetComponent<VRTK_InteractGrab>().GetGrabbedObject();
+            sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.green;
+            sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
+            other.tag = "SphereInModel";
 
-
-			if(grabbedObject == null || rightController.GetComponent<VRTK_InteractGrab>().GetGrabbedObject().name !=sphere.name){
-				//snapping to the grid
-
-				float x = sphere.transform.position.x;
-				float y = sphere.transform.position.y;
-				float z = sphere.transform.position.z;
-
-				//get the index of the target cell
-				float i = Mathf.Floor(Mathf.Abs((x - x0) / offset));
-				float j = Mathf.Floor(Mathf.Abs((y - y0) / offset));
-				float k = Mathf.Floor(Mathf.Abs((z - z0) / offset));
-
-				if(snappingOnOff){
-					//get the coordinates of the 8 corners of the target cell
-
-					List<Vector3> corners = new List<Vector3>();
-
-					corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*k));
-					corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*k));
-					corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*k));
-					corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*k));
-					corners.Add(new Vector3(x0 + offset*i, y0 + offset*j, z0 - offset*(k+1)));
-					corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*j, z0 - offset*(k+1)));
-					corners.Add(new Vector3(x0 + offset*(i+1), y0 + offset*(j+1), z0 - offset*(k+1)));
-					corners.Add(new Vector3(x0 + offset*i, y0 + offset*(j+1), z0 - offset*(k+1)));
-
-					float minDistance = float.MaxValue;
-					Vector3 target = new Vector3(0f, 0f, 0f);
-
-					foreach(Vector3 v in corners){
-						if(Vector3.Distance(sphere.transform.position, v) < minDistance){
-							target = v;
-							minDistance = Vector3.Distance(sphere.transform.position, v);
-						}
-					}
-
-					sphere.transform.position = target;
-				}
-
-				
-
-			}
-
-		}
-	}
-
-	//detect if sphere has exited model
-	void OnTriggerExit(Collider other){
-		if(other.tag == "Sphere" || other.tag == "SphereInModel"){
-			GameObject sphere = other.gameObject;
-
-			sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(false);
-			sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
-			other.tag = "Sphere";
-		}
-	}
-
-	public void UpdateOffset(float newOffset){
-		offset = newOffset;
-	}
+            GameObject grabbedObject = rightController.GetComponent<VRTK_InteractGrab>().GetGrabbedObject();
 
 
-	
+            if (grabbedObject == null || rightController.GetComponent<VRTK_InteractGrab>().GetGrabbedObject().name != sphere.name)
+            {
+                //snapping to the grid
+
+                float x = sphere.transform.position.x;
+                float y = sphere.transform.position.y;
+                float z = sphere.transform.position.z;
+
+                //get the index of the target cell
+                float i = Mathf.Floor(Mathf.Abs((x - x0) / offset));
+                float j = Mathf.Floor(Mathf.Abs((y - y0) / offset));
+                float k = Mathf.Floor(Mathf.Abs((z - z0) / offset));
+
+                if (snappingOnOff)
+                {
+                    //get the coordinates of the 8 corners of the target cell
+
+                    List<Vector3> corners = new List<Vector3>();
+
+                    corners.Add(new Vector3(x0 + offset * i, y0 + offset * j, z0 - offset * k));
+                    corners.Add(new Vector3(x0 + offset * (i + 1), y0 + offset * j, z0 - offset * k));
+                    corners.Add(new Vector3(x0 + offset * (i + 1), y0 + offset * (j + 1), z0 - offset * k));
+                    corners.Add(new Vector3(x0 + offset * i, y0 + offset * (j + 1), z0 - offset * k));
+                    corners.Add(new Vector3(x0 + offset * i, y0 + offset * j, z0 - offset * (k + 1)));
+                    corners.Add(new Vector3(x0 + offset * (i + 1), y0 + offset * j, z0 - offset * (k + 1)));
+                    corners.Add(new Vector3(x0 + offset * (i + 1), y0 + offset * (j + 1), z0 - offset * (k + 1)));
+                    corners.Add(new Vector3(x0 + offset * i, y0 + offset * (j + 1), z0 - offset * (k + 1)));
+
+                    float minDistance = float.MaxValue;
+                    Vector3 target = new Vector3(0f, 0f, 0f);
+
+                    foreach (Vector3 v in corners)
+                    {
+                        if (Vector3.Distance(sphere.transform.position, v) < minDistance)
+                        {
+                            target = v;
+                            minDistance = Vector3.Distance(sphere.transform.position, v);
+                        }
+                    }
+
+                    sphere.transform.position = target;
+                }
+
+
+
+            }
+
+        }
+    }
+
+    //detect if sphere has exited model
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Sphere" || other.tag == "SphereInModel")
+        {
+            GameObject sphere = other.gameObject;
+
+            sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(false);
+            sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
+            other.tag = "Sphere";
+        }
+    }
+
+    public void UpdateOffset(float newOffset)
+    {
+        offset = newOffset;
+    }
+
+
+
 }
