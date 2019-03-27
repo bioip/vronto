@@ -32,6 +32,10 @@ public class DetectCollisi : MonoBehaviour
         snappingOnOff = !snappingOnOff;
     }
 
+    public void SnappingOff(){
+        snappingOnOff = false;
+    }
+
     //detect if sphere is within model
     void OnTriggerStay(Collider other)
     {
