@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.25329408, g: 0.2169948, b: 0.23320016, a: 1}
+  m_IndirectSpecularColor: {r: 0.2532909, g: 0.21699807, b: 0.23320127, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1353,11 +1353,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CSVManager: {fileID: 1938834900}
+  pageNum: 1
   spheres: []
   labelList: []
   m_dropdownList: []
   PageInput: {fileID: 968209598}
-  labelInput: {fileID: 0}
+  labelInput: {fileID: 1904440347}
   DropDownList: {fileID: 44282265}
 --- !u!4 &175260259
 Transform:

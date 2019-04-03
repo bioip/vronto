@@ -31,15 +31,19 @@ public class InteractWithLabeledSphere : MonoBehaviour
         //sp = GameObject.Find(input.text);
         //Debug.Log("dropdownlist value = " + DropDownList.value);
         sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+        Debug.Log("sp = " + sp);
         if (sp != null)
         {
             sp.transform.position = rightController.transform.position + rightController.transform.forward;
         } else {
+            Debug.Log("dropdownlist value = " + DropDownList.value);
             int page = DropDownList.value / 450;
-            for(int i = SphereGenerator.GetComponent<SpheresGenerator>().pageNum; i <= page; i++){
-                SphereGenerator.GetComponent<SpheresGenerator>().pageNum++;
+            int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
+            for(int i = curPage; i <= page; i++){
                 SphereGenerator.GetComponent<SpheresGenerator>().increment_offset();
+                Debug.Log("next page");
             }
+            Debug.Log("value = " + DropDownList.options[DropDownList.value].text);
             sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
             sp.transform.position = rightController.transform.position + rightController.transform.forward;
         }
@@ -50,8 +54,25 @@ public class InteractWithLabeledSphere : MonoBehaviour
         //sp = GameObject.Find(input.text);	
         //Debug.Log("dropdownlist value = " + DropDownList.value);
         sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+        Debug.Log("sp = " + sp);
         if (sp != null)
         {
+            sp.tag = "Sphere_blinking";
+            coroutine = Blink(3.0f);
+            StartCoroutine(coroutine);
+
+            coroutine = Resize(3.0f);
+            StartCoroutine(coroutine);
+        } else {
+            int page = DropDownList.value / 450;
+            int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
+            for(int i = curPage; i <= page; i++){
+                SphereGenerator.GetComponent<SpheresGenerator>().increment_offset();
+                Debug.Log("next page");
+            }
+            Debug.Log("value = " + DropDownList.options[DropDownList.value].text);
+            sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+
             sp.tag = "Sphere_blinking";
             coroutine = Blink(3.0f);
             StartCoroutine(coroutine);
