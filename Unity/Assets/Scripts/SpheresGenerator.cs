@@ -16,7 +16,7 @@ public class SpheresGenerator : MonoBehaviour
     private int[] objects;
     public CSV CSVManager;
     private int sphere_offset = 0;
-    private int pageNum = 1;
+    public int pageNum = 1;
     public List<GameObject> spheres = new List<GameObject>();
     public List<string> labelList = new List<string>();
     public List<string> m_dropdownList = new List<string>();
@@ -29,8 +29,21 @@ public class SpheresGenerator : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        SetDropdownList();
         generate_spheres();
         PageInput.text = "P" + pageNum.ToString() + "/6";
+    }
+
+    private void SetDropdownList(){
+        
+
+        for(int i = 0; i < CSVManager.GetRowList().Count; i++){
+            m_dropdownList.Add(CSVManager.GetRowList()[i].Description);
+        }
+
+        m_dropdownList.Sort();
+        DropDownList.AddOptions(m_dropdownList);
+        Debug.Log("DropDownList size = " + DropDownList.options.Count);
     }
 
     private void generate_spheres()
@@ -43,6 +56,7 @@ public class SpheresGenerator : MonoBehaviour
             {
 
                 //Add the label to the dropdown list
+                /*
                 foreach (GameObject sphere in spheres)
                 {
                     m_dropdownList.Add(sphere.name);
@@ -50,6 +64,7 @@ public class SpheresGenerator : MonoBehaviour
 
                 m_dropdownList.Sort();
                 DropDownList.AddOptions(m_dropdownList);
+                */
                 return;
             }
 
@@ -117,6 +132,7 @@ public class SpheresGenerator : MonoBehaviour
         }
 
         //Add the label to the dropdown list
+        /*
         foreach (GameObject sphere in spheres)
         {
             m_dropdownList.Add(sphere.name);
@@ -124,6 +140,7 @@ public class SpheresGenerator : MonoBehaviour
 
         m_dropdownList.Sort();
         DropDownList.AddOptions(m_dropdownList);
+        */
     }
 
     private void deactivate_spheres()
@@ -155,8 +172,10 @@ public class SpheresGenerator : MonoBehaviour
 
         spheresToKeep.Clear();
 
+        /*
         m_dropdownList.Clear();
         DropDownList.ClearOptions();
+        */
     }
 
     // Update is called once per frame

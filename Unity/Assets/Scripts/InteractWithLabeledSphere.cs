@@ -34,6 +34,14 @@ public class InteractWithLabeledSphere : MonoBehaviour
         if (sp != null)
         {
             sp.transform.position = rightController.transform.position + rightController.transform.forward;
+        } else {
+            int page = DropDownList.value / 450;
+            for(int i = SphereGenerator.GetComponent<SpheresGenerator>().pageNum; i <= page; i++){
+                SphereGenerator.GetComponent<SpheresGenerator>().pageNum++;
+                SphereGenerator.GetComponent<SpheresGenerator>().increment_offset();
+            }
+            sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+            sp.transform.position = rightController.transform.position + rightController.transform.forward;
         }
     }
 
