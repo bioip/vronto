@@ -15,6 +15,7 @@ public class SpheresGenerator : MonoBehaviour
 
     private int[] objects;
     public CSV CSVManager;
+    public CSVRelationship CSVManagerRelationship;
     private int sphere_offset = 0;
     public int pageNum = 1;
     public List<GameObject> spheres = new List<GameObject>();
@@ -31,6 +32,7 @@ public class SpheresGenerator : MonoBehaviour
     {
         SetDropdownList();
         generate_spheres();
+        FormSet();
         PageInput.text = "P" + pageNum.ToString() + "/6";
     }
 
@@ -124,6 +126,10 @@ public class SpheresGenerator : MonoBehaviour
             ti.input_dropdown = DropDownList;
             ti.m_dropdownList = m_dropdownList;
 
+            //Add Parent attributes
+            Parent parent = sp.AddComponent(typeof(Parent)) as Parent;
+            parent.id = CSVManager.GetRowList()[i].ID;
+
             //add connectSphere component
             ConnectSpheres cs = sp.AddComponent(typeof(ConnectSpheres)) as ConnectSpheres;
             cs.spheres = spheres;
@@ -141,6 +147,40 @@ public class SpheresGenerator : MonoBehaviour
         m_dropdownList.Sort();
         DropDownList.AddOptions(m_dropdownList);
         */
+    }
+
+    private void FormSet(){
+        // form set based on part_of relationship
+        foreach(GameObject sphere in spheres){
+            List<CSVRelationship.Row> AllID = CSVManagerRelationship.FindAll_ID(sphere.GetComponent<Parent>().id);
+            foreach(CSVRelationship.Row row in AllID){
+                // part_of relatinoship
+                if(row.Relationship == "BFO:0000050"){
+                    GameObject targetSphere = spheres.Find(x => x.GetComponent<Parent>().id == row.Target_ID);
+                    if(targetSphere != null)
+                        targetSphere.GetComponent<Parent>().descendents.Add(sphere);
+                }
+            }
+        }
+
+        // modify set based on is_a relationship
+        foreach(GameObject sphere in spheres){
+            List<CSVRelationship.Row> AllID = CSVManagerRelationship.FindAll_ID(sphere.GetComponent<Parent>().id);
+            foreach(CSVRelationship.Row row in AllID){
+                // part_of relatinoship
+                if(row.Relationship == "is_a"){
+                    GameObject targetSphere = spheres.Find(x => x.GetComponent<Parent>().id == row.Target_ID);
+                    if(targetSphere != null){
+                        if(sphere.GetComponent<Parent>().descendents.Count < targetSphere.GetComponent<Parent>().descendents.Count){
+                            sphere.GetComponent<Parent>().descendents = targetSphere.GetComponent<Parent>().descendents;
+                        }else{
+                            targetSphere.GetComponent<Parent>().descendents = sphere.GetComponent<Parent>().descendents;
+                        }
+                    }
+                        
+                }
+            }
+        }
     }
 
     private void deactivate_spheres()
@@ -209,6 +249,7 @@ public class SpheresGenerator : MonoBehaviour
             pageNum = 1;
         }
         generate_spheres();
+        FormSet();
         PageInput.text = "P" + pageNum.ToString() + "/6";
     }
 
