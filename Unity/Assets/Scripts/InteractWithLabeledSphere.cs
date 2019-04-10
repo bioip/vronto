@@ -122,21 +122,14 @@ public class InteractWithLabeledSphere : MonoBehaviour
         sp.transform.localScale = originalScale;
     }
 
-    public void lastLabel()
-    {
-        int currentLabelIndex = labelList.IndexOf(input.text);
-        if (currentLabelIndex > 0)
-        {
-            input.text = labelList[currentLabelIndex - 1];
-        }
-    }
-
-    public void NextLabel()
-    {
-        int currentLabelIndex = labelList.IndexOf(input.text);
-        if (currentLabelIndex < labelList.Count - 1)
-        {
-            input.text = labelList[currentLabelIndex + 1];
+    public void ShowSet(){
+        sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+        if(sp != null){
+            List<GameObject> descendents = sp.GetComponent<Parent>().descendents;
+            foreach(GameObject descendent in descendents){
+                descendent.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
+                descendent.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
+            }
         }
     }
 }
