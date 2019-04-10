@@ -127,8 +127,10 @@ public class InteractWithLabeledSphere : MonoBehaviour
         if(sp != null){
             List<GameObject> descendents = sp.GetComponent<Parent>().descendents;
             foreach(GameObject descendent in descendents){
-                descendent.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
-                descendent.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
+                if(descendent.tag != "SphereInModel"){
+                    descendent.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
+                    descendent.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
+                }
             }
         }
     }
