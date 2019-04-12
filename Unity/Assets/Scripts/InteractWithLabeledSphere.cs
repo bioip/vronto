@@ -15,6 +15,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
     public List<string> labelList;
     private Dropdown DropDownList;
     public GameObject SphereGenerator;
+    private bool showingSet;
 
     // Use this for initialization
     void Start()
@@ -24,6 +25,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
         colors = new Color[3] { Color.red, Color.magenta, Color.cyan };
         labelList = SphereGenerator.GetComponent<SpheresGenerator>().labelList;
         DropDownList = SphereGenerator.GetComponent<SpheresGenerator>().DropDownList;
+        showingSet = false;
     }
 
     public void FetchSphere()
@@ -125,40 +127,45 @@ public class InteractWithLabeledSphere : MonoBehaviour
     public void ShowSet(){
         sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
         if(sp != null){
-            List<GameObject> descendents = sp.GetComponent<Parent>().descendents;
-            /*
-            foreach(GameObject descendent in descendents){
-                if(descendent.tag != "SphereInModel"){
-                    descendent.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
-                    descendent.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
-                    
+            showingSet = !showingSet;
+            if(showingSet){
+                List<GameObject> descendents = sp.GetComponent<Parent>().descendents;
+                foreach(GameObject sphere in SphereGenerator.GetComponent<SpheresGenerator>().spheres){
+                    if(descendents.Contains(sphere)){
+                        sphere.SetActive(true);
+                        sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
+                        sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
+                    }else{
+                        sphere.SetActive(false);
+                    }
                 }
-            }
-            */
-            foreach(GameObject sphere in SphereGenerator.GetComponent<SpheresGenerator>().spheres){
-                if(descendents.Contains(sphere)){
-                    sphere.SetActive(true);
-                    sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
-                    sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
-                }else{
-                    sphere.SetActive(false);
-                }
-            }
 
-            sp.SetActive(true);
-            sp.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
-            sp.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
+                sp.SetActive(true);
+                sp.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
+                sp.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
+
+            }else{
+                int pageNum = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
+                List<GameObject> spheres = SphereGenerator.GetComponent<SpheresGenerator>().spheres;
+                for(int i = 0; i < spheres.Count; i++){
+                    spheres[i].GetComponent<VRTK_InteractableObject>().ToggleHighlight(false);
+                    if(i >= (pageNum - 1) * 450 && i < pageNum * 450){
+                        spheres[i].SetActive(true);
+                    }else if(spheres[i].tag != "SphereInModel"){
+                        spheres[i].SetActive(false);
+                    }
+
+                }
+            }
         }
     }
 
     void Update(){
 
         // Debug Use
-        /*
         if(Input.GetKeyDown(KeyCode.S)){
 			Debug.Log("Show set");
 			ShowSet();
 		}
-        */
     }
 }

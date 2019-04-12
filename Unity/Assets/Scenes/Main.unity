@@ -13798,7 +13798,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Show Set
+  m_Text: Show/Hide Set
 --- !u!222 &1422652303
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17818,7 +17818,7 @@ GameObject:
   - component: {fileID: 1865381837}
   - component: {fileID: 1865381836}
   m_Layer: 0
-  m_Name: ShowSet
+  m_Name: ShowHideSet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

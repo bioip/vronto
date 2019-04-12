@@ -169,12 +169,12 @@ public class SpheresGenerator : MonoBehaviour
     {
 
         // For debug purpose
-        /*
+        
 		if(Input.GetKeyDown(KeyCode.N)){
 			Debug.Log("Next page");
 			NextPage();
 		}
-        */
+        
         
 
     }
