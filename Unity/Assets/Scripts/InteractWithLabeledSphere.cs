@@ -40,7 +40,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
             int page = DropDownList.value / 450;
             int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
             for(int i = curPage; i <= page; i++){
-                SphereGenerator.GetComponent<SpheresGenerator>().increment_offset();
+                SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
                 Debug.Log("next page");
             }
             Debug.Log("value = " + DropDownList.options[DropDownList.value].text);
@@ -67,7 +67,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
             int page = DropDownList.value / 450;
             int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
             for(int i = curPage; i <= page; i++){
-                SphereGenerator.GetComponent<SpheresGenerator>().increment_offset();
+                SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
                 Debug.Log("next page");
             }
             Debug.Log("value = " + DropDownList.options[DropDownList.value].text);
@@ -126,6 +126,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
         sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
         if(sp != null){
             List<GameObject> descendents = sp.GetComponent<Parent>().descendents;
+            /*
             foreach(GameObject descendent in descendents){
                 if(descendent.tag != "SphereInModel"){
                     descendent.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
@@ -133,6 +134,31 @@ public class InteractWithLabeledSphere : MonoBehaviour
                     
                 }
             }
+            */
+            foreach(GameObject sphere in SphereGenerator.GetComponent<SpheresGenerator>().spheres){
+                if(descendents.Contains(sphere)){
+                    sphere.SetActive(true);
+                    sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
+                    sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
+                }else{
+                    sphere.SetActive(false);
+                }
+            }
+
+            sp.SetActive(true);
+            sp.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
+            sp.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
         }
+    }
+
+    void Update(){
+
+        // Debug Use
+        /*
+        if(Input.GetKeyDown(KeyCode.S)){
+			Debug.Log("Show set");
+			ShowSet();
+		}
+        */
     }
 }

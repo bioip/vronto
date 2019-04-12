@@ -16,7 +16,6 @@ public class SpheresGenerator : MonoBehaviour
     private int[] objects;
     public CSV CSVManager;
     public CSVRelationship CSVManagerRelationship;
-    private int sphere_offset = 0;
     public int pageNum = 1;
     public List<GameObject> spheres = new List<GameObject>();
     public List<string> labelList = new List<string>();
@@ -52,28 +51,15 @@ public class SpheresGenerator : MonoBehaviour
     {
 
 
-        for (int i = sphere_offset; i < sphere_offset + 450; i++)
+        for (int i = 0; i < 2448; i++)
         {
-            if (i >= 2448)
-            {
-
-                //Add the label to the dropdown list
-                /*
-                foreach (GameObject sphere in spheres)
-                {
-                    m_dropdownList.Add(sphere.name);
-                }
-
-                m_dropdownList.Sort();
-                DropDownList.AddOptions(m_dropdownList);
-                */
-                return;
-            }
-
+            
+            /*
             if (spheres.Exists(x => x.name == CSVManager.GetRowList()[i].Description))
             {
                 continue;
             }
+            */
 
             //generate spheres according to coord in csv file
             GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -134,19 +120,14 @@ public class SpheresGenerator : MonoBehaviour
             ConnectSpheres cs = sp.AddComponent(typeof(ConnectSpheres)) as ConnectSpheres;
             cs.spheres = spheres;
 
+            if(i >= pageNum * 450){
+                sp.SetActive(false);
+            }
+
+            
 
         }
 
-        //Add the label to the dropdown list
-        /*
-        foreach (GameObject sphere in spheres)
-        {
-            m_dropdownList.Add(sphere.name);
-        }
-
-        m_dropdownList.Sort();
-        DropDownList.AddOptions(m_dropdownList);
-        */
     }
 
     private void FormSet(){
@@ -183,41 +164,6 @@ public class SpheresGenerator : MonoBehaviour
         }
     }
 
-    private void deactivate_spheres()
-    {
-
-        List<GameObject> spheresToKeep = new List<GameObject>();
-
-        foreach (GameObject sphere in spheres)
-        {
-
-            if (sphere.tag == "SphereInModel")
-            {
-
-                spheresToKeep.Add(sphere);
-                continue;
-
-            }
-
-            Destroy(sphere);
-        }
-
-
-        spheres.Clear();
-
-        foreach (GameObject sphere in spheresToKeep)
-        {
-            spheres.Add(sphere);
-        }
-
-        spheresToKeep.Clear();
-
-        /*
-        m_dropdownList.Clear();
-        DropDownList.ClearOptions();
-        */
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -226,9 +172,10 @@ public class SpheresGenerator : MonoBehaviour
         /*
 		if(Input.GetKeyDown(KeyCode.N)){
 			Debug.Log("Next page");
-			increment_offset();
+			NextPage();
 		}
         */
+        
 
     }
 
@@ -238,19 +185,24 @@ public class SpheresGenerator : MonoBehaviour
         SaveToCSV();
     }
 
-    public void increment_offset()
+    public void NextPage()
     {
-        deactivate_spheres();
-        sphere_offset += 450;
         pageNum += 1;
-        if (sphere_offset >= 2449)
+        if ((pageNum-1) * 450 >= 2449)
         {
-            sphere_offset = 0;
             pageNum = 1;
         }
-        generate_spheres();
-        FormSet();
         PageInput.text = "P" + pageNum.ToString() + "/6";
+
+        for(int i = 0; i < spheres.Count; i++){
+            if(i >= (pageNum - 1) * 450 && i < pageNum * 450){
+                
+                spheres[i].SetActive(true);
+            }else if(spheres[i].tag != "SphereInModel"){
+                spheres[i].SetActive(false);
+            }
+
+        }
     }
 
     public void showLabelList()
