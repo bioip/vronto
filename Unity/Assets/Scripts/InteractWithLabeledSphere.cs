@@ -30,22 +30,16 @@ public class InteractWithLabeledSphere : MonoBehaviour
 
     public void FetchSphere()
     {
-        //sp = GameObject.Find(input.text);
-        //Debug.Log("dropdownlist value = " + DropDownList.value);
         sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
-        Debug.Log("sp = " + sp);
         if (sp != null)
         {
             sp.transform.position = rightController.transform.position + rightController.transform.forward;
         } else {
-            Debug.Log("dropdownlist value = " + DropDownList.value);
             int page = DropDownList.value / 450;
             int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
             for(int i = curPage; i <= page; i++){
                 SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
-                Debug.Log("next page");
             }
-            Debug.Log("value = " + DropDownList.options[DropDownList.value].text);
             sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
             sp.transform.position = rightController.transform.position + rightController.transform.forward;
         }
@@ -53,10 +47,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
 
     public void LocateSphere()
     {
-        //sp = GameObject.Find(input.text);	
-        //Debug.Log("dropdownlist value = " + DropDownList.value);
         sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
-        Debug.Log("sp = " + sp);
         if (sp != null)
         {
             sp.tag = "Sphere_blinking";
@@ -70,9 +61,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
             int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
             for(int i = curPage; i <= page; i++){
                 SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
-                Debug.Log("next page");
             }
-            Debug.Log("value = " + DropDownList.options[DropDownList.value].text);
             sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
 
             sp.tag = "Sphere_blinking";
@@ -163,9 +152,11 @@ public class InteractWithLabeledSphere : MonoBehaviour
     void Update(){
 
         // Debug Use
+        /* 
         if(Input.GetKeyDown(KeyCode.S)){
 			Debug.Log("Show set");
 			ShowSet();
 		}
+        */
     }
 }
