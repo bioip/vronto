@@ -16,6 +16,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
     private Dropdown DropDownList;
     public GameObject SphereGenerator;
     private bool showingSet;
+    private bool isLocating;
 
     // Use this for initialization
     void Start()
@@ -26,22 +27,25 @@ public class InteractWithLabeledSphere : MonoBehaviour
         labelList = SphereGenerator.GetComponent<SpheresGenerator>().labelList;
         DropDownList = SphereGenerator.GetComponent<SpheresGenerator>().DropDownList;
         showingSet = false;
+        isLocating = false;
     }
 
     public void FetchSphere()
     {
-        sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
-        if (sp != null)
-        {
-            sp.transform.position = rightController.transform.position + rightController.transform.forward;
-        } else {
-            int page = DropDownList.value / 450;
-            int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
-            for(int i = curPage; i <= page; i++){
-                SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
-            }
+        if(!isLocating){
             sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
-            sp.transform.position = rightController.transform.position + rightController.transform.forward;
+            if (sp != null)
+            {
+                sp.transform.position = rightController.transform.position + rightController.transform.forward;
+            } else {
+                int page = DropDownList.value / 450 + 1;
+                int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
+                for(int i = curPage; i <= page; i++){
+                    SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
+                }
+                sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+                sp.transform.position = rightController.transform.position + rightController.transform.forward;
+            }
         }
     }
 
@@ -57,7 +61,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
             coroutine = Resize(3.0f, sp);
             StartCoroutine(coroutine);
         } else {
-            int page = DropDownList.value / 450;
+            int page = DropDownList.value / 450 + 1;
             int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
             for(int i = curPage; i <= page; i++){
                 SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
@@ -72,11 +76,11 @@ public class InteractWithLabeledSphere : MonoBehaviour
             StartCoroutine(coroutine);
         }
 
-
     }
 
     private IEnumerator Blink(float waitTime, GameObject go)
     {
+        isLocating = true;
         int i = 0;
         float endTime = Time.time + waitTime;
         while (Time.time < endTime)
@@ -89,10 +93,12 @@ public class InteractWithLabeledSphere : MonoBehaviour
         go.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
         go.GetComponent<VRTK_InteractableObject>().ToggleHighlight(false);
         go.tag = "Sphere";
+        isLocating = false;
     }
 
     private IEnumerator Resize(float waitTime, GameObject go)
     {
+        isLocating = true;
         float endTime = Time.time + waitTime;
         bool enlarge = true;
         Vector3 originalScale = go.transform.localScale;
@@ -111,6 +117,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
         }
         go.transform.localScale = originalScale;
+        isLocating = false;
     }
 
     public void ShowSet(){

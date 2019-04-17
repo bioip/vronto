@@ -39,7 +39,7 @@ public class SpheresGenerator : MonoBehaviour
         
 
         for(int i = 0; i < CSVManager.GetRowList().Count; i++){
-            m_dropdownList.Add(CSVManager.GetRowList()[i].Description);
+            m_dropdownList.Add(CSVManager.GetRowList()[i].Label);
         }
 
         DropDownList.AddOptions(m_dropdownList);
@@ -52,13 +52,6 @@ public class SpheresGenerator : MonoBehaviour
 
         for (int i = 0; i < 2448; i++)
         {
-            
-            /*
-            if (spheres.Exists(x => x.name == CSVManager.GetRowList()[i].Description))
-            {
-                continue;
-            }
-            */
 
             //generate spheres according to coord in csv file
             GameObject sp = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -66,7 +59,7 @@ public class SpheresGenerator : MonoBehaviour
             sp.transform.position = new Vector3(float.Parse(CSVManager.GetRowList()[i].X), float.Parse(CSVManager.GetRowList()[i].Y),
                                                 float.Parse(CSVManager.GetRowList()[i].Z));
             sp.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-            sp.name = CSVManager.GetRowList()[i].Description;
+            sp.name = CSVManager.GetRowList()[i].Label;
             sp.tag = "Sphere";
             spheres.Add(sp);
 
@@ -105,7 +98,7 @@ public class SpheresGenerator : MonoBehaviour
             //show the label in HUD when touched
             TouchedInput ti = sp.AddComponent(typeof(TouchedInput)) as TouchedInput;
             ti.input = labelInput;
-            ti.label = CSVManager.GetRowList()[i].Description;
+            ti.label = CSVManager.GetRowList()[i].Label;
             ti.sp = sp;
             ti.labelList = labelList;
             ti.input_dropdown = DropDownList;
@@ -217,23 +210,24 @@ public class SpheresGenerator : MonoBehaviour
     {
         Debug.Log("Start saving to csv file");
         string[] rowDataTmp = new string[6];
-        rowDataTmp[0] = "URI";
-        rowDataTmp[1] = "label";
-        rowDataTmp[2] = "X";
-        rowDataTmp[3] = "Y";
-        rowDataTmp[4] = "Z";
-        rowDataTmp[5] = "placed";
+        rowDataTmp[0] = "ID";
+        rowDataTmp[1] = "X";
+        rowDataTmp[2] = "Y";
+        rowDataTmp[3] = "Z";
+        rowDataTmp[4] = "Label";
+        rowDataTmp[5] = "Placed";
         rowData.Add(rowDataTmp);
 
         for (int i = 0; i < 2448; i++)
         {
+            GameObject sp = spheres.Find(sphere => sphere.name == CSVManager.GetRowList()[i].Label);
             rowDataTmp = new string[6];
             rowDataTmp[0] = CSVManager.GetRowList()[i].ID;
-            rowDataTmp[1] = CSVManager.GetRowList()[i].Description;
-            rowDataTmp[2] = CSVManager.GetRowList()[i].X;
-            rowDataTmp[3] = CSVManager.GetRowList()[i].Y;
-            rowDataTmp[4] = CSVManager.GetRowList()[i].Z;
-            GameObject sp = spheres.Find(sphere => sphere.name == CSVManager.GetRowList()[i].Description);
+            rowDataTmp[1] = "" + sp.transform.position.x;
+            rowDataTmp[2] = "" + sp.transform.position.y;
+            rowDataTmp[3] = "" + sp.transform.position.z;
+            rowDataTmp[4] = CSVManager.GetRowList()[i].Label;
+            
             if (sp != null && sp.tag == "SphereInModel")
             {
                 rowDataTmp[5] = "" + true;
