@@ -158,12 +158,6 @@ public class InteractWithLabeledSphere : MonoBehaviour
 
     void Update(){
 
-        // Debug Use
-        /* 
-        if(Input.GetKeyDown(KeyCode.S)){
-			Debug.Log("Show set");
-			ShowSet();
-		}
-        */
+        
     }
 }
