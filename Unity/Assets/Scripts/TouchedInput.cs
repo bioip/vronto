@@ -30,9 +30,12 @@ public class TouchedInput : MonoBehaviour
         {
             //Debug.Log("is touched");
 
-            //output sphere label to HUD inputfield
-            input.text = label;
-            input_dropdown.value = m_dropdownList.IndexOf(label);
+            //output sphere label to HUD inputfield when not showing set right now
+            if(!input_dropdown.GetComponent<InteractWithLabeledSphere>().showingSet){
+                input.text = label;
+                input_dropdown.value = m_dropdownList.IndexOf(label);
+            }
+            
         }
 
         if (io.IsGrabbed())

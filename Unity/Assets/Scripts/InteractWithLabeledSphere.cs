@@ -15,7 +15,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
     public List<string> labelList;
     private Dropdown DropDownList;
     public GameObject SphereGenerator;
-    private bool showingSet;
+    public bool showingSet;
     private bool isLocating;
 
     // Use this for initialization
