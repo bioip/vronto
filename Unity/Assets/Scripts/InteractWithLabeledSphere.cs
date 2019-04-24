@@ -177,6 +177,19 @@ public class InteractWithLabeledSphere : MonoBehaviour
         }
     }
 
+    public void NextItem(){
+        if(DropDownList.value < DropDownList.options.Count){
+            DropDownList.value++;
+        }
+    }
+
+    public void LastItem(){
+        if(DropDownList.value > 0){
+            DropDownList.value--;
+        }
+        
+    }
+
     void Update(){
 
         
