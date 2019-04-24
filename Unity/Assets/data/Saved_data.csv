@@ -1,7 +1,7 @@
 ID,X,Y,Z,Label,Placed
-HAO:0000000,38.95,-6.85,4.35, anatomical entity,True
+HAO:0000000,36.45,-6.85,9.35, anatomical entity,True
 HAO:0000001,-31.06934,31.02,-7.69934, ventral mesofurco-profurcal muscle,False
-HAO:0000002,41.45,-6.85,1.85, A1 flap,True
+HAO:0000002,36.45,-6.85,9.35, A1 flap,True
 HAO:0000003,-28.94802,31.02,-5.578019, anatomical structure,False
 HAO:0000004,-27.88736,31.02,-4.517359, portion of organism substance,False
 HAO:0000005,-26.8267,31.02,-3.456699, anatomical space,False
@@ -247,9 +247,9 @@ HAO:0000245,-27.88736,19.02,-4.517359, discrimenal lamella,False
 HAO:0000246,-26.8267,19.02,-3.456699, apical gonostyle/volsella complex-harpal muscle,False
 HAO:0000247,-25.76604,19.02,-2.396039, distal gonostipo-parossiculal muscle,False
 HAO:0000248,-24.70538,19.02,-1.335379, distal tarsal plantula,False
-HAO:0000249,-23.64472,19.02,-0.274719, distivolsellar apodeme,False
+HAO:0000249,-23.45098,18.73526,0.189855, distivolsellar apodeme,False
 HAO:0000250,-22.58406,19.02,0.785942, distodorsal gonostyle/volsella complex-penisvalval muscle,False
-HAO:0000251,-21.5234,19.02,1.846602, distoventral gonostyle/volsella complex-penisvalval muscle,False
+HAO:0000251,51.45,-4.35,-13.15, distoventral gonostyle/volsella complex-penisvalval muscle,True
 HAO:0000252,-20.46274,19.02,2.907262, dorsal axillar area,False
 HAO:0000253,-19.40208,19.02,3.967922, dorsal cibarial dilatator muscle,False
 HAO:0000254,-18.34142,19.02,5.028582, dorsal incision of the pronotum,False
@@ -395,7 +395,7 @@ HAO:0000393,-30.00868,11.52,-6.63868, gular sulcus,False
 HAO:0000394,-28.94802,11.52,-5.578019, hamulus,False
 HAO:0000395,-27.88736,11.52,-4.517359, harpe,False
 HAO:0000396,-26.8267,11.52,-3.456699, harpo-gonomaculal muscle,False
-HAO:0000397,-25.76604,11.52,-2.396039, head,False
+HAO:0000397,0.3212736,3.26597,8.065846, head,False
 HAO:0000398,-24.70538,11.52,-1.335379, head capsule,False
 HAO:0000399,-23.64472,11.52,-0.274719, hind leg,False
 HAO:0000400,-22.58406,11.52,0.785942, hind wing,False
@@ -414,7 +414,7 @@ HAO:0000412,-9.856136,11.52,13.51386, hypostomal bridge,False
 HAO:0000413,-8.795476,11.52,14.57452, hypostomal carina,False
 HAO:0000414,-7.734816,11.52,15.63518, hypostomal sulcus,False
 HAO:0000415,-6.674156,11.52,16.69584, hypostomal suture,False
-HAO:0000416,-5.613496,11.52,17.7565, hypostomal tooth,False
+HAO:0000416,48.95,-1.85,4.35, hypostomal tooth,True
 HAO:0000417,-4.552836,11.52,18.81716, impression,False
 HAO:0000418,-3.492175,11.52,19.87782, inflection,False
 HAO:0000419,-2.431515,11.52,20.93848, inner orbit,False
@@ -435,9 +435,9 @@ HAO:0000433,-19.40208,10.02,3.967922, interpenisvalval muscle,False
 HAO:0000434,-18.34142,10.02,5.028582, intersegmental membrane,False
 HAO:0000435,-17.28076,10.02,6.089242, intersegmental membrane-mesobasalar muscle,False
 HAO:0000436,-16.2201,10.02,7.149903, intersegmentalia,False
-HAO:0000437,-15.15944,10.02,8.210563, intersternite,False
+HAO:0000437,-13.97927,9.735012,9.663975, intersternite,False
 HAO:0000438,-14.09878,10.02,9.271223, interstice,False
-HAO:0000439,-13.03812,10.02,10.33188, intertorular carina,False
+HAO:0000439,46.45,0.6500001,6.85, intertorular carina,True
 HAO:0000440,-11.97746,10.02,11.39254, intervalvula,False
 HAO:0000441,-10.9168,10.02,12.4532, intervolsellal muscle,False
 HAO:0000442,-9.856136,10.02,13.51386, intrinsic muscle of the 9th sternum,False
@@ -1279,7 +1279,7 @@ HAO:0001277,-15.15944,13.02,8.210563, metatibio-metabasitarsal joint,False
 HAO:0001278,-14.09878,13.02,9.271223, metatibio-pretarsus of the metatarsus muscle,False
 HAO:0001279,-13.03812,13.02,10.33188, metatrochanteral apodeme,False
 HAO:0001280,-11.97746,13.02,11.39254, metatrochantero-metafemoral muscle,False
-HAO:0001281,-10.9168,13.02,12.4532, metatrochantero-metafemoral joint,False
+HAO:0001281,-6.719961,14.35758,13.9606, metatrochantero-metafemoral joint,False
 HAO:0001282,-9.856136,13.02,13.51386, posterior mesotibio-mesobasitarsal muscle,False
 HAO:0001283,-8.795476,13.02,14.57452, ninth abdominal tergal muscle,False
 HAO:0001284,-7.734816,13.02,15.63518, cranial condyle of the propleuron,False

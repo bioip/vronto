@@ -17,6 +17,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
     public GameObject SphereGenerator;
     public bool showingSet;
     private bool isLocating;
+    private bool isFetching;
 
     // Use this for initialization
     void Start()
@@ -40,10 +41,17 @@ public class InteractWithLabeledSphere : MonoBehaviour
             } else {
                 int page = DropDownList.value / 450 + 1;
                 int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
-                for(int i = curPage; i <= page; i++){
+                int pageToFlip = 0;
+                if(page >= curPage){
+                    pageToFlip = page - curPage;
+                }else{
+                    pageToFlip = 6 - curPage + page;
+                }
+                for(int i = 0; i < pageToFlip; i++){
                     SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
                 }
                 sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+
                 sp.transform.position = rightController.transform.position + rightController.transform.forward;
             }
         }
@@ -51,29 +59,42 @@ public class InteractWithLabeledSphere : MonoBehaviour
 
     public void LocateSphere()
     {
-        sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
-        if (sp != null)
-        {
-            sp.tag = "Sphere_blinking";
-            coroutine = Blink(3.0f, sp);
-            StartCoroutine(coroutine);
+        if(!isFetching){
 
-            coroutine = Resize(3.0f, sp);
-            StartCoroutine(coroutine);
-        } else {
-            int page = DropDownList.value / 450 + 1;
-            int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
-            for(int i = curPage; i <= page; i++){
-                SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
-            }
+        
             sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+            if (sp != null)
+            {
+                sp.tag = "Sphere_blinking";
+                coroutine = Blink(3.0f, sp);
+                StartCoroutine(coroutine);
 
-            sp.tag = "Sphere_blinking";
-            coroutine = Blink(3.0f, sp);
-            StartCoroutine(coroutine);
+                coroutine = Resize(3.0f, sp);
+                StartCoroutine(coroutine);
+            } else {
+                int page = DropDownList.value / 450 + 1;
+                int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
+                int pageToFlip = 0;
+                if(page >= curPage){
+                    pageToFlip = page - curPage;
+                }else{
+                    pageToFlip = 6 - curPage + page;
+                }
+                for(int i = 0; i < pageToFlip; i++){
+                    SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
+                }
 
-            coroutine = Resize(3.0f, sp);
-            StartCoroutine(coroutine);
+                
+                sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+
+                sp.tag = "Sphere_blinking";
+                coroutine = Blink(3.0f, sp);
+                StartCoroutine(coroutine);
+
+                coroutine = Resize(3.0f, sp);
+                StartCoroutine(coroutine);
+            }
+
         }
 
     }
