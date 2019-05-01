@@ -23,6 +23,7 @@ public class SpheresGenerator : MonoBehaviour
     public InputField PageInput;
     public InputField labelInput;
     public Dropdown DropDownList;
+    public Text currSelected;
 
     private List<string[]> rowData = new List<string[]>();
 
@@ -101,6 +102,7 @@ public class SpheresGenerator : MonoBehaviour
             ti.labelList = labelList;
             ti.input_dropdown = DropDownList;
             ti.m_dropdownList = m_dropdownList;
+            ti.currSelected = currSelected;
 
             //Add Parent attributes
             Parent parent = sp.AddComponent(typeof(Parent)) as Parent;

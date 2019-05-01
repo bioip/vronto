@@ -1552,6 +1552,7 @@ MonoBehaviour:
   PageInput: {fileID: 215233525}
   labelInput: {fileID: 1904440347}
   DropDownList: {fileID: 44282265}
+  currSelected: {fileID: 422794196}
 --- !u!4 &175260259
 Transform:
   m_ObjectHideFlags: 0
@@ -4126,7 +4127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 137.8}
+  m_AnchoredPosition: {x: 0, y: 160}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422794196
@@ -4150,18 +4151,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 150
+    m_FontSize: 250
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
-    m_MaxSize: 150
+    m_MaxSize: 250
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You can also type on me by pressing the keys with the controller!
+  m_Text: 
 --- !u!222 &422794197
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class TouchedInput : MonoBehaviour
     public GameObject sp;
     public List<string> labelList;
     public List<string> m_dropdownList;
+    public Text currSelected;
 
     // Use this for initialization
     void Start()
@@ -43,7 +44,7 @@ public class TouchedInput : MonoBehaviour
 
         if (io.IsGrabbed())
         {
-
+            currSelected.text = label;
             input.text = label;
             if (!labelList.Contains(label))
             {

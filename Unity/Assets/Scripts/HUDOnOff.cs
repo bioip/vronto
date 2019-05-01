@@ -10,7 +10,6 @@ public class HUDOnOff : MonoBehaviour {
 	private GameObject keyboard;
 	private GameObject input;
 	private GameObject keys;
-	private GameObject text;
 	private GameObject rightController;
     private GameObject leftController;
     private VRTK_ControllerEvents leftControllerEvents;
@@ -23,7 +22,6 @@ public class HUDOnOff : MonoBehaviour {
 		keyboard = this.gameObject.transform.GetChild(1).gameObject;
 		input = keyboard.transform.GetChild(1).gameObject;
 		keys = keyboard.transform.GetChild(2).gameObject;
-		text = keyboard.transform.GetChild(3).gameObject;
 
 		leftController = GameObject.FindGameObjectWithTag("LeftController");
         leftControllerEvents = leftController.GetComponent<VRTK_ControllerEvents>();
@@ -47,6 +45,5 @@ public class HUDOnOff : MonoBehaviour {
 	public void ToggleOnOff(){
 		HUD.SetActive(!HUD.activeInHierarchy);
 		keys.SetActive(!keys.activeInHierarchy);
-		text.SetActive(!text.activeInHierarchy);
 	}
 }
