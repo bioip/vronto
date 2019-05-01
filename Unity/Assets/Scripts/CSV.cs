@@ -12,7 +12,6 @@ public class CSV : MonoBehaviour
         Load(file);
 
     }
-
 	public class Row
 	{
 		public string ID;
@@ -41,7 +40,7 @@ public class CSV : MonoBehaviour
 	{
 		rowList.Clear();
 		string[][] grid = CsvParser2.Parse(csv.text);
-		for(int i = 1 ; i < grid.Length-1 ; i++)
+		for(int i = 1 ; i < grid.Length ; i++)
 		{
 			Row row = new Row();
 			row.ID = grid[i][0];

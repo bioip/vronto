@@ -11,7 +11,7 @@ def modify_csv_format(file):
 		
 		# add header
 		writer = csv.writer(csvOut, delimiter=',')
-		writer.writerow(['X', 'Y', 'Z', 'ID', 'Description'])
+		writer.writerow(['X', 'Y', 'Z', 'ID', 'Label'])
 
 		for row in reader: 
 			csvOut.write(','.join(row) + '\n')
@@ -20,10 +20,11 @@ def modify_csv_format(file):
 
 	with open('data_temp.csv', mode='r', newline='') as infile, open(file_out, mode='w', newline='') as outfile:
 		# re-order the columns
-		fieldnames = ['ID', 'X', 'Y', 'Z', 'Description']
+		fieldnames = ['ID', 'X', 'Y', 'Z', 'Label', 'Placed']
 		writer = csv.DictWriter(outfile, fieldnames=fieldnames)
 		writer.writeheader()
 		for row in csv.DictReader(infile):
+			row['Placed'] = 'False'
 			writer.writerow(row)
 	os.remove('data_temp.csv')
 
@@ -56,10 +57,9 @@ def modify_relationships_format(file):
 		
 
 def set_coordinates(file_in, file_out): 
-	data = np.genfromtxt(file_in, skip_header=1, dtype="U100, f8, f8, f8, U100", delimiter=",")
-
+	data = np.genfromtxt(file_in, skip_header=1, dtype="U100,f8,f8,f8,U100,U100", delimiter=",")
 	orig_x = -32.13
-	orig_y = 31.02
+	orig_y = 25.02
 	y = orig_y 
 	orig_z = -8.76
 	distance = 1.5
@@ -80,7 +80,7 @@ def set_coordinates(file_in, file_out):
 			y -= distance 
 		i += 450
 		y = orig_y 
-	np.savetxt(file_out, data, delimiter=",", fmt="%s, %f, %f, %f, %s", header="ID, X, Y, Z, Description", comments="")
+	np.savetxt(file_out, data, delimiter=",", fmt="%s,%f,%f,%f,%s,%s", header="ID,X,Y,Z,Label,Placed", comments="")
 	os.remove(file_in)
 
 if __name__ == "__main__":

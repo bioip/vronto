@@ -252,7 +252,10 @@ public class SpheresGenerator : MonoBehaviour
 
         for (int i = 0; i < length; i++)
         {
-            sb.AppendLine(string.Join(delimiter, output[i]));
+            if(i != length - 1)
+                sb.Append(string.Join(delimiter, output[i]) + "\n");
+            else
+                sb.Append(string.Join(delimiter, output[i]));
         }
 
         string filePath = Application.dataPath + "/data/" + "Saved_data.csv";
