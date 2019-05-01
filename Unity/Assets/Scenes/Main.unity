@@ -19170,6 +19170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DropdownList: {fileID: 44282265}
+  SphereGenerator: {fileID: 175260257}
 --- !u!1 &1911810599
 GameObject:
   m_ObjectHideFlags: 0
