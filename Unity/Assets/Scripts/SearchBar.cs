@@ -35,8 +35,6 @@ public class SearchBar : MonoBehaviour
     {
         if (input.text != "")
         {
-            //DropdownList.Show();
-            //outputString = input.text;
             matched = false;
             foreach (string label in m_dropdownList)
             {
@@ -49,6 +47,7 @@ public class SearchBar : MonoBehaviour
                         int range = Mathf.Min(20, m_dropdownList.Count - startIndex);
                         DropdownList.ClearOptions();
                         DropdownList.AddOptions(m_dropdownList.GetRange(startIndex, range));
+                        DropdownList.value = 0;
                         matched = true;
                     }
                 }
@@ -58,12 +57,6 @@ public class SearchBar : MonoBehaviour
 
     public void Enter()
     {
-        /*
-		int findValue = labels.IndexOf(outputString);
-		if(findValue > -1){
-			DropdownList.value = findValue;
-		}
-		*/
 
 
     }

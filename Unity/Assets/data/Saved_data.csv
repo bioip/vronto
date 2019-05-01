@@ -1,7 +1,7 @@
 ID,X,Y,Z,Label,Placed
-HAO:0000000,36.45,-4.35,4.35,anatomical entity,True
+HAO:0000000,33.00481,-5.640511,1.135127,anatomical entity,False
 HAO:0000001,-31.06934,25.02,-7.69934,ventral mesofurco-profurcal muscle,False
-HAO:0000002,38.95,-4.35,6.85,A1 flap,True
+HAO:0000002,46.45,-1.85,6.85,A1 flap,True
 HAO:0000003,-28.94802,25.02,-5.578019,anatomical structure,False
 HAO:0000004,-27.88736,25.02,-4.517359,portion of organism substance,False
 HAO:0000005,-26.8267,25.02,-3.456699,anatomical space,False
@@ -327,29 +327,29 @@ HAO:0000325,-6.674156,10.02,16.69584,femoral depression,False
 HAO:0000326,-5.613496,10.02,17.7565,femoral groove,False
 HAO:0000327,-4.552836,10.02,18.81716,femur,False
 HAO:0000328,-3.492175,10.02,19.87782,fibula ducti,False
-HAO:0000329,-2.431515,10.02,20.93848,first abdominal spiracle,False
+HAO:0000329,2.97785,7.759211,22.92147,first abdominal spiracle,False
 HAO:0000330,-1.370855,10.02,21.99915,first axillary sclerite,False
 HAO:0000331,-32.13,8.52,-8.76,first median plate,False
 HAO:0000332,-31.06934,8.52,-7.69934,first mesopleuro-mesonotal muscle,False
-HAO:0000333,-30.00868,8.52,-6.63868,first phragmo-postoccipital muscle,False
+HAO:0000333,-1.81176,1.225433,7.666918,first phragmo-postoccipital muscle,False
 HAO:0000334,-28.94802,8.52,-5.578019,first phragmo-propleural muscle,False
 HAO:0000335,-27.88736,8.52,-4.517359,first phragmo-second phragmal muscle,False
 HAO:0000336,-26.8267,8.52,-3.456699,distal gonostyle/volsella complex-harpal muscle,False
-HAO:0000337,-25.76604,8.52,-2.396039,first subdiscal,False
+HAO:0000337,30.66256,-6.165183,4.016748,first subdiscal,False
 HAO:0000338,-24.70538,8.52,-1.335379,first valvifer,False
 HAO:0000339,-23.64472,8.52,-0.274719,first valvula,False
 HAO:0000340,-22.58406,8.52,0.785942,fissure,False
 HAO:0000341,-21.5234,8.52,1.846602,flabellum,False
-HAO:0000342,-20.46274,8.52,2.907262,flagellomere,False
+HAO:0000342,-8.134014,1.734179,8.072976,flagellomere,False
 HAO:0000343,-19.40208,8.52,3.967922,flagellum,False
 HAO:0000344,-18.34142,8.52,5.028582,flange,False
 HAO:0000345,-17.28076,8.52,6.089242,foramen,False
 HAO:0000346,-16.2201,8.52,7.149903,foramen genitale,False
-HAO:0000347,-15.15944,8.52,8.210563,occipital foramen,False
+HAO:0000347,36.45,-6.85,9.35,occipital foramen,True
 HAO:0000348,-14.09878,8.52,9.271223,fore coxa,False
 HAO:0000349,-13.03812,8.52,10.33188,fore leg,False
 HAO:0000350,-11.97746,8.52,11.39254,fore tibia,False
-HAO:0000351,-10.9168,8.52,12.4532,fore wing,False
+HAO:0000351,-0.6051569,2.734293,-0.6591471,fore wing,False
 HAO:0000352,-9.856136,8.52,13.51386,forewing,False
 HAO:0000353,-8.795476,8.52,14.57452,fossa,False
 HAO:0000354,-7.734816,8.52,15.63518,frenal line,False
@@ -395,7 +395,7 @@ HAO:0000393,-30.00868,5.52,-6.63868,gular sulcus,False
 HAO:0000394,-28.94802,5.52,-5.578019,hamulus,False
 HAO:0000395,-27.88736,5.52,-4.517359,harpe,False
 HAO:0000396,-26.8267,5.52,-3.456699,harpo-gonomaculal muscle,False
-HAO:0000397,-25.76604,5.52,-2.396039,head,False
+HAO:0000397,10.15248,0.9493629,2.377952,head,False
 HAO:0000398,-24.70538,5.52,-1.335379,head capsule,False
 HAO:0000399,-23.64472,5.52,-0.274719,hind leg,False
 HAO:0000400,-22.58406,5.52,0.785942,hind wing,False
@@ -408,7 +408,7 @@ HAO:0000406,-16.2201,5.52,7.149903,hyperoccipital carina,False
 HAO:0000407,-15.15944,5.52,8.210563,hypoclypeal depression,False
 HAO:0000408,-14.09878,5.52,9.271223,hypopharyngeal rod,False
 HAO:0000409,-13.03812,5.52,10.33188,hypopharynx,False
-HAO:0000410,-11.97746,5.52,11.39254,hypopygium,False
+HAO:0000410,-20.42769,12.45595,3.07796,hypopygium,False
 HAO:0000411,-10.9168,5.52,12.4532,hypostoma,False
 HAO:0000412,-9.856136,5.52,13.51386,hypostomal bridge,False
 HAO:0000413,-8.795476,5.52,14.57452,hypostomal carina,False
@@ -492,7 +492,7 @@ HAO:0000490,-22.58406,23.52,0.785942,laterocervico-procoxal muscle,False
 HAO:0000491,-21.5234,23.52,1.846602,laterope,False
 HAO:0000492,-20.46274,23.52,2.907262,laterophragma,False
 HAO:0000493,-19.40208,23.52,3.967922,laterotergite,False
-HAO:0000494,-18.34142,23.52,5.028582,leg,False
+HAO:0000494,5.453414,2.076073,3.753606,leg,False
 HAO:0000495,-17.28076,23.52,6.089242,leg segment,False
 HAO:0000496,-16.2201,23.52,7.149903,ligula,False
 HAO:0000497,-15.15944,23.52,8.210563,longitudinal carina of the propleuron,False

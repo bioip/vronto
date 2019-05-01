@@ -27,7 +27,7 @@ public class HUDOnOff : MonoBehaviour {
 
 	public void ToggleOnOff(){
 		HUD.SetActive(!HUD.activeInHierarchy);
-		input.SetActive(!input.activeInHierarchy);
+		//input.SetActive(!input.activeInHierarchy);
 		keys.SetActive(!keys.activeInHierarchy);
 		text.SetActive(!text.activeInHierarchy);
 	}

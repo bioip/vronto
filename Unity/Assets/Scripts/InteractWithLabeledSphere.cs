@@ -36,12 +36,13 @@ public class InteractWithLabeledSphere : MonoBehaviour
     public void FetchSphere()
     {
         if(!isLocating){
-            sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+            string spName = DropDownList.options[DropDownList.value].text;
+            sp = GameObject.Find(spName);
             if (sp != null)
             {
                 sp.transform.position = rightController.transform.position + rightController.transform.forward;
             } else {
-                int page = DropDownList.value / 450 + 1;
+                int page = m_dropdownList.IndexOf(spName) / 450 + 1;
                 int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
                 int pageToFlip = 0;
                 if(page >= curPage){
@@ -64,7 +65,9 @@ public class InteractWithLabeledSphere : MonoBehaviour
         if(!isFetching){
 
         
-            sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
+            string spName = DropDownList.options[DropDownList.value].text;
+            sp = GameObject.Find(spName);
+
             if (sp != null)
             {
                 sp.tag = "Sphere_blinking";
@@ -74,7 +77,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
                 coroutine = Resize(3.0f, sp);
                 StartCoroutine(coroutine);
             } else {
-                int page = DropDownList.value / 450 + 1;
+                int page = m_dropdownList.IndexOf(spName) / 450 + 1;
                 int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
                 int pageToFlip = 0;
                 if(page >= curPage){
