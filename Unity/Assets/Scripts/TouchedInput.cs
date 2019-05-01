@@ -25,10 +25,8 @@ public class TouchedInput : MonoBehaviour
     void Update()
     {
         VRTK_InteractableObject io = GetComponent(typeof(VRTK_InteractableObject)) as VRTK_InteractableObject;
-        //Debug.Log("touchpadControl enabled = " + rightController.GetComponent<VRTK_TouchpadControl>().enabled);
         if (io.IsTouched())
         {
-            //Debug.Log("is touched");
 
             //output sphere label to HUD inputfield when not showing set right now
             if(!input_dropdown.GetComponent<InteractWithLabeledSphere>().showingSet){
@@ -46,7 +44,6 @@ public class TouchedInput : MonoBehaviour
         if (io.IsGrabbed())
         {
 
-            //Debug.Log("sphere position: " + sp.transform.position);
             input.text = label;
             if (!labelList.Contains(label))
             {
@@ -54,16 +51,12 @@ public class TouchedInput : MonoBehaviour
             }
             else
             {
-                /*
-				labelList.Remove(label);
-				labelList.Add(label);
-				*/
             }
 
         }
         else
         {
-            //rightController.GetComponent<VRTK_TouchpadControl>().enabled = false;
+            
         }
     }
 

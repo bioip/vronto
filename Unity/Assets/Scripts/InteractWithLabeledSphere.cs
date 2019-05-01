@@ -199,7 +199,6 @@ public class InteractWithLabeledSphere : MonoBehaviour
             DropDownList.value--;
         }else{
             int index = m_dropdownList.IndexOf(DropDownList.options[DropDownList.value].text);
-            Debug.Log("index = " + index);
             int startIndex = index - 1;
             int range = DropDownList.options.Count;
             DropDownList.ClearOptions();

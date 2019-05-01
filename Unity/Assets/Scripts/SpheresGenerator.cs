@@ -42,8 +42,6 @@ public class SpheresGenerator : MonoBehaviour
             m_dropdownList.Add(CSVManager.GetRowList()[i].Label);
         }
 
-        //DropDownList.AddOptions(m_dropdownList);
-        Debug.Log("DropDownList size = " + DropDownList.options.Count);
     }
 
     private void generate_spheres()
@@ -159,14 +157,6 @@ public class SpheresGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        // For debug purpose
-        /*
-		if(Input.GetKeyDown(KeyCode.N)){
-			Debug.Log("Next page");
-			NextPage();
-		}
-        */
         
         
 
