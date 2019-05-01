@@ -14,6 +14,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
     private Color[] colors;
     public List<string> labelList;
     private Dropdown DropDownList;
+    private List<string> m_dropdownList;
     public GameObject SphereGenerator;
     public bool showingSet;
     private bool isLocating;
@@ -27,6 +28,7 @@ public class InteractWithLabeledSphere : MonoBehaviour
         colors = new Color[3] { Color.red, Color.magenta, Color.cyan };
         labelList = SphereGenerator.GetComponent<SpheresGenerator>().labelList;
         DropDownList = SphereGenerator.GetComponent<SpheresGenerator>().DropDownList;
+        m_dropdownList = SphereGenerator.GetComponent<SpheresGenerator>().m_dropdownList;
         showingSet = false;
         isLocating = false;
     }
@@ -178,14 +180,27 @@ public class InteractWithLabeledSphere : MonoBehaviour
     }
 
     public void NextItem(){
-        if(DropDownList.value < DropDownList.options.Count){
+        if(DropDownList.value < DropDownList.options.Count-1){
             DropDownList.value++;
+        }else{
+            int index = m_dropdownList.IndexOf(DropDownList.options[DropDownList.value].text);
+            int startIndex = m_dropdownList.IndexOf(DropDownList.options[0].text) + 1;
+            int range = DropDownList.options.Count;
+            DropDownList.ClearOptions();
+            DropDownList.AddOptions(m_dropdownList.GetRange(startIndex, range));
         }
     }
 
     public void LastItem(){
         if(DropDownList.value > 0){
             DropDownList.value--;
+        }else{
+            int index = m_dropdownList.IndexOf(DropDownList.options[DropDownList.value].text);
+            Debug.Log("index = " + index);
+            int startIndex = index - 1;
+            int range = DropDownList.options.Count;
+            DropDownList.ClearOptions();
+            DropDownList.AddOptions(m_dropdownList.GetRange(startIndex, range));
         }
         
     }

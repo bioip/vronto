@@ -42,7 +42,7 @@ public class SpheresGenerator : MonoBehaviour
             m_dropdownList.Add(CSVManager.GetRowList()[i].Label);
         }
 
-        DropDownList.AddOptions(m_dropdownList);
+        //DropDownList.AddOptions(m_dropdownList);
         Debug.Log("DropDownList size = " + DropDownList.options.Count);
     }
 

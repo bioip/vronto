@@ -32,8 +32,13 @@ public class TouchedInput : MonoBehaviour
 
             //output sphere label to HUD inputfield when not showing set right now
             if(!input_dropdown.GetComponent<InteractWithLabeledSphere>().showingSet){
+                input_dropdown.ClearOptions();
                 input.text = label;
                 input_dropdown.value = m_dropdownList.IndexOf(label);
+                int value = m_dropdownList.IndexOf(label);
+                int startIndex = Mathf.Max(0, value - 10);
+                int range = Mathf.Min(20, m_dropdownList.Count-1 - startIndex);
+                input_dropdown.AddOptions(m_dropdownList.GetRange(startIndex, range));
             }
             
         }
