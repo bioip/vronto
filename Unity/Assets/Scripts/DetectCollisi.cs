@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using VRTK;
 
 public class DetectCollisi : MonoBehaviour
@@ -11,9 +12,11 @@ public class DetectCollisi : MonoBehaviour
     private float z0 = 9.35f;
     public float offset;
 
-    private bool snappingOnOff = true;
+    public bool snappingOnOff;
 
     public GameObject rightController;
+
+    public Toggle snappingToggle;
 
     // Use this for initialization
     void Start()
@@ -25,6 +28,7 @@ public class DetectCollisi : MonoBehaviour
     void Update()
     {
         //Debug.Log("update works");
+        snappingToggle.isOn = snappingOnOff;
     }
 
     public void ToggleSnappingOnOff()
@@ -34,6 +38,7 @@ public class DetectCollisi : MonoBehaviour
 
     public void SnappingOff(){
         snappingOnOff = false;
+        
     }
 
     //detect if sphere is within model

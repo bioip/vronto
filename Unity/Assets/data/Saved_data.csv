@@ -1,7 +1,7 @@
 ID,X,Y,Z,Label,Placed
 HAO:0000000,33.00481,-5.640511,1.135127,anatomical entity,False
 HAO:0000001,-31.06934,25.02,-7.69934,ventral mesofurco-profurcal muscle,False
-HAO:0000002,46.45,-1.85,6.85,A1 flap,True
+HAO:0000002,36.45,-6.85,9.35,A1 flap,True
 HAO:0000003,-28.94802,25.02,-5.578019,anatomical structure,False
 HAO:0000004,-27.88736,25.02,-4.517359,portion of organism substance,False
 HAO:0000005,-26.8267,25.02,-3.456699,anatomical space,False
@@ -327,11 +327,11 @@ HAO:0000325,-6.674156,10.02,16.69584,femoral depression,False
 HAO:0000326,-5.613496,10.02,17.7565,femoral groove,False
 HAO:0000327,-4.552836,10.02,18.81716,femur,False
 HAO:0000328,-3.492175,10.02,19.87782,fibula ducti,False
-HAO:0000329,2.97785,7.759211,22.92147,first abdominal spiracle,False
+HAO:0000329,36.45,6.715756,-4.215755,first abdominal spiracle,True
 HAO:0000330,-1.370855,10.02,21.99915,first axillary sclerite,False
 HAO:0000331,-32.13,8.52,-8.76,first median plate,False
 HAO:0000332,-31.06934,8.52,-7.69934,first mesopleuro-mesonotal muscle,False
-HAO:0000333,2.628645,1.038803,8.587456,first phragmo-postoccipital muscle,False
+HAO:0000333,4.524838,1.456493,2.341917,first phragmo-postoccipital muscle,False
 HAO:0000334,-28.94802,8.52,-5.578019,first phragmo-propleural muscle,False
 HAO:0000335,-27.88736,8.52,-4.517359,first phragmo-second phragmal muscle,False
 HAO:0000336,-26.8267,8.52,-3.456699,distal gonostyle/volsella complex-harpal muscle,False
@@ -349,7 +349,7 @@ HAO:0000347,36.45,-6.85,9.35,occipital foramen,True
 HAO:0000348,-14.09878,8.52,9.271223,fore coxa,False
 HAO:0000349,-13.03812,8.52,10.33188,fore leg,False
 HAO:0000350,-11.97746,8.52,11.39254,fore tibia,False
-HAO:0000351,-0.6051569,2.734293,-0.6591471,fore wing,False
+HAO:0000351,36.45,-6.85,-17.43519,fore wing,False
 HAO:0000352,-9.856136,8.52,13.51386,forewing,False
 HAO:0000353,-8.795476,8.52,14.57452,fossa,False
 HAO:0000354,-7.734816,8.52,15.63518,frenal line,False
@@ -395,7 +395,7 @@ HAO:0000393,-30.00868,5.52,-6.63868,gular sulcus,False
 HAO:0000394,-28.94802,5.52,-5.578019,hamulus,False
 HAO:0000395,-27.88736,5.52,-4.517359,harpe,False
 HAO:0000396,-26.8267,5.52,-3.456699,harpo-gonomaculal muscle,False
-HAO:0000397,10.15248,0.9493629,2.377952,head,False
+HAO:0000397,3.918114,1.400533,1.995502,head,False
 HAO:0000398,-24.70538,5.52,-1.335379,head capsule,False
 HAO:0000399,-23.64472,5.52,-0.274719,hind leg,False
 HAO:0000400,-22.58406,5.52,0.785942,hind wing,False
@@ -418,7 +418,7 @@ HAO:0000416,-5.613496,5.52,17.7565,hypostomal tooth,False
 HAO:0000417,-4.552836,5.52,18.81716,impression,False
 HAO:0000418,-3.492175,5.52,19.87782,inflection,False
 HAO:0000419,-2.431515,5.52,20.93848,inner orbit,False
-HAO:0000420,-1.370855,5.52,21.99915,integrated tarsal plantula,False
+HAO:0000420,5.024267,7.200858,24.10946,integrated tarsal plantula,False
 HAO:0000421,-32.13,4.02,-8.76,integument,False
 HAO:0000422,-31.06934,4.02,-7.69934,interantennal process,False
 HAO:0000423,-31.06934,4.02,-7.69934,interantennal process,False
@@ -1644,7 +1644,7 @@ HAO:0001642,-9.856136,11.52,13.51386,metanoto-metabasalar muscle,False
 HAO:0001643,-8.795476,11.52,14.57452,mesonoto-mesolaterophragmal muscle,False
 HAO:0001644,-7.734816,11.52,15.63518,mesonoto-mesocoxal muscle,False
 HAO:0001645,-6.674156,11.52,16.69584,mesonoto-mesobasalar muscle,False
-HAO:0001646,-5.613496,11.52,17.7565,subsalivarial gland,False
+HAO:0001646,3.245452,12.03276,22.81162,subsalivarial gland,False
 HAO:0001647,-4.552836,11.52,18.81716,mesosternal shelf,False
 HAO:0001648,-3.492175,11.52,19.87782,subpetiolar process,False
 HAO:0001649,-2.431515,11.52,20.93848,subocular area,False
@@ -2151,7 +2151,7 @@ HAO:0002149,-13.03812,8.52,10.33188,postarticular portion of the postmentum,Fals
 HAO:0002150,-11.97746,8.52,11.39254,prearticular portion of the postmentum,False
 HAO:0002151,-10.9168,8.52,12.4532,basal process of the prementum,False
 HAO:0002152,-9.856136,8.52,13.51386,lateral premental face,False
-HAO:0002153,-8.795476,8.52,14.57452,labial palpal excision,False
+HAO:0002153,61.45,-6.85,9.35,labial palpal excision,False
 HAO:0002154,-7.734816,8.52,15.63518,subligular process,False
 HAO:0002155,-6.674156,8.52,16.69584,premental arm,False
 HAO:0002156,-5.613496,8.52,17.7565,ventral premental face,False
@@ -2204,7 +2204,7 @@ HAO:0002202,-20.46274,5.52,2.907262,ventrolateral basiglossal arm,False
 HAO:0002203,-19.40208,5.52,3.967922,median conjunctiva of the anterior glossal plate,False
 HAO:0002204,-18.34142,5.52,5.028582,glossal annulus,False
 HAO:0002205,-17.28076,5.52,6.089242,annular hair,False
-HAO:0002206,-16.2201,5.52,7.149903,distal glossal edge,False
+HAO:0002206,-7.574853,1.413443,-3.019763,distal glossal edge,False
 HAO:0002207,-15.15944,5.52,8.210563,posterior surface of the glossa,False
 HAO:0002208,-14.09878,5.52,9.271223,anterior surface of the glossa,False
 HAO:0002209,-13.03812,5.52,10.33188,apical glossal hairs,False

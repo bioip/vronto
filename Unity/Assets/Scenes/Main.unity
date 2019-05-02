@@ -1411,7 +1411,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: 2.5
+  snappingOnOff: 1
   rightController: {fileID: 380843526}
+  snappingToggle: {fileID: 919173513}
 --- !u!65 &146925706
 BoxCollider:
   m_ObjectHideFlags: 0
