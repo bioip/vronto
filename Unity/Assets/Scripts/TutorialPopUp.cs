@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using VRTK;
 
+/// <summary>
+/// This class contains the script to turn the tutorial page on/off
+/// </summary>
 public class TutorialPopUp : MonoBehaviour
 {
 
@@ -29,6 +32,7 @@ public class TutorialPopUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Detect if the user pressed the menu button on the controller
         if (leftControllerEvents.IsButtonPressed(VRTK_ControllerEvents.ButtonAlias.ButtonTwoPress) || rightControllerEvents.IsButtonPressed(VRTK_ControllerEvents.ButtonAlias.ButtonTwoPress))
         {
             if (!buttonPressed)

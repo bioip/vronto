@@ -3,6 +3,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 [RequireComponent(typeof(ScrollRect))]
+
+/// <summary>
+/// This class contains the script to make the dropdown list scrollable
+/// </summary>
 public class SelfScrolling : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public float scrollSpeed = 10f;

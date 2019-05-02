@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/// <summary>
+/// This class contains the script to draw out the grid
+/// </summary>
 public class AxisXYZ : MonoBehaviour
 {
     static Material lineMaterial;
@@ -9,6 +12,9 @@ public class AxisXYZ : MonoBehaviour
 
     protected float offset;
 
+    /// <summary>
+    /// Create the line material for rendering the grid
+    /// </summary>
     static void CreateLineMaterial()
     {
         if (!lineMaterial)
@@ -28,7 +34,10 @@ public class AxisXYZ : MonoBehaviour
         }
     }
 
-    // Will be called after all regular rendering is done
+    
+    /// <summary>
+    /// Render the grid. Will be called after all regular rendering is done
+    /// </summary>
     public void OnRenderObject()
     {
 
@@ -93,6 +102,10 @@ public class AxisXYZ : MonoBehaviour
         GL.PopMatrix();
     }
 
+    /// <summary>
+    /// Adjust the size offset
+    /// </summary>
+    /// <param name="newOffset">The new size offset</param>
     public void AdjustOffset(float newOffset)
     {
         offset = newOffset;

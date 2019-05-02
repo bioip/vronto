@@ -10,6 +10,9 @@ using VRTK.GrabAttachMechanics;
 using VRTK.SecondaryControllerGrabActions;
 using UnityEngine.UI;
 
+/// <summary>
+/// This class contains the script to generate the spheres using the given data file
+/// </summary>
 public class SpheresGenerator : MonoBehaviour
 {
 
@@ -36,6 +39,9 @@ public class SpheresGenerator : MonoBehaviour
         PageInput.text = "P" + pageNum.ToString() + "/6";
     }
 
+    /// <summary>
+    /// Set up the dropdown list of the data
+    /// </summary>
     private void SetDropdownList(){
         
 
@@ -45,6 +51,9 @@ public class SpheresGenerator : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Generate the spheres and attach all the components
+    /// </summary>
     private void generate_spheres()
     {
 
@@ -122,6 +131,9 @@ public class SpheresGenerator : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Form the set using the relationships data
+    /// </summary>
     private void FormSet(){
         // form set based on part_of relationship
         foreach(GameObject sphere in spheres){
@@ -164,12 +176,18 @@ public class SpheresGenerator : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Call when quitting the application
+    /// </summary>
     void OnApplicationQuit()
     {
         Debug.Log("Application quit");
         SaveToCSV();
     }
 
+    /// <summary>
+    /// Go to the next page of the shelf
+    /// </summary>
     public void NextPage()
     {
         pageNum += 1;
@@ -198,6 +216,9 @@ public class SpheresGenerator : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Save the coordinates and placed data onto the saved_data file
+    /// </summary>
     private void SaveToCSV()
     {
         Debug.Log("Start saving to csv file");

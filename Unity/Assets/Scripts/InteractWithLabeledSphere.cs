@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using VRTK;
 
+/// <summary>
+/// This class contains the script to interact with the labeled sphere
+/// </summary>
 public class InteractWithLabeledSphere : MonoBehaviour
 {
 
@@ -33,6 +36,9 @@ public class InteractWithLabeledSphere : MonoBehaviour
         isLocating = false;
     }
 
+    /// <summary>
+    /// Fetch the selected sphere to the front of the user
+    /// </summary>
     public void FetchSphere()
     {
         if(!isLocating){
@@ -60,6 +66,9 @@ public class InteractWithLabeledSphere : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Locate the selected sphere
+    /// </summary>
     public void LocateSphere()
     {
         if(!isFetching){
@@ -104,6 +113,12 @@ public class InteractWithLabeledSphere : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Make the sphere blink
+    /// </summary>
+    /// <param name="waitTime">How long the blink lasts</param>
+    /// <param name="go">The gameobject to blink</param>
+    /// <returns></returns>
     private IEnumerator Blink(float waitTime, GameObject go)
     {
         isLocating = true;
@@ -122,6 +137,12 @@ public class InteractWithLabeledSphere : MonoBehaviour
         isLocating = false;
     }
 
+    /// <summary>
+    /// Resize the sphere for given time
+    /// </summary>
+    /// <param name="waitTime">How long does the resizing last</param>
+    /// <param name="go">The gameobject to resize</param>
+    /// <returns></returns>
     private IEnumerator Resize(float waitTime, GameObject go)
     {
         isLocating = true;
@@ -146,6 +167,9 @@ public class InteractWithLabeledSphere : MonoBehaviour
         isLocating = false;
     }
 
+    /// <summary>
+    /// Show the set/dependents of the selected sphere
+    /// </summary>
     public void ShowSet(){
         sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
         if(sp != null){
@@ -182,6 +206,9 @@ public class InteractWithLabeledSphere : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// go to the next item in the list
+    /// </summary>
     public void NextItem(){
         if(DropDownList.value < DropDownList.options.Count-1){
             DropDownList.value++;
@@ -194,6 +221,9 @@ public class InteractWithLabeledSphere : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// go to the last item in the list
+    /// </summary>
     public void LastItem(){
         if(DropDownList.value > 0){
             DropDownList.value--;

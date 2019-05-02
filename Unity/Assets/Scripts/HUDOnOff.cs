@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using VRTK;
 
+/// <summary>
+/// This class contains the script to turn the HUD on/off
+/// </summary>
 public class HUDOnOff : MonoBehaviour {
 
 	private GameObject HUD;
@@ -32,6 +35,8 @@ public class HUDOnOff : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
+		//Check if the user press the grip of the controller
 		if(leftControllerEvents.IsButtonPressed(VRTK_ControllerEvents.ButtonAlias.GripPress) || rightControllerEvents.IsButtonPressed(VRTK_ControllerEvents.ButtonAlias.GripPress)){
 			if(!buttonPressed){
 				ToggleOnOff();
@@ -42,6 +47,9 @@ public class HUDOnOff : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Turn the HUD on/off
+	/// </summary>
 	public void ToggleOnOff(){
 		HUD.SetActive(!HUD.activeInHierarchy);
 		keys.SetActive(!keys.activeInHierarchy);

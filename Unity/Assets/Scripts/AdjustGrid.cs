@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class contains scripts to adjust the size of the grid
+/// </summary>
 public class AdjustGrid : MonoBehaviour
 {
 
@@ -25,6 +28,10 @@ public class AdjustGrid : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Adjust the grid size by changing the offset
+    /// </summary>
+    /// <param name="newOffset">The new size offset for the grid</param>
     public void AdjustOffset(float newOffset)
     {
         offset = newOffset;

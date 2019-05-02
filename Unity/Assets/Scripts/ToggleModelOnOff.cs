@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class contains the script to turn the model on/off
+/// </summary>
 public class ToggleModelOnOff : MonoBehaviour
 {
 
@@ -19,6 +22,9 @@ public class ToggleModelOnOff : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Turn the model on/off
+    /// </summary>
     public void ModelOnOff()
     {
         model.SetActive(!model.activeSelf);

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This class contains the script to utilize the searchbar
+/// </summary>
 public class SearchBar : MonoBehaviour
 {
 
@@ -31,6 +34,9 @@ public class SearchBar : MonoBehaviour
         Debug.Log(m_dropdownList.IndexOf("head"));
     }
 
+    /// <summary>
+    /// When the user click the key on the keyboard, find the matching item in the list
+    /// </summary>
     public void ClickKey()
     {
         if (input.text != "")

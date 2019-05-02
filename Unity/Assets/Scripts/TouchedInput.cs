@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using VRTK;
 
+/// <summary>
+/// This class contains teh script to interact with the spheres pointed by the pointer
+/// </summary>
 public class TouchedInput : MonoBehaviour
 {
 
@@ -44,6 +47,7 @@ public class TouchedInput : MonoBehaviour
 
         if (io.IsGrabbed())
         {
+            //output the currently grabbed/selected sphere
             currSelected.text = label;
             input.text = label;
             if (!labelList.Contains(label))

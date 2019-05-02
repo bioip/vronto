@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using VRTK;
 
+/// <summary>
+/// This class contains the script to interact with spheres placed inside the model
+/// </summary>
 public class DetectCollisi : MonoBehaviour
 {
 
@@ -31,17 +34,26 @@ public class DetectCollisi : MonoBehaviour
         snappingToggle.isOn = snappingOnOff;
     }
 
+    /// <summary>
+    /// Turn snapping on/off
+    /// </summary>
     public void ToggleSnappingOnOff()
     {
         snappingOnOff = !snappingOnOff;
     }
 
+    /// <summary>
+    /// Turn snapping off
+    /// </summary>
     public void SnappingOff(){
         snappingOnOff = false;
         
     }
 
-    //detect if sphere is within model
+    /// <summary>
+    /// Interact with spheres placed inside the model
+    /// </summary>
+    /// <param name="other">The collider that triggers</param>
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "Sphere" || other.tag == "SphereInModel")
@@ -105,7 +117,10 @@ public class DetectCollisi : MonoBehaviour
         }
     }
 
-    //detect if sphere has exited model
+    /// <summary>
+    /// Interact with spheres that exit the model
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerExit(Collider other)
     {
         if (other.tag == "Sphere" || other.tag == "SphereInModel")
@@ -118,6 +133,10 @@ public class DetectCollisi : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Update grid size offset
+    /// </summary>
+    /// <param name="newOffset">The new size offset</param>
     public void UpdateOffset(float newOffset)
     {
         offset = newOffset;

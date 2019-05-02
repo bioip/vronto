@@ -3,6 +3,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// This class contains the script to manage the CSV data structure for "relationships_mod.csv"
+/// </summary>
 public class CSVRelationship : MonoBehaviour
 {
 	public TextAsset file;

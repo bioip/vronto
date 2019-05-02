@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class contains the script to draw a line between spheres in the same plane
+/// </summary>
 public class ConnectSpheres : MonoBehaviour
 {
     public List<GameObject> spheres;
@@ -18,6 +21,10 @@ public class ConnectSpheres : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Draw a line if the spheres in the model are in the same plane
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerStay(Collider other)
     {
         if (other.tag == "Model")
@@ -58,6 +65,13 @@ public class ConnectSpheres : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Draw the line between spheres
+    /// </summary>
+    /// <param name="start">The starting position</param>
+    /// <param name="end">The ending position</param>
+    /// <param name="color">The color of the line</param>
+    /// <param name="duration">the duration of the line</param>
     void DrawLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
     {
         GameObject myLine = new GameObject();

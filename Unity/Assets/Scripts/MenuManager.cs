@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class contains the script to manage the different UI pages
+/// </summary>
 public class MenuManager : MonoBehaviour {
 
 	public GameObject shelfPage;
@@ -19,6 +22,9 @@ public class MenuManager : MonoBehaviour {
 		
 	}
 
+	/// <summary>
+	/// Navigate to the Shelf page
+	/// </summary>
 	public void OnShelfPage(){
 		shelfPage.SetActive(true);
 		spherePage.SetActive(false);
@@ -26,6 +32,9 @@ public class MenuManager : MonoBehaviour {
 		homePage.SetActive(false);
 	}
 
+	/// <summary>
+	/// Navigate to the Sphere page
+	/// </summary>
 	public void OnSpherePage(){
 		shelfPage.SetActive(false);
 		spherePage.SetActive(true);
@@ -33,6 +42,9 @@ public class MenuManager : MonoBehaviour {
 		homePage.SetActive(false);
 	}
 
+	/// <summary>
+	/// Navigate to the Model/Grid page
+	/// </summary>
 	public void OnModelPage(){
 		shelfPage.SetActive(false);
 		spherePage.SetActive(false);
@@ -40,6 +52,9 @@ public class MenuManager : MonoBehaviour {
 		homePage.SetActive(false);
 	}
 
+	/// <summary>
+	/// Navigate to the HomeSpot page
+	/// </summary>
 	public void OnHomePage(){
 		shelfPage.SetActive(false);
 		spherePage.SetActive(false);

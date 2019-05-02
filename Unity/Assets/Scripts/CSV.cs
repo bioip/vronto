@@ -3,6 +3,9 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// This class contains the script to manage the CSV data structure for "data_final.csv" or "saved_data.csv"
+/// </summary>
 public class CSV : MonoBehaviour
 {
 	public TextAsset file;
