@@ -42,7 +42,15 @@ And you should get the relationships_mod file which looks like this:
 
 ![image](https://user-images.githubusercontent.com/36896710/57106821-f84a9180-6cf3-11e9-8e0c-57bdd016a166.png)
 
-Then use the final version of the CSV file - "data_final.csv". Drag the CSV file to the variable "File" in the CSV script component.
+Then use the final version of the CSV file - "data_final.csv". Drag the CSV file to the variable "File" in the CSV script component. Or if you have a saved_data file and want to reuse it to store your progress, then drag "saved_data.csv" file to the variable instead.
+
+![image](https://user-images.githubusercontent.com/36896710/57106993-79a22400-6cf4-11e9-85b4-ea8e5a5fc851.png)
+
+![image](https://user-images.githubusercontent.com/36896710/57106924-465f9500-6cf4-11e9-8c2d-fccf34026acf.png)
+
+Similarly, for the relationship data file, drag the "relationships_mod.csv" to the variable "File" in the "CSV Relationship" script component.
+
+![image](https://user-images.githubusercontent.com/36896710/57107018-8aeb3080-6cf4-11e9-8ff5-cf26b64086f6.png)
 
 
 # Collaboration
