@@ -24,15 +24,23 @@ Demo 3: https://drive.google.com/open?id=1Djw52z5vXc4A2M7-DFms1zSnsEjdMePr
 
 ![image](https://user-images.githubusercontent.com/36896710/53604222-7f0ab300-3b79-11e9-809e-2dd6243353e1.png)
 
-4) To load your own CSV file, first drag your file into the "Assets"-"data" folder in the Unity Editor. Then find the CSV gameobject in the Hierachy.
+4) To load your own CSV file and relationship file, first drag your file into the "Assets"-"data" folder in the Unity Editor. Then find the CSV gameobject in the Hierachy.
 
 Your data should look like this:
 
 ![image](https://user-images.githubusercontent.com/36896710/54091682-e2060200-4350-11e9-9435-8fd497542208.png)
 
+And your relationship file should look like this:
+
+![image](https://user-images.githubusercontent.com/36896710/57106712-bcafc780-6cf3-11e9-81ec-79f148620f42.png)
+
 Then run the csv_mod.py file with python. After that, you should get the data_final.csv file which looks like this, with coordinates assigned for each term.
 
-![image](https://user-images.githubusercontent.com/36896710/54091708-1bd70880-4351-11e9-9f78-a6272d1a0a08.png)
+![image](https://user-images.githubusercontent.com/36896710/57106616-7ce8e000-6cf3-11e9-9250-58154e5ee5ec.png)
+
+And you should get the relationships_mod file which looks like this:
+
+![image](https://user-images.githubusercontent.com/36896710/57106821-f84a9180-6cf3-11e9-8e0c-57bdd016a166.png)
 
 Then use the final version of the CSV file - "data_final.csv". Drag the CSV file to the variable "File" in the CSV script component.
 
