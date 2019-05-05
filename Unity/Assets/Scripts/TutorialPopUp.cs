@@ -9,13 +9,13 @@ using VRTK;
 public class TutorialPopUp : MonoBehaviour
 {
 
-    public GameObject tutorialPage;
-    protected GameObject rightController;
-    protected GameObject leftController;
-    protected VRTK_ControllerEvents leftControllerEvents;
-    protected VRTK_ControllerEvents rightControllerEvents;
-    protected bool active;
-    protected bool buttonPressed;
+    public GameObject tutorialPage;     // The tutorial page
+    protected GameObject rightController;   // The right hand controller
+    protected GameObject leftController;    // The left hand controller
+    protected VRTK_ControllerEvents leftControllerEvents;   // The left hand controller events used to identify button pressed
+    protected VRTK_ControllerEvents rightControllerEvents;  // The right hand controller events used to identify button pressed
+    protected bool active;  // Whether the tutorial page is active
+    protected bool buttonPressed;   // Whether the button has been pressed
 
     // Use this for initialization
     void Start()

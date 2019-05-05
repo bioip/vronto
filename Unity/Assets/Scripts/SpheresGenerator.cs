@@ -16,19 +16,18 @@ using UnityEngine.UI;
 public class SpheresGenerator : MonoBehaviour
 {
 
-    private int[] objects;
-    public CSV CSVManager;
-    public CSVRelationship CSVManagerRelationship;
-    public int pageNum = 1;
-    public List<GameObject> spheres = new List<GameObject>();
-    public List<string> labelList = new List<string>();
-    public List<string> m_dropdownList = new List<string>();
-    public InputField PageInput;
-    public InputField labelInput;
-    public Dropdown DropDownList;
-    public Text currSelected;
+    public CSV CSVManager;  // The CSV manager for the data csv file
+    public CSVRelationship CSVManagerRelationship;  // The CSV manager for the relationship data csv file
+    public int pageNum = 1; // The current page number of the shelf
+    public List<GameObject> spheres = new List<GameObject>();   // The list of spheres
+    public List<string> labelList = new List<string>(); // The list of labels
+    public List<string> m_dropdownList = new List<string>();    // The list of dropdown list items
+    public InputField PageInput;    // The Inputfield for showing page number
+    public InputField labelInput;   // The Inputfield for showing the selected sphere's label
+    public Dropdown DropDownList;   // The UI dropdown list
+    public Text currSelected;   // The text for currently grabbed/selected sphere label
 
-    private List<string[]> rowData = new List<string[]>();
+    private List<string[]> rowData = new List<string[]>();  // The list for saving data as a csv file
 
     // Use this for initialization
     void Start()
@@ -42,10 +41,12 @@ public class SpheresGenerator : MonoBehaviour
     /// <summary>
     /// Set up the dropdown list of the data
     /// </summary>
-    private void SetDropdownList(){
-        
+    private void SetDropdownList()
+    {
 
-        for(int i = 0; i < CSVManager.GetRowList().Count; i++){
+
+        for (int i = 0; i < CSVManager.GetRowList().Count; i++)
+        {
             m_dropdownList.Add(CSVManager.GetRowList()[i].Label);
         }
 
@@ -121,11 +122,12 @@ public class SpheresGenerator : MonoBehaviour
             ConnectSpheres cs = sp.AddComponent(typeof(ConnectSpheres)) as ConnectSpheres;
             cs.spheres = spheres;
 
-            if(i >= pageNum * 450){
+            if (i >= pageNum * 450)
+            {
                 sp.SetActive(false);
             }
 
-            
+
 
         }
 
@@ -134,35 +136,46 @@ public class SpheresGenerator : MonoBehaviour
     /// <summary>
     /// Form the set using the relationships data
     /// </summary>
-    private void FormSet(){
+    private void FormSet()
+    {
         // form set based on part_of relationship
-        foreach(GameObject sphere in spheres){
+        foreach (GameObject sphere in spheres)
+        {
             List<CSVRelationship.Row> AllID = CSVManagerRelationship.FindAll_ID(sphere.GetComponent<Parent>().id);
-            foreach(CSVRelationship.Row row in AllID){
+            foreach (CSVRelationship.Row row in AllID)
+            {
                 // part_of relatinoship
-                if(row.Relationship == "BFO:0000050"){
+                if (row.Relationship == "BFO:0000050")
+                {
                     GameObject targetSphere = spheres.Find(x => x.GetComponent<Parent>().id == row.Target_ID);
-                    if(targetSphere != null)
+                    if (targetSphere != null)
                         targetSphere.GetComponent<Parent>().descendents.Add(sphere);
                 }
             }
         }
 
         // modify set based on is_a relationship
-        foreach(GameObject sphere in spheres){
+        foreach (GameObject sphere in spheres)
+        {
             List<CSVRelationship.Row> AllID = CSVManagerRelationship.FindAll_ID(sphere.GetComponent<Parent>().id);
-            foreach(CSVRelationship.Row row in AllID){
+            foreach (CSVRelationship.Row row in AllID)
+            {
                 // part_of relatinoship
-                if(row.Relationship == "is_a"){
+                if (row.Relationship == "is_a")
+                {
                     GameObject targetSphere = spheres.Find(x => x.GetComponent<Parent>().id == row.Target_ID);
-                    if(targetSphere != null){
-                        if(sphere.GetComponent<Parent>().descendents.Count < targetSphere.GetComponent<Parent>().descendents.Count){
+                    if (targetSphere != null)
+                    {
+                        if (sphere.GetComponent<Parent>().descendents.Count < targetSphere.GetComponent<Parent>().descendents.Count)
+                        {
                             sphere.GetComponent<Parent>().descendents = targetSphere.GetComponent<Parent>().descendents;
-                        }else{
+                        }
+                        else
+                        {
                             targetSphere.GetComponent<Parent>().descendents = sphere.GetComponent<Parent>().descendents;
                         }
                     }
-                        
+
                 }
             }
         }
@@ -171,8 +184,8 @@ public class SpheresGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
+
+
 
     }
 
@@ -191,17 +204,21 @@ public class SpheresGenerator : MonoBehaviour
     public void NextPage()
     {
         pageNum += 1;
-        if ((pageNum-1) * 450 >= 2449)
+        if ((pageNum - 1) * 450 >= 2449)
         {
             pageNum = 1;
         }
         PageInput.text = "P" + pageNum.ToString() + "/6";
 
-        for(int i = 0; i < spheres.Count; i++){
-            if(i >= (pageNum - 1) * 450 && i < pageNum * 450){
-                
+        for (int i = 0; i < spheres.Count; i++)
+        {
+            if (i >= (pageNum - 1) * 450 && i < pageNum * 450)
+            {
+
                 spheres[i].SetActive(true);
-            }else if(spheres[i].tag != "SphereInModel"){
+            }
+            else if (spheres[i].tag != "SphereInModel")
+            {
                 spheres[i].SetActive(false);
             }
 
@@ -240,7 +257,7 @@ public class SpheresGenerator : MonoBehaviour
             rowDataTmp[2] = "" + sp.transform.position.y;
             rowDataTmp[3] = "" + sp.transform.position.z;
             rowDataTmp[4] = CSVManager.GetRowList()[i].Label;
-            
+
             if (sp != null && sp.tag == "SphereInModel")
             {
                 rowDataTmp[5] = "" + true;
@@ -265,7 +282,7 @@ public class SpheresGenerator : MonoBehaviour
 
         for (int i = 0; i < length; i++)
         {
-            if(i != length - 1)
+            if (i != length - 1)
                 sb.Append(string.Join(delimiter, output[i]) + "\n");
             else
                 sb.Append(string.Join(delimiter, output[i]));

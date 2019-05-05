@@ -8,7 +8,7 @@ using UnityEngine;
 public class ToggleModelOnOff : MonoBehaviour
 {
 
-    private GameObject model;
+    private GameObject model;   // The insect model gameobject
 
     // Use this for initialization
     void Start()

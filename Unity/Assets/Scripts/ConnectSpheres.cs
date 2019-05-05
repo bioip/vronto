@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class ConnectSpheres : MonoBehaviour
 {
-    public List<GameObject> spheres;
+    public List<GameObject> spheres;    // The list of spheres
 
     // Use this for initialization
     void Start()

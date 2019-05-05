@@ -8,86 +8,86 @@ using System.Collections.Generic;
 /// </summary>
 public class CSVRelationship : MonoBehaviour
 {
-	public TextAsset file;
+    public TextAsset file;	// The relationship data CSV file to load
 
     void Start()
     {
         Load(file);
 
     }
-	
-	public class Row
-	{
-		public string ID;
-		public string Relationship;
-		public string Target_ID;
 
-	}
+    public class Row
+    {
+        public string ID;
+        public string Relationship;
+        public string Target_ID;
 
-	List<Row> rowList = new List<Row>();
-	bool isLoaded = false;
+    }
 
-	public bool IsLoaded()
-	{
-		return isLoaded;
-	}
+    List<Row> rowList = new List<Row>();
+    bool isLoaded = false;
 
-	public List<Row> GetRowList()
-	{
-		return rowList;
-	}
+    public bool IsLoaded()
+    {
+        return isLoaded;
+    }
 
-	public void Load(TextAsset csv)
-	{
-		rowList.Clear();
-		string[][] grid = CsvParser2.Parse(csv.text);
-		for(int i = 1 ; i < grid.Length ; i++)
-		{
-			Row row = new Row();
-			row.ID = grid[i][0];
-			row.Relationship = grid[i][1];
-			row.Target_ID = grid[i][2];
+    public List<Row> GetRowList()
+    {
+        return rowList;
+    }
 
-			rowList.Add(row);
-		}
-		isLoaded = true;
-	}
+    public void Load(TextAsset csv)
+    {
+        rowList.Clear();
+        string[][] grid = CsvParser2.Parse(csv.text);
+        for (int i = 1; i < grid.Length; i++)
+        {
+            Row row = new Row();
+            row.ID = grid[i][0];
+            row.Relationship = grid[i][1];
+            row.Target_ID = grid[i][2];
 
-	public int NumRows()
-	{
-		return rowList.Count;
-	}
+            rowList.Add(row);
+        }
+        isLoaded = true;
+    }
 
-	public Row GetAt(int i)
-	{
-		if(rowList.Count <= i)
-			return null;
-		return rowList[i];
-	}
+    public int NumRows()
+    {
+        return rowList.Count;
+    }
 
-	public Row Find_ID(string find)
-	{
-		return rowList.Find(x => x.ID == find);
-	}
-	public List<Row> FindAll_ID(string find)
-	{
-		return rowList.FindAll(x => x.ID == find);
-	}
-	public Row Find_Relationship(string find)
-	{
-		return rowList.Find(x => x.Relationship == find);
-	}
-	public List<Row> FindAll_Relationship(string find)
-	{
-		return rowList.FindAll(x => x.Relationship == find);
-	}
-	public Row Find_Target_ID(string find)
-	{
-		return rowList.Find(x => x.Target_ID == find);
-	}
-	public List<Row> FindAll_Target_ID(string find)
-	{
-		return rowList.FindAll(x => x.Target_ID == find);
-	}
+    public Row GetAt(int i)
+    {
+        if (rowList.Count <= i)
+            return null;
+        return rowList[i];
+    }
+
+    public Row Find_ID(string find)
+    {
+        return rowList.Find(x => x.ID == find);
+    }
+    public List<Row> FindAll_ID(string find)
+    {
+        return rowList.FindAll(x => x.ID == find);
+    }
+    public Row Find_Relationship(string find)
+    {
+        return rowList.Find(x => x.Relationship == find);
+    }
+    public List<Row> FindAll_Relationship(string find)
+    {
+        return rowList.FindAll(x => x.Relationship == find);
+    }
+    public Row Find_Target_ID(string find)
+    {
+        return rowList.Find(x => x.Target_ID == find);
+    }
+    public List<Row> FindAll_Target_ID(string find)
+    {
+        return rowList.FindAll(x => x.Target_ID == find);
+    }
 
 }

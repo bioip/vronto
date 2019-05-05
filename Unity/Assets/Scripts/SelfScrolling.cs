@@ -9,13 +9,13 @@ using UnityEngine.UI;
 /// </summary>
 public class SelfScrolling : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public float scrollSpeed = 10f;
-    private bool mouseOver = false;
+    public float scrollSpeed = 10f; // The scroll speed for the dropdown list
+    private bool mouseOver = false; // Whether the mouse is over the dropdown list
 
-    private List<Selectable> m_Selectables = new List<Selectable>();
-    private ScrollRect m_ScrollRect;
+    private List<Selectable> m_Selectables = new List<Selectable>();    // The list of all selectables in the dropdown list
+    private ScrollRect m_ScrollRect;    // The scroll rect for scrolling
 
-    private Vector2 m_NextScrollPosition = Vector2.up;
+    private Vector2 m_NextScrollPosition = Vector2.up;  // Used for scrolling up/down
     void OnEnable()
     {
         if (m_ScrollRect)

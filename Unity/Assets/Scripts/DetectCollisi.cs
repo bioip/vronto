@@ -10,16 +10,16 @@ using VRTK;
 public class DetectCollisi : MonoBehaviour
 {
 
-    private float x0 = 36.45f;
-    private float y0 = -6.85f;
-    private float z0 = 9.35f;
-    public float offset;
+    private float x0 = 36.45f;  // The starting x coordinate
+    private float y0 = -6.85f;  // The starting y coordinate
+    private float z0 = 9.35f;   // The starting z coordinate
+    public float offset;    // The size offset
 
-    public bool snappingOnOff;
+    public bool snappingOnOff;  // Whether the snapping is on/off
 
-    public GameObject rightController;
+    public GameObject rightController;  // The right hand controller
 
-    public Toggle snappingToggle;
+    public Toggle snappingToggle;   // The UI toggle that shows if the snapping is on/off
 
     // Use this for initialization
     void Start()
@@ -45,9 +45,10 @@ public class DetectCollisi : MonoBehaviour
     /// <summary>
     /// Turn snapping off
     /// </summary>
-    public void SnappingOff(){
+    public void SnappingOff()
+    {
         snappingOnOff = false;
-        
+
     }
 
     /// <summary>

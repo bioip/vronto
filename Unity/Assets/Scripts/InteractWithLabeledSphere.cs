@@ -10,18 +10,18 @@ using VRTK;
 public class InteractWithLabeledSphere : MonoBehaviour
 {
 
-    private InputField input;
-    private GameObject rightController;
-    private IEnumerator coroutine;
-    private GameObject sp;
-    private Color[] colors;
-    public List<string> labelList;
-    private Dropdown DropDownList;
-    private List<string> m_dropdownList;
-    public GameObject SphereGenerator;
-    public bool showingSet;
-    private bool isLocating;
-    private bool isFetching;
+    private InputField input;   // The inputfield on the keyboard
+    private GameObject rightController;     // The right hand controller
+    private IEnumerator coroutine;      // Corountine used to start another process
+    private GameObject sp;  // The sphere to interact with
+    private Color[] colors; // The list of colors used for blinking
+    public List<string> labelList;  // The list of all labels in the data
+    private Dropdown DropDownList;  // The UI dropdown list that shows 20 items at a time
+    private List<string> m_dropdownList;    // The list to keep all labels in the data
+    public GameObject SphereGenerator;  // The sphere generator gameobject used to generate and initialize spheres
+    public bool showingSet; // Whether to show the set of the specific sphere
+    private bool isLocating;    // Whether the user is trying to locate the sphere
+    private bool isFetching;    // Whether the user is trying to fetch the sphere
 
     // Use this for initialization
     void Start()
@@ -41,22 +41,29 @@ public class InteractWithLabeledSphere : MonoBehaviour
     /// </summary>
     public void FetchSphere()
     {
-        if(!isLocating){
+        if (!isLocating)
+        {
             string spName = DropDownList.options[DropDownList.value].text;
             sp = GameObject.Find(spName);
             if (sp != null)
             {
                 sp.transform.position = rightController.transform.position + rightController.transform.forward;
-            } else {
+            }
+            else
+            {
                 int page = m_dropdownList.IndexOf(spName) / 450 + 1;
                 int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
                 int pageToFlip = 0;
-                if(page >= curPage){
+                if (page >= curPage)
+                {
                     pageToFlip = page - curPage;
-                }else{
+                }
+                else
+                {
                     pageToFlip = 6 - curPage + page;
                 }
-                for(int i = 0; i < pageToFlip; i++){
+                for (int i = 0; i < pageToFlip; i++)
+                {
                     SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
                 }
                 sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
@@ -71,9 +78,10 @@ public class InteractWithLabeledSphere : MonoBehaviour
     /// </summary>
     public void LocateSphere()
     {
-        if(!isFetching){
+        if (!isFetching)
+        {
 
-        
+
             string spName = DropDownList.options[DropDownList.value].text;
             sp = GameObject.Find(spName);
 
@@ -85,20 +93,26 @@ public class InteractWithLabeledSphere : MonoBehaviour
 
                 coroutine = Resize(3.0f, sp);
                 StartCoroutine(coroutine);
-            } else {
+            }
+            else
+            {
                 int page = m_dropdownList.IndexOf(spName) / 450 + 1;
                 int curPage = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
                 int pageToFlip = 0;
-                if(page >= curPage){
+                if (page >= curPage)
+                {
                     pageToFlip = page - curPage;
-                }else{
+                }
+                else
+                {
                     pageToFlip = 6 - curPage + page;
                 }
-                for(int i = 0; i < pageToFlip; i++){
+                for (int i = 0; i < pageToFlip; i++)
+                {
                     SphereGenerator.GetComponent<SpheresGenerator>().NextPage();
                 }
 
-                
+
                 sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
 
                 sp.tag = "Sphere_blinking";
@@ -170,18 +184,25 @@ public class InteractWithLabeledSphere : MonoBehaviour
     /// <summary>
     /// Show the set/dependents of the selected sphere
     /// </summary>
-    public void ShowSet(){
+    public void ShowSet()
+    {
         sp = GameObject.Find(DropDownList.options[DropDownList.value].text);
-        if(sp != null){
+        if (sp != null)
+        {
             showingSet = !showingSet;
-            if(showingSet){
+            if (showingSet)
+            {
                 List<GameObject> descendents = sp.GetComponent<Parent>().descendents;
-                foreach(GameObject sphere in SphereGenerator.GetComponent<SpheresGenerator>().spheres){
-                    if(descendents.Contains(sphere)){
+                foreach (GameObject sphere in SphereGenerator.GetComponent<SpheresGenerator>().spheres)
+                {
+                    if (descendents.Contains(sphere))
+                    {
                         sphere.SetActive(true);
                         sphere.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
                         sphere.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
-                    }else{
+                    }
+                    else
+                    {
                         sphere.SetActive(false);
                     }
                 }
@@ -190,14 +211,20 @@ public class InteractWithLabeledSphere : MonoBehaviour
                 sp.GetComponent<VRTK_InteractableObject>().touchHighlightColor = Color.yellow;
                 sp.GetComponent<VRTK_InteractableObject>().ToggleHighlight(true);
 
-            }else{
+            }
+            else
+            {
                 int pageNum = SphereGenerator.GetComponent<SpheresGenerator>().pageNum;
                 List<GameObject> spheres = SphereGenerator.GetComponent<SpheresGenerator>().spheres;
-                for(int i = 0; i < spheres.Count; i++){
+                for (int i = 0; i < spheres.Count; i++)
+                {
                     spheres[i].GetComponent<VRTK_InteractableObject>().ToggleHighlight(false);
-                    if(i >= (pageNum - 1) * 450 && i < pageNum * 450){
+                    if (i >= (pageNum - 1) * 450 && i < pageNum * 450)
+                    {
                         spheres[i].SetActive(true);
-                    }else if(spheres[i].tag != "SphereInModel"){
+                    }
+                    else if (spheres[i].tag != "SphereInModel")
+                    {
                         spheres[i].SetActive(false);
                     }
 
@@ -209,10 +236,14 @@ public class InteractWithLabeledSphere : MonoBehaviour
     /// <summary>
     /// go to the next item in the list
     /// </summary>
-    public void NextItem(){
-        if(DropDownList.value < DropDownList.options.Count-1){
+    public void NextItem()
+    {
+        if (DropDownList.value < DropDownList.options.Count - 1)
+        {
             DropDownList.value++;
-        }else{
+        }
+        else
+        {
             int index = m_dropdownList.IndexOf(DropDownList.options[DropDownList.value].text);
             int startIndex = m_dropdownList.IndexOf(DropDownList.options[0].text) + 1;
             int range = DropDownList.options.Count;
@@ -224,21 +255,26 @@ public class InteractWithLabeledSphere : MonoBehaviour
     /// <summary>
     /// go to the last item in the list
     /// </summary>
-    public void LastItem(){
-        if(DropDownList.value > 0){
+    public void LastItem()
+    {
+        if (DropDownList.value > 0)
+        {
             DropDownList.value--;
-        }else{
+        }
+        else
+        {
             int index = m_dropdownList.IndexOf(DropDownList.options[DropDownList.value].text);
             int startIndex = index - 1;
             int range = DropDownList.options.Count;
             DropDownList.ClearOptions();
             DropDownList.AddOptions(m_dropdownList.GetRange(startIndex, range));
         }
-        
+
     }
 
-    void Update(){
+    void Update()
+    {
 
-        
+
     }
 }

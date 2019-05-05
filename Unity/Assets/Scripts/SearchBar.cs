@@ -9,14 +9,14 @@ using UnityEngine.UI;
 public class SearchBar : MonoBehaviour
 {
 
-    public Dropdown DropdownList;
-    private List<Dropdown.OptionData> m_Messages;
-    private InputField input;
-    private List<string> labels = new List<string>();
-    private List<string> m_dropdownList;
-    private string outputString;
-    private bool matched;
-    public GameObject SphereGenerator;
+    public Dropdown DropdownList;   // The UI dropdown list
+    private List<Dropdown.OptionData> m_Messages;   // The list of messages in the dropdown list
+    private InputField input;   // The UI inputfield
+    private List<string> labels = new List<string>();   // The list of all labels
+    private List<string> m_dropdownList;    // The list of all items in the dropdown list
+    private string outputString;    // The output string of the keyboard
+    private bool matched;   // Whether we have a matching item for the search
+    public GameObject SphereGenerator;  // The sphere generator gameobject
 
     // Use this for initialization
     void Start()

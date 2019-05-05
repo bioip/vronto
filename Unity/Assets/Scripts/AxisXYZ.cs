@@ -7,10 +7,10 @@ using UnityEngine.UI;
 /// </summary>
 public class AxisXYZ : MonoBehaviour
 {
-    static Material lineMaterial;
-    public float AxisLength;
+    static Material lineMaterial;   // The material used for rendering 
+    public float AxisLength;    // The axis length
 
-    protected float offset;
+    protected float offset; //The size offset
 
     /// <summary>
     /// Create the line material for rendering the grid
@@ -34,7 +34,7 @@ public class AxisXYZ : MonoBehaviour
         }
     }
 
-    
+
     /// <summary>
     /// Render the grid. Will be called after all regular rendering is done
     /// </summary>

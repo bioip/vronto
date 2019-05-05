@@ -5,19 +5,19 @@ using UnityEngine.UI;
 using VRTK;
 
 /// <summary>
-/// This class contains teh script to interact with the spheres pointed by the pointer
+/// This class contains the script to interact with the spheres pointed by the pointer
 /// </summary>
 public class TouchedInput : MonoBehaviour
 {
 
-    public InputField input;
-    public Dropdown input_dropdown;
-    public string label;
-    public GameObject rightController;
-    public GameObject sp;
-    public List<string> labelList;
-    public List<string> m_dropdownList;
-    public Text currSelected;
+    public InputField input;    // The inputfield for the currently pointed sphere's label
+    public Dropdown input_dropdown; // The UI dropdown list
+    public string label;    // The sphere's label
+    public GameObject rightController;  // The right hand controller
+    public GameObject sp;   // The sphere
+    public List<string> labelList;  // The list of all labels
+    public List<string> m_dropdownList; // The list of all labels in the dropdown list
+    public Text currSelected;   // The UI text for currently grabbed/selected sphere label
 
     // Use this for initialization
     void Start()
@@ -33,7 +33,8 @@ public class TouchedInput : MonoBehaviour
         {
 
             //output sphere label to HUD inputfield when not showing set right now
-            if(!input_dropdown.GetComponent<InteractWithLabeledSphere>().showingSet){
+            if (!input_dropdown.GetComponent<InteractWithLabeledSphere>().showingSet)
+            {
                 input_dropdown.ClearOptions();
                 input.text = label;
                 input_dropdown.value = m_dropdownList.IndexOf(label);
@@ -42,7 +43,7 @@ public class TouchedInput : MonoBehaviour
                 int range = Mathf.Min(20, m_dropdownList.Count - startIndex);
                 input_dropdown.AddOptions(m_dropdownList.GetRange(value, range));
             }
-            
+
         }
 
         if (io.IsGrabbed())
@@ -61,7 +62,7 @@ public class TouchedInput : MonoBehaviour
         }
         else
         {
-            
+
         }
     }
 

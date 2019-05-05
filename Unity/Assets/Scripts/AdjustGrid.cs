@@ -8,9 +8,9 @@ using UnityEngine;
 public class AdjustGrid : MonoBehaviour
 {
 
-    private float offset = 0.0f;
+    private float offset = 0.0f;    // The size offset
 
-    private GameObject grid;
+    private GameObject grid;    // The grid gameobject
 
     // Use this for initialization
     void Start()
